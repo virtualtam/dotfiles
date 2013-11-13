@@ -1,0 +1,66 @@
+! Xresources file
+!- Fonts
+URxvt.font: xft:monospace:size=11
+
+!- They see me scrollin', they hatin'
+URxvt*.scrollstyle: plain
+URxvt*scrollTtyKeypress: true
+
+!- Extensions
+URxvt*.perl-ext-common:	     default,url-select,tabbed
+
+!- URL
+URxvt*.url-select.launcher:  /usr/bin/firefox -new-tab
+URxvt*.keysym.M-u:    perl:url-select:select_next
+URxvt*.matcher.button:	    1
+URxvt*.url-select.underline: true
+URxvt*.colorUL: #4682B4
+
+!- Tabs
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg:    3
+URxvt.tabbed.tab-bg:    0
+
+!- Term colors
+urxvt*foreground: #f2f2f2
+urxvt*background: #101010
+
+! Normal
+! color0    black
+! color1    red
+! color2    green
+! color3    yellow
+! color4    blue
+! color5    purple
+! color6    cyan
+! color7    white
+
+urxvt*color0:    #2e3436
+urxvt*color1:    #e9897c
+urxvt*color2:    #b6e77d
+urxvt*color3:    #ecebbe
+urxvt*color4:    #3465a4
+urxvt*color5:    #ea96eb
+urxvt*color6:    #06989a
+urxvt*color7:    #f2f2f2
+
+! Light
+! color8    black
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue
+! color13    purple
+! color14    cyan
+! color15    white
+
+urxvt*color8:    #747474
+urxvt*color9:    #ef2b31
+urxvt*color10:    #6dd738
+urxvt*color11:    #fce94f
+urxvt*color12:    #729fcf
+urxvt*color13:    #ae81ad
+urxvt*color14:    #d7d9fc
+urxvt*color15:    #e2e2e2
+
