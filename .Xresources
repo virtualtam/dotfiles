@@ -26,41 +26,41 @@ URxvt.tabbed.tab-bg:    0
 urxvt*foreground: #f2f2f2
 urxvt*background: #101010
 
-! Normal
+!- Normal colors
+!
 ! color0    black
-! color1    red
-! color2    green
-! color3    yellow
-! color4    blue
-! color5    purple
-! color6    cyan
-! color7    white
-
 urxvt*color0:    #2e3436
-urxvt*color1:    #e9897c
+! color1    red
+urxvt*color1:	 #e9361d
+! color2    green
 urxvt*color2:    #b6e77d
-urxvt*color3:    #ecebbe
+! color3    yellow
+urxvt*color3:    #e8e430
+! color4    blue
 urxvt*color4:    #3465a4
+! color5    purple
 urxvt*color5:    #ea96eb
+! color6    cyan
 urxvt*color6:    #06989a
+! color7    white
 urxvt*color7:    #f2f2f2
 
-! Light
+!- Light colors
+!
 ! color8    black
-! color9    red
-! color10    green
-! color11    yellow
-! color12    blue
-! color13    purple
-! color14    cyan
-! color15    white
-
 urxvt*color8:    #747474
+! color9    red
 urxvt*color9:    #ef2b31
-urxvt*color10:    #6dd738
-urxvt*color11:    #fce94f
-urxvt*color12:    #729fcf
-urxvt*color13:    #ae81ad
-urxvt*color14:    #d7d9fc
-urxvt*color15:    #e2e2e2
+! color10   green
+urxvt*color10:   #6dd738
+! color11   yellow
+urxvt*color11:   #ffc94a
+! color12   blue
+urxvt*color12:   #729fcf
+! color13   purple
+urxvt*color13:   #ae81ad
+! color14   cyan
+urxvt*color14:   #d7d9fc
+! color15   white
+urxvt*color15:   #e2e2e2
 
