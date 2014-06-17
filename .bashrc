@@ -1,7 +1,5 @@
-# ~/.bashrc: ArchUser | ArchRoot
-# author	VirtualTam
-# created	2010-05-26
-# updated	2013-03-13
+# ~/.bashrc
+# author	VirtualTam	<virtualtam@flibidi.org>
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -51,15 +49,6 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-#if [ -f ~/.bash_aliases ]; then
-#    . ~/.bash_aliases
-#fi
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     eval "`dircolors -b`"
@@ -70,63 +59,24 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
-
-# some more ls aliases
-alias ll='ls -lh'
-alias la='ls -lAh'
-
-# Compilation
-alias gflag='gcc -W -Wall -Wextra -ansi -pedantic'
-alias gdebug='gcc -W -Wall -Wextra -ansi -pedantic -g -pg -DNDEBUG'
-alias mclean='make clean'
-alias mdist='make distclean'
-
-# External storage
-MEDIA_FOLDER="/run/media/tamisier/"
-alias k1='cd '${MEDIA_FOLDER}"DRS_K-1/"
-alias k8='cd '${MEDIA_FOLDER}"DRS_K-8/"
-alias n8='cd '${MEDIA_FOLDER}"DRS_N-8/"
-alias d1='cd '${MEDIA_FOLDER}"D1_Media/"
-alias d2='cd '${MEDIA_FOLDER}"D2_Softs/"
-
-# Steam fix
-alias steam='steam && xsetroot -cursor_name left_ptr'
-
-# Spell shortcuts :p
-alias md='mkdir'
-alias cd..='cd ..'
-#alias n.='nautilus .'
-
-# MATÉ session
-#if [ `ps -eo comm | grep session` = "mate-session" ]; then
-#    alias n.='echo "Call me caja maybe!";caja .';
-#    alias c.='caja .';
-#    alias evince='echo "Call me atril maybe!";atril';
-#    alias gedit='echo "Call me pluma maybe!";pluma';
-#fi
-
 # Java (moved to $JAVA_HOME/jre/lib/swing.properties)
 export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
 ' -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
 ' -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
 
 # Text & Editors
-alias emax='emacs -nw'
 export EDITOR="emacs -nw"
 export MANPAGER='most'
 #export VISUAL='/usr/bin/emacs -nw'
 
-# SSH
-alias vibi='ssh virtualtam@flibidi.org'
-alias mibi='ssh minecraft@flibidi.org'
-
 # ROOT utils
 complete -cf sudo
-#alias pacman='pacman-color' # Deprecated as of pacman 4.1.0
 alias grubconf='grub-mkconfig -o /boot/grub/grub.cfg'
 
-# iii];p
-alias rm='rm --preserve-root'
+# Alias definitions
+if [ -f  ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
