@@ -4,5 +4,10 @@
 [push]
 	default = simple
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	lh = log --color --graph --pretty=format:'%Cred%H%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	br = branch
+	ci = commit
+	co = checkout
+	st = status
+	lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset %Cgreen%ad%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --date=relative
+	lh = log --color --graph --pretty=format:'%C(yellow)%H%Creset %Cgreen%ad%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --date=iso
+	ll = log --pretty=format:'%C(yellow)%h %Cgreen%ar%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%cn>%Creset' --stat
