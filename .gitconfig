@@ -11,3 +11,5 @@
 	lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset %Cgreen%ad%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --date=relative
 	lh = log --color --graph --pretty=format:'%C(yellow)%H%Creset %Cgreen%ad%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --date=iso
 	ll = log --pretty=format:'%C(yellow)%h %Cgreen%ar%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%cn>%Creset' --stat
+[core]
+	excludesfile = ~/.gitignore_global
