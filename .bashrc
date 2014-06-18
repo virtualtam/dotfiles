@@ -67,6 +67,7 @@ export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndF
 # Text & Editors
 export EDITOR="emacs -nw"
 export MANPAGER='most'
+export PAGER='more -f'
 #export VISUAL='/usr/bin/emacs -nw'
 
 # ROOT utils
