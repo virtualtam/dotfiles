@@ -145,6 +145,12 @@
 ;(autoload 'vhdl-mode "vhdl-mode" "VHDL Mode" t)
 ;(setq auto-mode-alist (cons '("\\.vhdl?\\'" . vhdl-mode) auto-mode-alist))
 
+
+;; YAML
+(autoload 'yaml-mode "yaml-mode" "YAML mode." t)
+(add-to-list 'auto-mode-alist '("\\.sls$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+
 ;;--------------
 ;; Auto-insert
 ;;--------------
