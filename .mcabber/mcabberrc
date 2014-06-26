@@ -1,0 +1,80 @@
+# Account
+set server = taga.zok
+#set password = d3bug0n1y
+set jid = meh@taga.zok
+set username = meh
+set nickname = M3h
+
+# Display
+set ignore_self_presence = 1
+set roster_display_filter = ofdna
+set max_history_blocks = 8
+set cmdhistory_lines = 250
+
+# Security
+set tls = 1
+set ssl_ignore_checks = 1
+
+# Spell check
+set spell_enable = 1
+set spell_lang = fr_FR
+set spell_encoding = UTF-8
+
+# Status
+set message_autoaway = Idle des jeunes
+#set message = Unique message status
+#set message_avail     = I'm available
+#set message_free      = I'm free for chat
+#set message_dnd       = Please do not disturb
+#set message_notavail  = I'm not available
+set message_away      = Falling away from me
+
+# Colors
+# - black, red, green, yellow, blue, magenta, cyan, white
+# - terminal colors: 16-255
+# hint: in emacs, M-x list-colors-display
+#
+# theme:  mcabber-colors-solarized
+# source: https://github.com/seebi/mcabber-colors-solarized
+set color_background = 234
+set color_general = 244
+set color_info = 240
+set color_msgin = 166
+set color_msgout = 64
+set color_msghl = 136
+set color_bgstatus = 235
+set color_status = 166
+set color_roster = 240
+set color_bgrostersel = 235
+set color_rostersel = 166
+set color_rosterselmsg = 136
+set color_rosternewmsg = 136
+
+#color mucnick my_friend yellow
+
+# Aliases
+alias me = say /me
+alias online   = status online
+alias away     = status away
+alias dnd      = status dnd
+alias notavail = status notavail
+
+# Room aliases
+alias names = room names
+alias topic = room topic
+alias woom  = room join woom@chat.jabberfr.org
+
+# Key bindings
+# Ctrl-q (17) bound to /roster unread_next
+bind 17 = roster unread_next
+# Ctrl-x (24) bound to /roster alternate
+bind 24 = roster alternate
+# F5 (269) bound to /roster toggle_offline  (centericq-like, IIRC)
+bind 269 = roster toggle_offline
+# F12 (276) bound to /roster toggle
+bind 276 = roster toggle
+# Ctrl-Up/Ctrl-Down bound to /buffer up/down  (like Ctrl-p/Ctrl-n)
+bind 521 = buffer up
+bind 514 = buffer down
+
+#set url_regex = "(((https?|ftps?|nntp)://)|www[.][-a-z0-9.]+|(mailto:|news:))(%[0-9A-F]{2}|[-_.!~*';/?:@&=+$,#[:alnum:]])+"
