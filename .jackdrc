@@ -1,0 +1,1 @@
+/usr/bin/jackd -dalsa -r48000 -p64 -n3 -Xseq -D -Chw:Pro,1 -Phw:Pro,0 -i2 -o2 -zt -I128 -O128
