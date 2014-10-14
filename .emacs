@@ -1,7 +1,7 @@
 ;;-----------------------------------------------------------
 ;; file		.emacs
 ;; author	VirtualTam
-;; updated	2013-04-02
+;; updated	2014-10-15
 ;;
 ;; Description: emacs configuration file
 ;;
@@ -103,6 +103,11 @@
       (append '(("CMakeLists\\.txt\\'" . cmake-mode)
 		("\\.cmake\\'" . cmake-mode))
 	      auto-mode-alist))
+
+;; Cobol
+(autoload 'cobol-mode "cobol-mode" "Cobol editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.cbl$" . cobol-mode))
+(add-to-list 'auto-mode-alist '("\\.cob$" . cobol-mode))
 
 ;; Java decompiled classes
 (add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
