@@ -81,7 +81,6 @@
 (add-to-list 'auto-mode-alist '("\\.conf$" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\.po$" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\.rules$" . shell-script-mode))
-(add-to-list 'auto-mode-alist '("PKGBUILD" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("sysuplist" . shell-script-mode))
 
 ;; AUCTeX
@@ -122,6 +121,10 @@
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (add-to-list 'auto-mode-alist '("\\.tdl$" . org-mode))
 (add-to-list 'auto-mode-alist '("TODOLIST" . org-mode))
+
+;; PKGBUILD (ArchLinux)
+(autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
+(add-to-list 'auto-mode-alist '("\\PKGBUILD$" . pkgbuild-mode))
 
 ;; Qt project files
 ;(autoload 'qt-pro "qt-pro" "Qt project files editing mode." t)
