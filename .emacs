@@ -83,7 +83,6 @@
 (add-to-list 'auto-mode-alist '("\\.rules$" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("PKGBUILD" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("sysuplist" . shell-script-mode))
-;(add-to-list 'auto-mode-alist '("CMakeLists\\.txt\\'" . shell-script-mode))
 
 ;; AUCTeX
 (load "auctex.el" nil t t)
@@ -106,7 +105,7 @@
 (add-to-list 'auto-mode-alist '("\\.cob$" . cobol-mode))
 
 ;; Java decompiled classes
-(add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
+;(add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
 
 ;; LUA
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
@@ -125,8 +124,8 @@
 (add-to-list 'auto-mode-alist '("TODOLIST" . org-mode))
 
 ;; Qt project files
-(autoload 'qt-pro "qt-pro" "Qt project files editing mode." t)
-(add-to-list 'auto-mode-alist '("\\.pr[io]$" . qt-pro-mode))
+;(autoload 'qt-pro "qt-pro" "Qt project files editing mode." t)
+;(add-to-list 'auto-mode-alist '("\\.pr[io]$" . qt-pro-mode))
 
 ;; SLIME
 ;(setq inferior-lisp-program "/path/to/lisp-executable")
