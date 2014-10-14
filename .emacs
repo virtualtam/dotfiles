@@ -19,8 +19,7 @@
 
 (custom-set-variables
  '(tool-bar-mode nil)
- '(scroll-bar-mode t)
- '(php-mode-force-pear t))
+ '(scroll-bar-mode t))
 
 (custom-set-faces
  '(default
@@ -125,14 +124,6 @@
 (add-to-list 'auto-mode-alist '("\\.tdl$" . org-mode))
 (add-to-list 'auto-mode-alist '("TODOLIST" . org-mode))
 
-;; PHP
-(autoload 'php-mode "php-mode" "Major mode for editing php code." t)
-(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
-;(add-to-list 'auto-mode-alist '("\\.module$" . php-mode))
-;(add-to-list 'auto-mode-alist '("\\.inc$" . php-mode))
-;(add-to-list 'auto-mode-alist '("\\.install$" . php-mode))
-;(add-to-list 'auto-mode-alist '("\\.engine$" . php-mode))
-
 ;; Qt project files
 (autoload 'qt-pro "qt-pro" "Qt project files editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.pr[io]$" . qt-pro-mode))
@@ -147,10 +138,24 @@
 ;(autoload 'vhdl-mode "vhdl-mode" "VHDL Mode" t)
 ;(setq auto-mode-alist (cons '("\\.vhdl?\\'" . vhdl-mode) auto-mode-alist))
 
+;; Web: html, php, django/jinja
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[gj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.sls\\'" . web-mode))
+
+; Web: SaltStack states
+(setq web-mode-engines-alist
+      '(("django" . "\\.sls\\'")))
 
 ;; YAML
 (autoload 'yaml-mode "yaml-mode" "YAML mode." t)
-(add-to-list 'auto-mode-alist '("\\.sls$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 
 ;;--------------
