@@ -1,14 +1,12 @@
 ;;-----------------------------------------------------------
-;; file		.emacs
-;; author	VirtualTam
-;; updated	2014-10-15
+;; Emacs configuration file
 ;;
-;; Description: emacs configuration file
-;;
+;; author       VirtualTam
+;; revision     2014-10-15
 ;;-----------------------------------------------------------
 (setq user-full-name "VirtualTam")
-(setq user-mail-address "<virtualtam@myopera.com>")
-(setq mail-self-address "VirtualTam <virtualtam@myopera.com>")
+(setq user-mail-address "<virtualtam@flibidi.org>")
+(setq mail-self-address "VirtualTam <virtualtam@flibidi.org>")
 
 ;; Load path
 (add-to-list 'load-path "~/.emacs.d/elisp")
@@ -56,7 +54,6 @@
   (progn
     ;; Cursor
     (set-cursor-color "black")))
-
 
 ;; Highlight keywords
 (defvar special-words 'special-words)
