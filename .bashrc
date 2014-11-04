@@ -25,14 +25,6 @@ case "$TERM" in
 	;;
 esac
 
-case "$COLORTERM" in
-    gnome-terminal)
-	# On gnome-terminal 3.8, keep the working dir when opening a new tab
-	. /etc/profile.d/vte.sh
-	#export PS1='\[$(__vte_ps1)\]'$PS1
-	;;
-esac	
-
 # don't put duplicate lines in the history. See bash(1) for more options
 # don't overwrite GNU Midnight Commander's setting of `ignorespace'.
 export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
