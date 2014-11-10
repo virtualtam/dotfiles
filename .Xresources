@@ -7,20 +7,20 @@ URxvt*.scrollstyle: plain
 URxvt*scrollTtyKeypress: true
 
 !- Extensions
-URxvt*.perl-ext-common:	     default,url-select,tabbed
+URxvt*.perl-ext-common: default,url-select,tabbed
 
 !- URL
-URxvt*.url-select.launcher:  /usr/bin/firefox -new-tab
-URxvt*.keysym.M-u:    perl:url-select:select_next
-URxvt*.matcher.button:	    1
+URxvt*.url-select.launcher: /usr/bin/firefox -new-tab
+URxvt*.keysym.M-u: perl:url-select:select_next
+URxvt*.matcher.button: 1
 URxvt*.url-select.underline: true
 URxvt*.colorUL: #4682B4
 
 !- Tabs
 URxvt.tabbed.tabbar-fg: 2
 URxvt.tabbed.tabbar-bg: 0
-URxvt.tabbed.tab-fg:    3
-URxvt.tabbed.tab-bg:    0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
 
 !- Term colors
 urxvt*foreground: #f2f2f2
