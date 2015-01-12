@@ -4,17 +4,25 @@
 [alias]
 	br = branch
 	co = checkout
+	com = checkout master
 	ca = commit -a --amend
 	ci = commit
 	cs = commit -a -s
-	st = status
+	d = diff
+	dst = diff --stat
+	l = log --oneline
 	lg = log --graph --pretty=format:'%C(yellow)%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset%C(bold blue)<%an>%Creset' --color
 	lh = log --graph --pretty=format:'%C(yellow)%H%Creset %Cgreen%cd%Creset %C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --date=iso --color
 	ll = log --stat --pretty=format:'%C(yellow)%h %Cgreen%cr%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'
+	rem = "!f(){ git checkout master && git pull && git checkout ${1} && git rebase -i master; };f"
+	sh = show
+	s = status --short --branch
+	st = status
 [color]
 	branch = auto
 	diff = auto
 	status = auto
+	ui = auto
 [core]
 	excludesfile = ~/.gitignore_global
 [push]
