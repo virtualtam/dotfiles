@@ -126,6 +126,13 @@
 (autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
 (add-to-list 'auto-mode-alist '("\\PKGBUILD$" . pkgbuild-mode))
 
+;; Python
+; disable electric-indent
+(add-hook 'python-mode-hook
+	  (lambda ()
+	    (set (make-local-variable 'electric-indent-functions)
+		 (list (lambda (arg) 'no-indent)))))
+
 ;; Qt project files
 ;(autoload 'qt-pro "qt-pro" "Qt project files editing mode." t)
 ;(add-to-list 'auto-mode-alist '("\\.pr[io]$" . qt-pro-mode))
