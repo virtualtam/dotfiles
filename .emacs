@@ -2,7 +2,7 @@
 ;; Emacs configuration file
 ;;
 ;; author       VirtualTam
-;; revision     2014-10-15
+;; revision     2015-03-08
 ;;-----------------------------------------------------------
 (setq user-full-name "VirtualTam")
 (setq user-mail-address "<virtualtam@flibidi.org>")
@@ -10,6 +10,11 @@
 
 ;; Load path
 (add-to-list 'load-path "~/.emacs.d/elisp")
+
+;; Packages
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(package-initialize)
 
 ;;------------------------
 ;; Appearance
@@ -29,11 +34,12 @@
        :underline nil :slant normal :weight normal :height 100 :width normal
        :foundry "unknown" :family "DejaVu Sans Mono")))))
 
-(column-number-mode t)
+;; Time
 (display-time)
 (setq display-time-24hr-format t)
 
-;; Line numbers
+;; Line & column numbers
+(column-number-mode t)
 (line-number-mode t)
 (require 'linum)
 (global-linum-mode t)
@@ -61,6 +67,8 @@
     (font-lock-add-keywords nil
       '(("\\<\\(FIXME\\|TODO\\|WARNING\\|BUG\\|XXX+\\|NB\\|NOTE\\|ATTENTION\\)[  ]*:"
          1 special-words t)))))
+
+(put 'upcase-region 'disabled nil)
 
 ;;------------------------
 ;; Encoding Selection
@@ -104,7 +112,7 @@
 (add-to-list 'auto-mode-alist '("\\.cob$" . cobol-mode))
 
 ;; Java decompiled classes
-;(add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
+(add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
 
 ;; LUA
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
@@ -134,14 +142,13 @@
 		 (list (lambda (arg) 'no-indent)))))
 
 ;; Qt project files
-;(autoload 'qt-pro "qt-pro" "Qt project files editing mode." t)
-;(add-to-list 'auto-mode-alist '("\\.pr[io]$" . qt-pro-mode))
+(autoload 'qt-pro "qt-pro" "Qt project files editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.pr[io]$" . qt-pro-mode))
 
 ;; SLIME
-;(setq inferior-lisp-program "/path/to/lisp-executable")
-;(add-to-list 'load-path "/usr/share/emacs/site-lisp/slime/")
-;(require 'slime)
-;(slime-setup '(slime-fancy))
+(setq inferior-lisp-program "/usr/bin/clisp")
+(require 'slime)
+(setq slime-contribs '(slime-fancy))
 
 ;; VHDL
 ;(autoload 'vhdl-mode "vhdl-mode" "VHDL Mode" t)
