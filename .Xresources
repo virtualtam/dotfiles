@@ -1,4 +1,26 @@
 ! Xresources file
+!- Solarized color scheme for the X Window System
+! http://ethanschoonover.com/solarized
+
+!- Common
+#define S_yellow #b58900
+#define S_orange #cb4b16
+#define S_red #dc322f
+#define S_magenta #d33682
+#define S_violet #6c71c4
+#define S_blue #268bd2
+#define S_cyan #2aa198
+#define S_green #859900
+!- Dark
+#define S_base03 #002b36
+#define S_base02 #073642
+#define S_base01 #586e75
+#define S_base00 #657b83
+#define S_base0 #839496
+#define S_base1 #93a1a1
+#define S_base2 #eee8d5
+#define S_base3 #fdf6e3
+
 !- Fonts
 URxvt.font: xft:monospace:size=11
 
@@ -14,7 +36,7 @@ URxvt*.url-select.launcher: /usr/bin/firefox -new-tab
 URxvt*.keysym.M-u: perl:url-select:select_next
 URxvt*.matcher.button: 1
 URxvt*.url-select.underline: true
-URxvt*.colorUL: #4682B4
+URxvt*.colorUL: S_blue
 
 !- Tabs
 URxvt.tabbed.tabbar-fg: 2
@@ -22,45 +44,27 @@ URxvt.tabbed.tabbar-bg: 0
 URxvt.tabbed.tab-fg: 3
 URxvt.tabbed.tab-bg: 0
 
-!- Term colors
-urxvt*foreground: #f2f2f2
-urxvt*background: #101010
-
-!- Normal colors
-!
-! color0    black
-urxvt*color0:    #2e3436
-! color1    red
-urxvt*color1:	 #e9361d
-! color2    green
-urxvt*color2:    #b6e77d
-! color3    yellow
-urxvt*color3:    #e8e430
-! color4    blue
-urxvt*color4:    #3465a4
-! color5    purple
-urxvt*color5:    #ea96eb
-! color6    cyan
-urxvt*color6:    #06989a
-! color7    white
-urxvt*color7:    #f2f2f2
-
-!- Light colors
-!
-! color8    black
-urxvt*color8:    #747474
-! color9    red
-urxvt*color9:    #ef2b31
-! color10   green
-urxvt*color10:   #6dd738
-! color11   yellow
-urxvt*color11:   #ffc94a
-! color12   blue
-urxvt*color12:   #729fcf
-! color13   purple
-urxvt*color13:   #ae81ad
-! color14   cyan
-urxvt*color14:   #d7d9fc
-! color15   white
-urxvt*color15:   #e2e2e2
-
+!- URxvt theme
+URxvt*background: S_base03
+URxvt*foreground: S_base0
+URxvt*fading: 40
+URxvt*fadeColor: S_base03
+URxvt*cursorColor: S_base1
+URxvt*pointerColorBackground: S_base01
+URxvt*pointerColorForeground: S_base1
+URxvt*color0: S_base02
+URxvt*color1: S_red
+URxvt*color2: S_green
+URxvt*color3: S_yellow
+URxvt*color4: S_blue
+URxvt*color5: S_magenta
+URxvt*color6: S_cyan
+URxvt*color7: S_base2
+URxvt*color8: S_base1
+URxvt*color9: S_red
+URxvt*color10: S_green
+URxvt*color11: S_yellow
+URxvt*color12: S_blue
+URxvt*color13: S_violet
+URxvt*color14: S_cyan
+URxvt*color15: S_base3
