@@ -33,8 +33,11 @@
 
 ;; Hide toolbars
 (custom-set-variables
- '(tool-bar-mode nil)
- '(scroll-bar-mode t))
+ '(custom-safe-themes
+   (quote
+    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+ '(scroll-bar-mode t)
+ '(tool-bar-mode nil))
 
 ;; Line & column numbers
 (column-number-mode t)
@@ -62,6 +65,20 @@
     '(("\\<\\(FIXME\\|TODO\\|WARNING\\|BUG\\|XXX+\\|NB\\|NOTE\\|ATTENTION\\)[  ]*:"
        1 special-words t)))))
 
+;; Column marker
+(use-package column-marker :ensure t)
+
+;;------------------------
+;; Theming
+;;------------------------
+(custom-set-faces
+ '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 98 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
+
+(use-package solarized-theme
+  :ensure t
+  :init
+  (load-theme 'solarized-dark))
+
 ;;------------------------
 ;; Encoding Selection
 ;;------------------------
@@ -76,9 +93,6 @@
 ;; Default: text-mode
 (setq initial-major-mode 'text-mode)
 (setq default-major-mode 'text-mode)
-
-;; Column marker
-(use-package column-marker :ensure t)
 
 ;; Config files: shell-mode
 (add-to-list 'auto-mode-alist '("\\.conf$" . shell-script-mode))

@@ -15,7 +15,8 @@ alias v2a='source ~/virtualenv/python27/bin/activate'
 alias v3a='source ~/virtualenv/python34/bin/activate'
 
 # Editors
-alias emax='emacs -nw'
+# - force TERM to xterm (16 colors) so emacs doesn't mess up with Solarized
+alias emax='TERM=xterm emacs -nw'
 
 # Games
 alias steam='steam && xsetroot -cursor_name left_ptr'
