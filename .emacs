@@ -68,6 +68,9 @@
 ;; Column marker
 (use-package column-marker :ensure t)
 
+;; Rainbow: display colors after their code
+(use-package rainbow-mode :ensure t)
+
 ;;------------------------
 ;; Theming
 ;;------------------------
