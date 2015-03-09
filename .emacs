@@ -98,6 +98,7 @@
 (setq default-major-mode 'text-mode)
 
 ;; Config files: shell-mode
+(add-to-list 'auto-mode-alist '("\\.bash" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\.conf$" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\.po$" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\.rules$" . shell-script-mode))
