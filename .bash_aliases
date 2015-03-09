@@ -17,6 +17,8 @@ alias v3a='source ~/virtualenv/python34/bin/activate'
 # Editors
 # - force TERM to xterm (16 colors) so emacs doesn't mess up with Solarized
 alias emax='TERM=xterm emacs -nw'
+export EDITOR='TERM=xterm emacs -nw'
+export VISUAL='TERM=xterm emacs -nw'
 
 # Games
 alias steam='steam && xsetroot -cursor_name left_ptr'
