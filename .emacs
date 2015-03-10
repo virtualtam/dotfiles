@@ -2,7 +2,7 @@
 ;; Emacs configuration file
 ;;
 ;; author       VirtualTam
-;; revision     2015-03-08
+;; revision     2015-03-10
 ;;-----------------------------------------------------------
 (setq user-full-name "VirtualTam")
 (setq user-mail-address "<virtualtam@flibidi.org>")
@@ -139,6 +139,20 @@
 (use-package pkgbuild-mode :ensure t)
 
 ;; Python
+(use-package jedi
+  ;; TODO: handle virtualenvs
+  :commands jedi:setup
+  :init
+  (progn
+    (add-hook 'python-mode-hook 'jedi:setup)
+    ;; C-tab is not usable in a terminal
+    (global-set-key (kbd "M-§") 'jedi:complete))
+  :config
+  (progn
+    ;(setq jedi:complete-on-dot t)
+    (setq jedi:setup-keys t))
+  :ensure t)
+
 ;; disable electric-indent
 (add-hook 'python-mode-hook
           (lambda ()
