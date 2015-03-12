@@ -2,7 +2,7 @@
 ;; Emacs configuration file
 ;;
 ;; author       VirtualTam
-;; revision     2015-03-10
+;; revision     2015-03-12
 ;;-----------------------------------------------------------
 (setq user-full-name "VirtualTam")
 (setq user-mail-address "<virtualtam@flibidi.org>")
@@ -190,7 +190,9 @@
     (add-to-list 'auto-mode-alist '("\\.sls\\'" . web-mode))
     (add-hook 'web-mode-hook
 	      (lambda ()
-		(setq web-mode-code-indent-offset 4)))))
+                (set (make-local-variable 'electric-indent-functions)
+                     (list (lambda (arg) 'no-indent)))
+                (setq web-mode-code-indent-offset 4)))))
 
 
 ;; Web: SaltStack states
