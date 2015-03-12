@@ -51,6 +51,9 @@
 (setq truncate-lines nil)
 (setq truncate-partial-width-windows nil)
 
+;; TABS: get rid of'em!
+(setq-default indent-tabs-mode nil)
+
 ;; Time
 (display-time)
 (setq display-time-24hr-format t)
@@ -184,7 +187,11 @@
     (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
-    (add-to-list 'auto-mode-alist '("\\.sls\\'" . web-mode))))
+    (add-to-list 'auto-mode-alist '("\\.sls\\'" . web-mode))
+    (add-hook 'web-mode-hook
+	      (lambda ()
+		(setq web-mode-code-indent-offset 4)))))
+
 
 ;; Web: SaltStack states
 ;; TODO: define a custom mode for SaltStack states
