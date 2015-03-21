@@ -111,21 +111,49 @@
 (use-package tex :ensure auctex)
 
 ;; C#
-(use-package csharp-mode :ensure t)
+;(use-package csharp-mode :ensure t)
 
 ;; CMake
 (use-package cmake-mode :ensure t)
 
 ;; Cobol
-(autoload 'cobol-mode "cobol-mode" "Cobol editing mode." t)
-(add-to-list 'auto-mode-alist '("\\.cbl$" . cobol-mode))
-(add-to-list 'auto-mode-alist '("\\.cob$" . cobol-mode))
+;(autoload 'cobol-mode "cobol-mode" "Cobol editing mode." t)
+;(add-to-list 'auto-mode-alist '("\\.cbl$" . cobol-mode))
+;(add-to-list 'auto-mode-alist '("\\.cob$" . cobol-mode))
 
 ;; Java decompiled classes
-(add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
+;(add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
 
 ;; LUA
-(use-package lua-mode :ensure t)
+;(use-package lua-mode :ensure t)
+
+;; Magit
+(use-package magit
+  :ensure t
+  :init
+  (global-set-key (kbd "C-x g") 'magit-status)
+  :config
+  (progn
+    (set-face-foreground 'magit-diff-add "green3")
+    (set-face-foreground 'magit-diff-del "red3")
+    (set-face-background 'magit-branch nil)
+    (set-face-background 'magit-tag nil)
+    (set-face-background 'magit-item-highlight "black")
+    (set-face-foreground 'magit-item-highlight "white")
+    (set-face-background 'magit-log-head-label-head nil)
+    (set-face-foreground 'magit-log-head-label-head "yellow")
+    (set-face-background 'magit-log-head-label-local nil)
+    (set-face-background 'magit-log-head-label-remote nil)
+    (set-face-background 'magit-log-head-label-tags nil)
+    (set-face-background 'magit-log-reflog-label-amend nil)
+    (set-face-background 'magit-log-reflog-label-checkout nil)
+    (set-face-background 'magit-log-reflog-label-cherry-pick nil)
+    (set-face-background 'magit-log-reflog-label-commit nil)
+    (set-face-background 'magit-log-reflog-label-merge nil)
+    (set-face-background 'magit-log-reflog-label-other nil)
+    (set-face-background 'magit-log-reflog-label-rebase nil)
+    (set-face-background 'magit-log-reflog-label-remote nil)
+    (set-face-background 'magit-log-reflog-label-reset nil)))
 
 ;; Markdown
 (use-package markdown-mode :ensure t)
