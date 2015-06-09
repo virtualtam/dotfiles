@@ -1,9 +1,11 @@
 [user]
-	email = virtualtam@flibidi.org
+	email = virtualtam@flibidi.net
 	name = VirtualTam
 [alias]
 	br = branch
+	bv = branch -vv
 	co = checkout
+	cob = checkout -b
 	com = checkout master
 	ca = commit -a --amend
 	ci = commit
@@ -14,7 +16,13 @@
 	lg = log --graph --pretty=format:'%C(yellow)%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset%C(bold blue)<%an>%Creset' --color
 	lh = log --graph --pretty=format:'%C(yellow)%H%Creset %Cgreen%cd%Creset %C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --date=iso --color
 	ll = log --stat --pretty=format:'%C(yellow)%h %Cgreen%cr%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'
+	p = pull
 	rem = "!f(){ git checkout master && git pull && git checkout ${1} && git rebase -i master; };f"
+	ri = rebase -i
+	rim = rebase -i master
+	rev = review
+	rt = remote
+	rv = remote -v
 	sh = show
 	s = status --short --branch
 	st = status
