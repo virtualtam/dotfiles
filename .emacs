@@ -125,6 +125,9 @@
 ;(add-to-list 'auto-mode-alist '("\\.cbl$" . cobol-mode))
 ;(add-to-list 'auto-mode-alist '("\\.cob$" . cobol-mode))
 
+;; Graphviz
+(use-package graphviz-dot-mode :ensure t)
+
 ;; Java decompiled classes
 ;(add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
 
