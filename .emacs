@@ -5,8 +5,8 @@
 ;; revision     2015-03-12
 ;;-----------------------------------------------------------
 (setq user-full-name "VirtualTam")
-(setq user-mail-address "<virtualtam@flibidi.org>")
-(setq mail-self-address "VirtualTam <virtualtam@flibidi.org>")
+(setq user-mail-address "<virtualtam@flibidi.net>")
+(setq mail-self-address "VirtualTam <virtualtam@flibidi.net>")
 
 ;; emacs-snapshot PPA hack
 ;(when (>= emacs-major-version 25)
@@ -208,6 +208,11 @@
 ;; VHDL
 ;;(autoload 'vhdl-mode "vhdl-mode" "VHDL Mode" t)
 ;;(setq auto-mode-alist (cons '("\\.vhdl?\\'" . vhdl-mode) auto-mode-alist))
+
+
+;; Web: less, sass CSS templates
+(use-package less-css-mode :ensure t)
+(use-package sass-mode :ensure t)
 
 ;; Web: html, php, django/jinja
 (use-package web-mode
