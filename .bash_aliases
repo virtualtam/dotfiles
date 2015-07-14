@@ -1,18 +1,11 @@
 # ~/.bash_aliases
-# author	VirtualTam	<virtualtam@flibidi.org>
+# author	VirtualTam	<virtualtam@flibidi.net>
 
 # Audio
 alias mocp='padsp mocp'
 
-# Compilation
-alias gflag='gcc -W -Wall -Wextra -ansi -pedantic'
-alias gdebug='gcc -W -Wall -Wextra -ansi -pedantic -g -pg -DNDEBUG'
-alias mclean='make clean'
-alias mdist='make distclean'
-
 # Dev
-alias v2a='source ~/virtualenv/python27/bin/activate'
-alias v3a='source ~/virtualenv/python34/bin/activate'
+alias git='LANG=en_GB.UTF-8 git'
 
 # Editors
 # - force TERM to xterm (16 colors) so emacs doesn't mess up with Solarized
@@ -30,19 +23,16 @@ alias la='ls -lAh'
 
 alias md='mkdir'
 alias cd..='cd ..'
-#alias n.='nautilus .'
+
+function mcd() {
+    # create and switch to a directory
+    mkdir -p ${1}
+    cd ${1}
+}
 
 # SSH
-alias vibi='ssh virtualtam@flibidi.org'
-alias mibi='ssh minecraft@flibidi.org'
+alias vibi='ssh virtualtam@flibidi.net'
+alias mibi='ssh minecraft@flibidi.net'
 
 # iii];p
 alias rm='rm --preserve-root'
-
-# MATÉ session
-#if [ `ps -eo comm | grep session` = "mate-session" ]; then
-#    alias n.='echo "Call me caja maybe!";caja .';
-#    alias c.='caja .';
-#    alias evince='echo "Call me atril maybe!";atril';
-#    alias gedit='echo "Call me pluma maybe!";pluma';
-#fi

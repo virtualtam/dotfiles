@@ -1,5 +1,5 @@
 # ~/.bashrc
-# author	VirtualTam	<virtualtam@flibidi.org>
+# author	VirtualTam	<virtualtam@flibidi.net>
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -10,7 +10,6 @@ PS1='\[\033[01;32m\]AT\[\033[00m\]( \[\033[01;34m\]\w\[\033[00m\] ) $ ';
 # Root color prompt
 # if [ `tty | sed s/[0-9]//` = "/dev/pts/" ]
 # then
-#     xset -b;
 #     PS1='╭ \[\033[01;31m\]ROOT\[\033[00m\]{ \[\033[01;34m\]\w\[\033[00m\] }'
 #     PS1+='\n╰ \[\033[01;30m\]\t\[\033[00m\] ≻ ';
 # else
@@ -53,18 +52,24 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+
 # Java (moved to $JAVA_HOME/jre/lib/swing.properties)
 export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
 ' -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
 ' -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
 
-# Text & Editors
-export MANPAGER='most'
-export PAGER='more -f'
+# Python
+export PROJECT_HOME='~/python'
+export WORKON_HOME='~/virtualenvs'
+source /usr/bin/virtualenvwrapper.sh
 
 # ROOT utils
 complete -cf sudo
 alias grubconf='grub-mkconfig -o /boot/grub/grub.cfg'
+
+# Text & Editors
+export MANPAGER='most'
+export PAGER='more -f'
 
 # Alias definitions
 if [ -f  ~/.bash_aliases ]; then
