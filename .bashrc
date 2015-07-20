@@ -54,7 +54,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Java (moved to $JAVA_HOME/jre/lib/swing.properties)
-export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
+export JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
 ' -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
 ' -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
 
