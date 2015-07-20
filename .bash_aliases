@@ -30,6 +30,9 @@ function mcd() {
     cd ${1}
 }
 
+# R
+alias R='R --quiet'
+
 # SSH
 alias vibi='ssh virtualtam@flibidi.net'
 alias mibi='ssh minecraft@flibidi.net'

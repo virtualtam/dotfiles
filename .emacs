@@ -197,6 +197,9 @@
 	    (set (make-local-variable 'electric-indent-functions)
 		 (list (lambda (arg) 'no-indent)))))
 
+;; R
+(use-package ess)
+
 ;; SLIME
 (use-package slime
   :init
