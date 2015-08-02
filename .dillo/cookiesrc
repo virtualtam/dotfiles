@@ -1,1 +1,4 @@
 DEFAULT DENY
+.flibidi.net    ACCEPT
+.flibidi.org    ACCEPT
+github.com      ACCEPT
