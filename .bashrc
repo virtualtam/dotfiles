@@ -4,8 +4,13 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# Python virual environments
+export PROJECT_HOME='~/python'
+export WORKON_HOME='~/virtualenvs'
+[[ -n "${VIRTUAL_ENV}" ]] && VPS1="($(basename ${VIRTUAL_ENV})) "
+
 # User color prompt
-PS1='\[\033[01;32m\]AT\[\033[00m\]( \[\033[01;34m\]\w\[\033[00m\] ) $ ';
+PS1='\[\033[01;32m\]AT\[\033[00m\]( \[\033[01;34m\]\w\[\033[00m\] ) ${VPS1}$ ';
 
 # Root color prompt
 # if [ `tty | sed s/[0-9]//` = "/dev/pts/" ]
@@ -19,7 +24,7 @@ PS1='\[\033[01;32m\]AT\[\033[00m\]( \[\033[01;34m\]\w\[\033[00m\] ) $ ';
 case "$TERM" in
     rxvt-unicode-256color | xterm)
 	PS1='╭ \[\033[01;32m\]AT\[\033[00m\]( \[\033[01;34m\]\w\[\033[00m\] )'
-	PS1+='\n╰ \[\033[01;30m\]\t\[\033[00m\] ≻ ';
+	PS1+='\n╰ \[\033[01;30m\]\t\[\033[00m\] ${VPS1}≻ ';
 	xset -b
 	;;
 esac
@@ -58,11 +63,6 @@ export JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFe
 ' -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
 ' -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
 
-# Python
-export PROJECT_HOME='~/python'
-export WORKON_HOME='~/virtualenvs'
-source /usr/bin/virtualenvwrapper.sh
-
 # ROOT utils
 complete -cf sudo
 alias grubconf='grub-mkconfig -o /boot/grub/grub.cfg'
@@ -76,9 +76,7 @@ if [ -f  ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
+# enable programmable completion features
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
