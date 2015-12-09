@@ -23,12 +23,16 @@
     rem = "!f(){ git checkout master && git pull && git checkout ${1} && git rebase -i master; };f"
     ri = rebase -i
     rim = rebase -i master
-    rev = review
     rt = remote
     rv = remote -v
     sh = show
+    shst = show --stat
     s = status --short --branch
     st = status
+    sti = status --ignored
+    v = review
+    vd = review -d
+    vl = review -l
 [color]
     branch = auto
     diff = auto
