@@ -2,7 +2,7 @@
 ;; Emacs configuration file
 ;;
 ;; author       VirtualTam
-;; revision     2015-03-12
+;; revision     2015-12-09
 ;;-----------------------------------------------------------
 (setq user-full-name "VirtualTam")
 (setq user-mail-address "<virtualtam@flibidi.net>")
@@ -100,6 +100,10 @@
 ;; Lisp Modes
 ;;------------------------
 
+;; Disable electric-mode for RET -what a relief!
+(add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
+(when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
+
 ;; Default: text-mode
 (setq initial-major-mode 'text-mode)
 (setq default-major-mode 'text-mode)
@@ -163,12 +167,6 @@
     (setq jedi:setup-keys t))
   :ensure t)
 
-;; disable electric-indent
-(add-hook 'python-mode-hook
-          (lambda ()
-	    (set (make-local-variable 'electric-indent-functions)
-		 (list (lambda (arg) 'no-indent)))))
-
 ;; R
 ;(use-package ess)
 
@@ -202,13 +200,7 @@
     (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
-    (add-to-list 'auto-mode-alist '("\\.sls\\'" . web-mode))
-    (add-hook 'web-mode-hook
-	      (lambda ()
-                (set (make-local-variable 'electric-indent-functions)
-                     (list (lambda (arg) 'no-indent)))
-                (setq web-mode-code-indent-offset 4)))))
-
+    (add-to-list 'auto-mode-alist '("\\.sls\\'" . web-mode))))
 
 ;; Web: SaltStack states
 (setq web-mode-engines-alist '(("django" . "\\.sls\\'")))
