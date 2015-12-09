@@ -97,12 +97,23 @@
 (set-language-environment 'utf-8)
 
 ;;------------------------
-;; Lisp Modes
+;; Editing
 ;;------------------------
 
-;; Disable electric-mode for RET -what a relief!
+;; Disable electric-mode for RET
 (add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
 (when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
+
+;; Windmove - easy buffer cycling
+(global-set-key (kbd "C-c <left>")  'windmove-left)
+(global-set-key (kbd "C-c <right>") 'windmove-right)
+(global-set-key (kbd "C-c <up>")    'windmove-up)
+(global-set-key (kbd "C-c <down>")  'windmove-down)
+
+
+;;------------------------
+;; Lisp Modes
+;;------------------------
 
 ;; Default: text-mode
 (setq initial-major-mode 'text-mode)
