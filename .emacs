@@ -129,6 +129,10 @@
 ;(add-to-list 'auto-mode-alist '("\\.cbl$" . cobol-mode))
 ;(add-to-list 'auto-mode-alist '("\\.cob$" . cobol-mode))
 
+;; Docker
+(use-package docker :ensure t)
+(use-package dockerfile-mode :ensure t)
+
 ;; Graphviz
 (use-package graphviz-dot-mode :ensure t)
 
