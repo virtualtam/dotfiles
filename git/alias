@@ -1,6 +1,3 @@
-[user]
-    email = virtualtam@flibidi.net
-    name = VirtualTam
 [alias]
     br = branch
     bv = branch -vv
@@ -33,12 +30,3 @@
     v = review
     vd = review -d
     vl = review -l
-[color]
-    branch = auto
-    diff = auto
-    status = auto
-    ui = auto
-[core]
-    excludesfile = ~/.gitignore_global
-[push]
-    default = simple
