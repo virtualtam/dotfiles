@@ -1,0 +1,8 @@
+syntax: glob
+*~
+.\#*
+*.elc
+*.o
+*.pyc
+.*.swp
+.DS_Store
