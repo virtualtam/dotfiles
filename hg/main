@@ -1,0 +1,19 @@
+[extensions]
+color =
+hgext.gpg =
+hgk =
+pager =
+purge =
+
+[alias]
+ca = commit --addremove --amend
+cs = commit --addremove
+lg = log -G -T "{node|short} {desc|firstline} ({date|age}) <{author|person}>"
+lh = log -G -T "{node} {date|isodate} {desc|firstline} <{author|person}>"
+ll = log --stat -T "{node| short} {date|age} {desc|firstline} <{author|person}>\n"
+lt = lg -l 10
+mrproper = purge --all
+sti = status --ignored
+stu = status --ignored --unknown
+sum = summary
+sumr = summary --remote
