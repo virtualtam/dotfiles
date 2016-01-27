@@ -215,7 +215,8 @@
     (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
-    (add-to-list 'auto-mode-alist '("\\.sls\\'" . web-mode))))
+    (add-to-list 'auto-mode-alist '("\\.sls\\'" . web-mode))
+    (setq web-mode-markup-indent-offset 2)))
 
 ;; Web: SaltStack states
 (setq web-mode-engines-alist '(("django" . "\\.sls\\'")))
