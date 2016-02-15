@@ -1,9 +1,6 @@
 # ~/.bash_aliases
 # author	VirtualTam	<virtualtam@flibidi.net>
 
-# Audio
-alias mocp='padsp mocp'
-
 # Dev
 alias git='LANG=en_GB.UTF-8 git'
 
