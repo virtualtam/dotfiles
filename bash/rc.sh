@@ -10,21 +10,21 @@ export WORKON_HOME='~/virtualenvs'
 [[ -n "${VIRTUAL_ENV}" ]] && VPS1="($(basename ${VIRTUAL_ENV})) "
 
 # User color prompt
-PS1='\[\033[01;32m\]AT\[\033[00m\]( \[\033[01;34m\]\w\[\033[00m\] ) ${VPS1}$ ';
+PS1='\e[01;32m\]AT\e[00m\]( \e[01;34m\]\w\e[00m\] ) ${VPS1}$ ';
 
 # Root color prompt
 # if [ `tty | sed s/[0-9]//` = "/dev/pts/" ]
 # then
-#     PS1='╭ \[\033[01;31m\]ROOT\[\033[00m\]{ \[\033[01;34m\]\w\[\033[00m\] }'
-#     PS1+='\n╰ \[\033[01;30m\]\t\[\033[00m\] ≻ ';
+#     PS1='╭ \e[01;31m\]ROOT\e[00m\]{ \e[01;34m\]\w\e[00m\] }'
+#     PS1+='\n╰ \e[01;30m\]\t\e[00m\] ≻ ';
 # else
-#     PS1='\[\033[01;31m\]ROOT\[\033[00m\]{ \[\033[01;34m\]\w\[\033[00m\] } § '
+#     PS1='\e[01;31m\]ROOT\e[00m\]{ \e[01;34m\]\w\e[00m\] } § '
 # fi
 
 case "$TERM" in
     rxvt-unicode-256color | xterm)
-	PS1='╭ \[\033[01;32m\]AT\[\033[00m\]( \[\033[01;34m\]\w\[\033[00m\] )'
-	PS1+='\n╰ \[\033[01;30m\]\t\[\033[00m\] ${VPS1}≻ ';
+	PS1='╭ \e[01;32m\]AT\e[00m\]( \e[01;34m\]\w\e[00m\] )'
+	PS1+='\n╰ \e[01;39m\]\t\e[00m\] ${VPS1}≻ ';
 	xset -b
 	;;
 esac
@@ -59,7 +59,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Java (moved to $JAVA_HOME/jre/lib/swing.properties)
-export JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
+export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
 ' -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
 ' -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
 
