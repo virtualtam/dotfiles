@@ -69,7 +69,7 @@ ReadTags = yes
 #
 # Example:    MusicDir = "/home/joe/music"
 #
-MusicDir = "/media/D1_Media/Musique"
+MusicDir = "/media/D1_Media/Music"
 
 # Start in the music directory by default?  If set to 'no', start
 # in the current directory by default.  A single directory on
@@ -145,9 +145,9 @@ OSSMixerChannel2 = master          # 'pcm', 'master' or 'speaker'
 #
 #    ALSADevice=tee:hw,'/tmp/out.wav',wav
 #
-ALSADevice = hw:Pro
-ALSAMixer1 = PCM
-ALSAMixer2 = Master
+#ALSADevice = hw:Pro
+#ALSAMixer1 = default
+#ALSAMixer2 = master
 
 # Save software mixer state?
 # If enabled, a file 'softmixer' will be created in '~/.moc/' storing the
