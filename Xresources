@@ -52,19 +52,29 @@ URxvt*fadeColor: S_base03
 URxvt*cursorColor: S_base1
 URxvt*pointerColorBackground: S_base01
 URxvt*pointerColorForeground: S_base1
+
+! black
 URxvt*color0: S_base02
+URxvt*color8: S_base03
+
 URxvt*color1: S_red
-URxvt*color2: S_green
-URxvt*color3: S_yellow
-URxvt*color4: S_blue
-URxvt*color5: S_magenta
-URxvt*color6: S_cyan
-URxvt*color7: S_base2
-URxvt*color8: S_base1
 URxvt*color9: S_red
+
+URxvt*color2: S_green
 URxvt*color10: S_green
+
+URxvt*color3: S_yellow
 URxvt*color11: S_yellow
+
+URxvt*color4: S_blue
 URxvt*color12: S_blue
+
+URxvt*color5: S_magenta
 URxvt*color13: S_violet
+
+URxvt*color6: S_cyan
 URxvt*color14: S_cyan
+
+! white
+URxvt*color7: S_base2
 URxvt*color15: S_base3
