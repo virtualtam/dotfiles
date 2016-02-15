@@ -2,7 +2,7 @@
 colordef blue = 350 600 870
 
 background		= default	default
-frame			= black		default	bold
+frame			= default	default	bold
 window_title		= magenta	default
 directory		= blue		default
 selected_directory	= yellow	default bold
