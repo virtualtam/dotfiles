@@ -22,7 +22,7 @@ PS1='\e[01;32m\]AT\e[00m\]( \e[01;34m\]\w\e[00m\] ) ${VPS1}$ ';
 # fi
 
 case "$TERM" in
-    rxvt-unicode-256color | xterm)
+    screen | rxvt-unicode-256color | xterm)
 	PS1='╭ \e[01;32m\]AT\e[00m\]( \e[01;34m\]\w\e[00m\] )'
 	PS1+='\n╰ \e[01;39m\]\t\e[00m\] ${VPS1}≻ ';
 	xset -b
