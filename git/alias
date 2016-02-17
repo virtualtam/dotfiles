@@ -16,6 +16,7 @@
     lh = log --graph --pretty=format:'%C(yellow)%H%Creset %Cgreen%cd%Creset %C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --date=iso --color
     ll = log --stat --pretty=format:'%C(yellow)%h %Cgreen%cr%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'
     lo = log --oneline
+    lt = "!f(){ git lg -10; };f"
     p = pull
     pum = pull upstream master
     rem = "!f(){ git checkout master && git pull && git checkout ${1} && git rebase -i master; };f"
