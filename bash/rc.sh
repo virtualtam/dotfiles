@@ -22,7 +22,7 @@ PS1='\[\033[01;32m\]AT\[\033[00m\]( \[\033[01;34m\]\w\[\033[00m\] ) ${VPS1}$ ';
 # fi
 
 case "$TERM" in
-    screen | rxvt-unicode-256color | xterm)
+    screen | rxvt-unicode-* | xterm)
 	PS1='╭ \[\033[01;32m\]AT\[\033[00m\]( \[\033[01;34m\]\w\[\033[00m\] )'
 	PS1+='\n╰ \[\033[01;39m\]\t\[\033[00m\] ${VPS1}≻ ';
 	xset -b
