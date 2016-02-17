@@ -10,21 +10,21 @@ export WORKON_HOME='~/virtualenvs'
 [[ -n "${VIRTUAL_ENV}" ]] && VPS1="($(basename ${VIRTUAL_ENV})) "
 
 # User color prompt
-PS1='\e[01;32m\]AT\e[00m\]( \e[01;34m\]\w\e[00m\] ) ${VPS1}$ ';
+PS1='\[\033[01;32m\]AT\[\033[00m\]( \[\033[01;34m\]\w\[\033[00m\] ) ${VPS1}$ ';
 
 # Root color prompt
 # if [ `tty | sed s/[0-9]//` = "/dev/pts/" ]
 # then
-#     PS1='╭ \e[01;31m\]ROOT\e[00m\]{ \e[01;34m\]\w\e[00m\] }'
-#     PS1+='\n╰ \e[01;30m\]\t\e[00m\] ≻ ';
+#     PS1='╭ \[\033[01;31m\]ROOT\[\033[00m\]{ \[\033[01;34m\]\w\[\033[00m\] }'
+#     PS1+='\n╰ \[\033[01;30m\]\t\[\033[00m\] ≻ ';
 # else
-#     PS1='\e[01;31m\]ROOT\e[00m\]{ \e[01;34m\]\w\e[00m\] } § '
+#     PS1='\[\033[01;31m\]ROOT\[\033[00m\]{ \[\033[01;34m\]\w\[\033[00m\] } § '
 # fi
 
 case "$TERM" in
     screen | rxvt-unicode-256color | xterm)
-	PS1='╭ \e[01;32m\]AT\e[00m\]( \e[01;34m\]\w\e[00m\] )'
-	PS1+='\n╰ \e[01;39m\]\t\e[00m\] ${VPS1}≻ ';
+	PS1='╭ \[\033[01;32m\]AT\[\033[00m\]( \[\033[01;34m\]\w\[\033[00m\] )'
+	PS1+='\n╰ \[\033[01;39m\]\t\[\033[00m\] ${VPS1}≻ ';
 	xset -b
 	;;
 esac
