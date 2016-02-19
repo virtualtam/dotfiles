@@ -8,10 +8,6 @@
 (setq user-mail-address "<virtualtam@flibidi.net>")
 (setq mail-self-address "VirtualTam <virtualtam@flibidi.net>")
 
-;; emacs-snapshot PPA hack
-;(when (>= emacs-major-version 25)
-;  (defconst debian-emacs-flavor 'emacs25))
-
 ;; Package repositories
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
