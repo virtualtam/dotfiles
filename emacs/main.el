@@ -1,13 +1,3 @@
-;;-----------------------------------------------------------
-;; Emacs configuration file
-;;
-;; author       VirtualTam
-;; revision     2015-12-09
-;;-----------------------------------------------------------
-(setq user-full-name "VirtualTam")
-(setq user-mail-address "<virtualtam@flibidi.net>")
-(setq mail-self-address "VirtualTam <virtualtam@flibidi.net>")
-
 ;; Package repositories
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
@@ -32,6 +22,7 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; Hide toolbars
+(menu-bar-mode -1)
 (custom-set-variables
  '(custom-safe-themes
    (quote
