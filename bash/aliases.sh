@@ -1,14 +1,12 @@
 # ~/.bash_aliases
-# author	VirtualTam	<virtualtam@flibidi.net>
-
 # Dev
 alias git='LANG=en_GB.UTF-8 git'
 
 # Editors
-# - force TERM to xterm (16 colors) so emacs doesn't mess up with Solarized
-alias emax='TERM=xterm emacs -nw'
-export EDITOR='TERM=xterm emacs -nw'
-export VISUAL='TERM=xterm emacs -nw'
+# - force TERM to rxvt so emacs doesn't mess up with Solarized
+alias emax='TERM=rxvt emacs -nw'
+export EDITOR='TERM=rxvt emacs -nw'
+export VISUAL='TERM=rxvt emacs -nw'
 
 # Games
 alias steam='steam && xsetroot -cursor_name left_ptr'
