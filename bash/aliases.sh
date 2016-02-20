@@ -1,9 +1,18 @@
 # ~/.bash_aliases
+function mcd() {
+    # create and switch to a directory
+    mkdir -p ${1}
+    cd ${1}
+}
+
 # Dev
 alias git='LANG=en_GB.UTF-8 git'
 
 # Editors
-# - force TERM to rxvt so emacs doesn't mess up with Solarized
+export MANPAGER='most'
+export PAGER='more -f'
+
+# Force TERM to rxvt so emacs doesn't mess up with Solarized
 alias emax='TERM=rxvt emacs -nw'
 export EDITOR='TERM=rxvt emacs -nw'
 export VISUAL='TERM=rxvt emacs -nw'
@@ -19,18 +28,8 @@ alias la='ls -lAh'
 alias md='mkdir'
 alias cd..='cd ..'
 
-function mcd() {
-    # create and switch to a directory
-    mkdir -p ${1}
-    cd ${1}
-}
-
 # R
 alias R='R --quiet'
-
-# SSH
-alias vibi='ssh virtualtam@flibidi.net'
-alias mibi='ssh minecraft@flibidi.net'
 
 # iii];p
 alias rm='rm --preserve-root'
