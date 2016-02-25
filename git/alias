@@ -1,4 +1,5 @@
 [alias]
+    bd = "!f(){ git bv && echo && git dst; };f"
     br = branch
     bv = branch -vv
     co = checkout
@@ -8,6 +9,7 @@
     ci = commit
     cs = commit -a -s
     d = diff
+    ds = diff --stat
     dst = diff --stat
     f = fetch
     fu = fetch upstream
