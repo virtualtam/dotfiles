@@ -16,18 +16,18 @@ else
 fi
 
 case "$TERM" in
-    screen | rxvt-unicode-* | xterm)
+    screen | rxvt-unicode* | xterm)
         # fancy colorized unicode prompt
-	PS1='╭ \[\033[01;${USERCOLOR}m\]\u\[\033[01;39m\]@\[\033[01;35m\]\h\[\033[00m\]'
+        PS1='╭ \[\033[01;${USERCOLOR}m\]\u\[\033[01;39m\]@\[\033[01;35m\]\h\[\033[00m\]'
         PS1+='( \[\033[01;34m\]\w\[\033[00m\] )'
-	PS1+='\n╰ \[\033[01;39m\]\t\[\033[00m\] ${VPS1}≻ ';
-	xset -b
-	;;
+        PS1+='\n╰ \[\033[01;39m\]\t\[\033[00m\] ${VPS1}≻ ';
+        xset -b
+        ;;
     *)
         # fancy colorized ascii prompt
-	PS1='\[\033[01;${USERCOLOR}m\]\u\[\033[01;00m\]@\[\033[01;35m\]\h\[\033[00m\]'
+        PS1='\[\033[01;${USERCOLOR}m\]\u\[\033[01;00m\]@\[\033[01;35m\]\h\[\033[00m\]'
         PS1+='( \[\033[01;34m\]\w\[\033[00m\] )'
-	PS1+='\n\[\033[01;00m\]\t\[\033[00m\] ${VPS1}> ';
+        PS1+='\n\[\033[01;00m\]\t\[\033[00m\] ${VPS1}> ';
         ;;
 esac
 
