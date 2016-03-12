@@ -64,7 +64,7 @@ URxvt*color2: S_green
 URxvt*color10: S_green
 
 URxvt*color3: S_yellow
-URxvt*color11: S_yellow
+URxvt*color11: S_orange
 
 URxvt*color4: S_blue
 URxvt*color12: S_blue

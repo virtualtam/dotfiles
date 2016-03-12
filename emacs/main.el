@@ -71,11 +71,6 @@
 (custom-set-faces
  '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 98 :width normal :foundry "unknown" :family "DejaVu Sans Mono")))))
 
-(use-package solarized-theme
-  :init
-  (load-theme 'solarized-dark)
-  :ensure t)
-
 ;;------------------------
 ;; Encoding Selection
 ;;------------------------
