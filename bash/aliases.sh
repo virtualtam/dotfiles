@@ -13,9 +13,9 @@ export MANPAGER='most'
 export PAGER='more -f'
 
 # Force TERM to rxvt so emacs doesn't mess up with Solarized
-alias emax='TERM=rxvt emacs -nw'
-export EDITOR='TERM=rxvt emacs -nw'
-export VISUAL='TERM=rxvt emacs -nw'
+alias emax='emacs'
+export EDITOR='emacs'
+export VISUAL='emacs'
 
 # Games
 alias steam='steam && xsetroot -cursor_name left_ptr'
