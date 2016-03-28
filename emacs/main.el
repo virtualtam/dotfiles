@@ -130,7 +130,7 @@
 (use-package graphviz-dot-mode :ensure t)
 
 ;; Groovy
-(use-package groovy-mode :ensure t)
+;(use-package groovy-mode :ensure t)
 
 ;; Java decompiled classes
 ;(add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
