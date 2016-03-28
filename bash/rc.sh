@@ -21,7 +21,7 @@ case "$TERM" in
         PS1='╭ \[\033[01;${USERCOLOR}m\]\u\[\033[01;39m\]@\[\033[01;35m\]\h\[\033[00m\]'
         PS1+='( \[\033[01;34m\]\w\[\033[00m\] )'
         PS1+='\n╰ \[\033[01;39m\]\t\[\033[00m\] ${VPS1}≻ ';
-        xset -b
+        [[ -x /usr/bin/xset ]] && xset -b 2>&1 > /dev/null
         ;;
     *)
         # fancy colorized ascii prompt
