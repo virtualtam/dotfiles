@@ -8,7 +8,7 @@ export WORKON_HOME='~/virtualenvs'
 [[ -n "${VIRTUAL_ENV}" ]] && VPS1="($(basename ${VIRTUAL_ENV})) "
 
 # Username color
-if [[ "${USER}" == "root" ]]; then
+if [[ "$(whoami)" == "root" ]]; then
     USERCOLOR="31" # red
     alias grubconf='grub-mkconfig -o /boot/grub/grub.cfg'
 else
