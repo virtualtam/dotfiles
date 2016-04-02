@@ -136,7 +136,7 @@
 ;(add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
 
 ;; LUA
-;(use-package lua-mode :ensure t)
+(use-package lua-mode :ensure t)
 
 ;; Markdown
 (use-package markdown-mode :ensure t)
