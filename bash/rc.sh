@@ -60,12 +60,8 @@ if [[ -x /usr/bin/dircolors ]]; then
 fi
 
 # Alias definitions
-if [[ -f  ~/.bash_aliases ]]; then
-    . ~/.bash_aliases
-fi
+[[ -f  ~/.bash_aliases ]] && . ~/.bash_aliases
 
 # Programmable completion features
 complete -cf sudo
-if [[ -f /etc/bash_completion ]]; then
-    . /etc/bash_completion
-fi
+[[ -f /etc/bash_completion ]] && . /etc/bash_completion
