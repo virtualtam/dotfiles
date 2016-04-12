@@ -1,19 +1,18 @@
 # ~/.bash_aliases
+
+# Direcotries
 function mcd() {
     # create and switch to a directory
     mkdir -p ${1}
     cd ${1}
 }
-
-# Dev
-alias git='LANG=en_GB.UTF-8 git'
+alias md='mkdir'
 
 # Editors
 export MANPAGER='most'
 export PAGER='more -f'
 
 # Force TERM to rxvt so emacs doesn't mess up with Solarized
-alias emax='emacs'
 export EDITOR='emacs'
 export VISUAL='emacs'
 
@@ -24,9 +23,9 @@ alias steam='steam && xsetroot -cursor_name left_ptr'
 # *nix
 alias ll='ls -lh'
 alias la='ls -lAh'
+alias lol='ls -lh --color=no'
+alias loa='ls -lAh --color=no'
 
-alias md='mkdir'
-alias cd..='cd ..'
 
 # R
 alias R='R --quiet'
