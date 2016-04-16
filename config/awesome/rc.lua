@@ -53,7 +53,7 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
-local layouts =
+local all_layouts =
 {
     awful.layout.suit.floating,
     awful.layout.suit.tile,
@@ -68,6 +68,18 @@ local layouts =
     awful.layout.suit.max.fullscreen,
     awful.layout.suit.magnifier
 }
+local layouts =
+{
+    awful.layout.suit.floating,
+    awful.layout.suit.max,
+    awful.layout.suit.max.fullscreen,
+    awful.layout.suit.tile,
+    awful.layout.suit.tile.left,
+    awful.layout.suit.tile.bottom,
+    awful.layout.suit.tile.top,
+    awful.layout.suit.fair,
+    awful.layout.suit.fair.horizontal
+}
 -- }}}
 
 -- {{{ Wallpaper
@@ -80,10 +92,13 @@ end
 
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
-tags = {}
+tags = {
+   names  = { ">_", "www", "misc", "jack", "ardour", "h2", "media" },
+   layout = { layouts[3], layouts[3], layouts[1], layouts[1], layouts[6], layouts[6], layouts[1] }
+}
 for s = 1, screen.count() do
-    -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+   -- Each screen has its own tag table.
+   tags[s] = awful.tag(tags.names, s, tags.layout)
 end
 -- }}}
 
