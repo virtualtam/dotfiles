@@ -20,12 +20,15 @@ export VISUAL='emacs'
 alias steam='steam && xsetroot -cursor_name left_ptr'
 #alias doom3='doom3 +set s_alsa_pcm plughw:5 +set s_driver alsa'
 
-# *nix
+# ls
 alias ll='ls -lh'
 alias la='ls -lAh'
 alias lol='ls -lh --color=no'
 alias loa='ls -lAh --color=no'
 
+# tree
+alias tl='tree -ph'
+alias ta='tree -pha'
 
 # R
 alias R='R --quiet'
