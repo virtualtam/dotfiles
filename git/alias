@@ -21,6 +21,7 @@
     lt = "!f(){ git lg -10; };f"
     p = pull
     pum = pull upstream master
+    re = rebase
     rem = "!f(){ git checkout master && git pull && git checkout ${1} && git rebase -i master; };f"
     ri = rebase -i
     rim = rebase -i master
@@ -31,6 +32,10 @@
     s = status --short --branch
     st = status
     sti = status --ignored
+    sm = submodule
+    sms = submodule sync
+    smu = submodule update
+    sf = submodule foreach
     v = review
     vd = review -d
     vl = review -l
