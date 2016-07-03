@@ -39,3 +39,7 @@
     v = review
     vd = review -d
     vl = review -l
+    wt = worktree
+    wa = worktree add
+    wl = worktree list
+    wp = worktree prune
