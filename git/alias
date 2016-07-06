@@ -6,6 +6,7 @@
     cob = checkout -b
     com = checkout master
     ca = commit -a --amend
+    can = commit -a --amend --no-edit
     ci = commit
     cs = commit -a -s
     d = diff
