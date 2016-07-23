@@ -16,9 +16,8 @@ export PAGER='more -f'
 export EDITOR='emacs'
 export VISUAL='emacs'
 
-# Games
-alias steam='steam && xsetroot -cursor_name left_ptr'
-#alias doom3='doom3 +set s_alsa_pcm plughw:5 +set s_driver alsa'
+# GnuPG
+export GNUPG_TTY=$(tty)
 
 # ls
 alias ll='ls -lh'
