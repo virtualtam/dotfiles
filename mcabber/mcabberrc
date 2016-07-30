@@ -50,22 +50,22 @@ set message_away      = Falling away from me
 # green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
 
 # general
-set color_background   = brblack
-set color_general      = brgreen
+set color_background   = default
+set color_general      = green
 
 # info
-set color_info         = brgreen
-set color_log          = brgreen
+set color_info         = green
+set color_log          = green
 
 # messages
-set color_msgin        = brblue
-set color_msgout       = brblue
+set color_msgin        = default
+set color_msgout       = cyan
 set color_msghl        = yellow
-set color_timestamp    = brgreen
+set color_timestamp    = default
 
 # status
 set color_bgstatus     = black
-set color_status       = white
+set color_status       = default
 
 # roster
 set color_roster       = green
@@ -76,7 +76,7 @@ set color_rostersel    = yellow
 #set color_rosternewmsg = default
 
 color muc * on
-set nick_colors = blue yellow magenta green cyan red
+set nick_colors = blue green magenta red yellow
 
 #color mucnick my_friend yellow
 
