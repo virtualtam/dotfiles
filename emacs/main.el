@@ -101,6 +101,10 @@
 (setq initial-major-mode 'text-mode)
 (setq default-major-mode 'text-mode)
 
+;; CC mode: C, C++, Java & affiliated
+(setq c-default-style "k&r"
+      c-basic-offset 4)
+
 ;; Config files: shell-mode
 (add-to-list 'auto-mode-alist '("\\.bash" . shell-script-mode))
 (add-to-list 'auto-mode-alist '("\\.conf$" . shell-script-mode))
