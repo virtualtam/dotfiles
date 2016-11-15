@@ -52,6 +52,9 @@ editor_cmd = terminal .. " -e " .. editor
 -- However, you can use another modifier like Mod1, but it may interact with others.
 modkey = "Mod4"
 
+-- Default altkey
+altkey = "Mod1"
+
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local all_layouts =
 {
@@ -274,6 +277,10 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
 
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
+
+
+    -- Custom
+    awful.key({ altkey, "Control" }, "l", function () awful.util.spawn("light-locker-command -l") end),
 
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
