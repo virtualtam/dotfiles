@@ -1,6 +1,7 @@
 [alias]
-    bd = "!f(){ git bv && echo && git dst; };f"
     br = branch
+    bd = branch -d
+    bdd = branch -D
     bv = branch -vv
     co = checkout
     cob = checkout -b
@@ -13,6 +14,7 @@
     ds = diff --stat
     dst = diff --stat
     f = fetch
+    fp = fetch --prune
     fu = fetch upstream
     lf = ls-files
     lg = log --graph --pretty=format:'%C(yellow)%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset%C(bold blue)<%an>%Creset' --color
@@ -21,6 +23,7 @@
     lo = log --oneline
     lt = "!f(){ git lg -10; };f"
     p = pull
+    pp = pull --prune
     pum = pull upstream master
     re = rebase
     rem = rebase master
@@ -34,6 +37,7 @@
     s = status --short --branch
     st = status
     sti = status --ignored
+    sb = "!f(){ git bv && echo && git dst; };f"
     sm = submodule
     sma = submodule add
     sms = submodule sync
