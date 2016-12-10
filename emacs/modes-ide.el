@@ -4,6 +4,17 @@
 (setq grep-find-ignored-directories '("build" "doxygen" "vendor"))
 
 (use-package ag :ensure t)
+
+(use-package company
+  :ensure t
+  :init
+  (add-hook 'after-init-hook 'global-company-mode))
+(use-package company-php
+  :ensure t
+  :init
+  (add-hook 'php-mode-hook
+            (add-to-list 'company-backends 'company-ac-php-backend)))
+
 (use-package helm-ag :ensure t)
 
 (require 'helm-config)

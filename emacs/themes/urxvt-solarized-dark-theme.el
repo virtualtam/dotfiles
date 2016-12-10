@@ -474,6 +474,22 @@
    `(helm-source-header ((t (:foreground ,base1 :background ,base02 :weight bold))))
    `(helm-visible-mark ((t (:foreground ,base02 :background ,yellow))))
 
+   ;; company
+   `(company-preview ((t (:foreground ,base0 :underline t))))
+   `(company-preview-common ((t (:inherit company-preview))))
+   `(company-scrollbar-bg ((t (:background ,base02))))
+   `(company-scrollbar-fg ((t (:background ,blue))))
+   `(company-tooltip ((t (:background ,base02 :foreground nil))))
+   `(company-tooltip-annotation ((t (:background ,base02 :foreground ,yellow))))
+   `(company-tooltip-annotation-selection ((t (:background ,blue :foreground ,base2))))
+   `(company-tooltip-selection ((t (:background ,blue :foreground ,base2))))
+   `(company-tooltip-common
+     ((((type x)) (:inherit company-tooltip :weight bold))
+      (t (:inherit company-tooltip))))
+   `(company-tooltip-common-selection
+     ((((type x)) (:inherit company-tooltip-selection :weight bold))
+      (t (:inherit company-tooltip-selection))))
+
    `(custom-variable-tag ((t (:foreground ,blue))))
    `(custom-group-tag ((t (:foreground ,blue))))
    `(custom-state ((t (:foreground ,green)))))
