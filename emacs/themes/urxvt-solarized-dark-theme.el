@@ -22,7 +22,7 @@
       (violet "brightmagenta")
       (magenta "magenta"))
 
-  (custom-theme-set-faces 
+  (custom-theme-set-faces
    'urxvt-solarized-dark
 
    ;; Built-in stuff (Emacs 23)
@@ -54,7 +54,7 @@
    `(font-lock-comment-delimiter-face ((t (:foreground ,red))))
    `(font-lock-comment-face ((t (:foreground ,red))))
    `(font-lock-constant-face ((t (:foreground ,yellow :weight normal))))
-   `(font-lock-doc-face ((t (:foreground ,base0))))
+   `(font-lock-doc-face ((t (:foreground ,red))))
    `(font-lock-doc-string-face ((t (:foreground ,base00))))
    `(font-lock-function-name-face ((t (:foreground ,blue :weight bold))))
    `(font-lock-keyword-face ((t (:foreground ,cyan :weight bold))))
@@ -77,16 +77,6 @@
    `(isearch-fail ((t (:background ,base02 :inherit font-lock-warning-face :inverse-video t))))
    `(evil-search-highlight-persist-highlight-face ((t (:background ,base02 :inherit font-lock-warning-face :inverse-video t))))
 
-
-   ;; Popups
-   `(popup-face ((t (:foreground ,base1 :background ,base01))))
-   `(popup-isearch-match ((t (:foreground ,base03 :background ,green))))
-   `(popup-scroll-bar-background-face ((t (:background ,base00))))
-   `(popup-scroll-bar-foreground-face ((t (:background ,base1))))
-   `(popup-summary-face ((t (:foreground ,base0))))
-   `(popup-tip-face ((t (:foreground ,base03 :background ,yellow))))
-   `(popup-menu-mouse-face ((t (:foreground ,base03 :background ,blue))))
-   `(popup-menu-selection-face ((t (:foreground ,base03 :background ,cyan))))
 
    ;; Popups
    `(popup-face ((t (:foreground ,base1 :background ,base01))))
@@ -474,6 +464,7 @@
    `(helm-grep-lineno ((t (:foreground ,base00))))
    `(helm-grep-match ((t (:foreground ,yellow))))
    `(helm-grep-running ((t (:foreground ,orange))))
+   `(helm-history-deleted ((t (:foreground ,base02 :background ,red))))
    `(helm-header ((t (:foreground ,yellow :background ,base03 :underline nil))))
    `(helm-match ((t (:foreground ,yellow))))
    `(helm-moccur-buffer ((t (:foreground ,cyan))))
@@ -481,7 +472,7 @@
    `(helm-selection-line ((t (:foreground nil :background ,base01))))
    `(helm-separator ((t (:foreground ,base01))))
    `(helm-source-header ((t (:foreground ,base1 :background ,base02 :weight bold))))
-   `(helm-visible-mark ((t (:foreground ,base03 :background ,green))))
+   `(helm-visible-mark ((t (:foreground ,base02 :background ,yellow))))
 
    `(custom-variable-tag ((t (:foreground ,blue))))
    `(custom-group-tag ((t (:foreground ,blue))))
