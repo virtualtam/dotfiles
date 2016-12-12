@@ -45,7 +45,9 @@
     (add-to-list 'auto-mode-alist '("TODOLIST" . org-mode))))
 
 ;; PKGBUILD (ArchLinux)
-(use-package pkgbuild-mode :ensure t)
+(use-package pkgbuild-mode
+  :ensure t
+  :init (setq pkgbuild-update-sums-on-save nil))
 
 ;; Python
 (use-package jedi
