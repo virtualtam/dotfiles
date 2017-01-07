@@ -10,12 +10,13 @@
     can = commit -a --amend --no-edit
     ci = commit
     cs = commit -a -s
+    csm = commit -a -s -m
     d = diff
     ds = diff --stat
-    dst = diff --stat
+    dsm = diff --stat master
     f = fetch
     fp = fetch --prune
-    fu = fetch upstream
+    fu = fetch --prune upstream
     lf = ls-files
     lg = log --graph --pretty=format:'%C(yellow)%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset%C(bold blue)<%an>%Creset' --color
     lh = log --graph --pretty=format:'%C(yellow)%H%Creset %Cgreen%cd%Creset %C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --date=iso --color
@@ -34,6 +35,8 @@
     rv = remote -v
     sh = show
     shst = show --stat
+    sl = shortlog
+    snes = shortlog -nes
     s = status --short --branch
     st = status
     sti = status --ignored
