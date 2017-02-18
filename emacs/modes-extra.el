@@ -5,14 +5,6 @@
 ;; AUCTeX
 (use-package tex :ensure auctex)
 
-;; C#
-;(use-package csharp-mode :ensure t)
-
-;; Cobol
-;(autoload 'cobol-mode "cobol-mode" "Cobol editing mode." t)
-;(add-to-list 'auto-mode-alist '("\\.cbl$" . cobol-mode))
-;(add-to-list 'auto-mode-alist '("\\.cob$" . cobol-mode))
-
 ;; Graphviz
 (use-package graphviz-dot-mode :ensure t)
 
