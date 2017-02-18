@@ -3,8 +3,8 @@
 [[ -z "$PS1" ]] && return
 
 # Python virtual environments
-export PROJECT_HOME='~/python'
-export WORKON_HOME='~/virtualenvs'
+export PROJECT_HOME='~/dev/python'
+export WORKON_HOME='~/.virtualenvs'
 [[ -n "${VIRTUAL_ENV}" ]] && VPS1="($(basename ${VIRTUAL_ENV})) "
 
 # Username color
