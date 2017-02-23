@@ -9,7 +9,7 @@ fi
 [ -d "${HOME}/bin" ] && PATH="${HOME}/bin:${PATH}"
 
 # Qt5 theme management
-QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # Java (moved to $JAVA_HOME/jre/lib/swing.properties)
 _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
