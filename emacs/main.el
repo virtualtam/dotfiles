@@ -63,6 +63,9 @@
     '(("\\<\\(FIXME\\|TODO\\|WARNING\\|BUG\\|XXX+\\|NB\\|NOTE\\|ATTENTION\\)[  ]*:"
        1 special-words t)))))
 
+;; Highlight the current line
+(global-hl-line-mode t)
+
 ;; Column marker
 (use-package column-marker :ensure t)
 

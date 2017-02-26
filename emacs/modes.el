@@ -25,7 +25,7 @@
 (use-package dockerfile-mode :ensure t)
 
 ;; Groovy
-;(use-package groovy-mode :ensure t)
+(use-package groovy-mode :ensure t)
 
 ;; Java decompiled classes
 ;(add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
@@ -63,6 +63,9 @@
     ;(setq jedi:complete-on-dot t)
     (setq jedi:setup-keys t))
   :ensure t)
+
+;; TOML
+(use-package toml-mode :ensure t)
 
 ;; Web: less, sass CSS templates
 (use-package less-css-mode :ensure t)
