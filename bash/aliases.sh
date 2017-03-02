@@ -22,7 +22,7 @@ export LESS_TERMCAP_us=$'\e[1;32m'    # begin underline
 
 # pager
 export MANPAGER='less -s -M +Gg'
-export PAGER='less -s -M +Gg'
+export PAGER='less -s'
 
 # GnuPG CLI agent
 export GNUPG_TTY=$(tty)
