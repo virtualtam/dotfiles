@@ -46,9 +46,6 @@
 (setq truncate-lines nil)
 (setq truncate-partial-width-windows nil)
 
-;; TABS: get rid of'em!
-(setq-default indent-tabs-mode nil)
-
 ;; Time
 (display-time)
 (setq display-time-24hr-format t)
@@ -92,6 +89,10 @@
 ;; Disable electric-mode for RET
 (add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
 (when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
+
+;; TABs
+(setq default-tab-width 4)
+(setq-default indent-tabs-mode nil)
 
 ;; Show whitespace characters
 (defun show-whitespace ()
