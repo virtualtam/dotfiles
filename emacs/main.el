@@ -93,6 +93,20 @@
 (add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
 (when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
 
+;; Show whitespace characters
+(defun show-whitespace ()
+  (interactive)
+  (whitespace-mode -1)
+  (let ((ws-small '(face lines-tail))
+        (ws-big '(face tabs spaces trailing lines-tail space-before-tab
+                       newline indentation empty space-after-tab space-mark
+                       tab-mark newline-mark)))
+    (if (eq whitespace-style ws-small)
+        (setq whitespace-style ws-big)
+      (setq whitespace-style ws-small)))
+  (whitespace-mode 1))
+(define-key prog-mode-map (kbd "C-c w") 'show-whitespace)
+
 ;; Windmove - easy buffer cycling
 (global-set-key (kbd "C-c <left>")  'windmove-left)
 (global-set-key (kbd "C-c <right>") 'windmove-right)
