@@ -90,6 +90,12 @@
 (add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
 (when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
 
+;; EditorConfig
+(use-package editorconfig
+  :ensure t
+  :config
+  (editorconfig-mode 1))
+
 ;; TABs
 (setq default-tab-width 4)
 (setq-default indent-tabs-mode nil)
