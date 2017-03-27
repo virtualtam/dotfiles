@@ -23,20 +23,25 @@
 
 !- Fonts
 URxvt.font: xft:monospace:size=11
+URxvt.letterSpace: -1
 
 !- They see me scrollin', they hatin'
-URxvt*.scrollstyle: plain
-URxvt*scrollTtyKeypress: true
+URxvt.scrollBar: false
+URxvt.scrollstyle: plain
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt.scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt.scrollTtyKeypress: true
 
 !- Extensions
-URxvt*.perl-ext-common: default,url-select,tabbed
+URxvt.perl-ext-common: default,matcher,tabbed
 
 !- URL
-URxvt*.url-select.launcher: /usr/bin/firefox -new-tab
-URxvt*.keysym.M-u: perl:url-select:select_next
-URxvt*.matcher.button: 1
-URxvt*.url-select.underline: true
-URxvt*.colorUL: S_blue
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg6
 
 !- Tabs
 URxvt.tabbed.tabbar-fg: 2
@@ -45,36 +50,36 @@ URxvt.tabbed.tab-fg: 3
 URxvt.tabbed.tab-bg: 0
 
 !- URxvt theme
-URxvt*background: S_base03
-URxvt*foreground: S_base0
-URxvt*fading: 40
-URxvt*fadeColor: S_base03
-URxvt*cursorColor: S_base1
-URxvt*pointerColorBackground: S_base01
-URxvt*pointerColorForeground: S_base1
+URxvt.background: S_base03
+URxvt.foreground: S_base0
+URxvt.fading: 40
+URxvt.fadeColor: S_base03
+URxvt.cursorColor: S_base1
+URxvt.pointerColorBackground: S_base01
+URxvt.pointerColorForeground: S_base1
 
 ! black
-URxvt*color0: S_base02
-URxvt*color8: S_base03
+URxvt.color0: S_base02
+URxvt.color8: S_base03
 
-URxvt*color1: S_red
-URxvt*color9: S_red
+URxvt.color1: S_red
+URxvt.color9: S_red
 
-URxvt*color2: S_green
-URxvt*color10: S_green
+URxvt.color2: S_green
+URxvt.color10: S_green
 
-URxvt*color3: S_yellow
-URxvt*color11: S_orange
+URxvt.color3: S_yellow
+URxvt.color11: S_orange
 
-URxvt*color4: S_blue
-URxvt*color12: S_blue
+URxvt.color4: S_blue
+URxvt.color12: S_blue
 
-URxvt*color5: S_magenta
-URxvt*color13: S_violet
+URxvt.color5: S_magenta
+URxvt.color13: S_violet
 
-URxvt*color6: S_cyan
-URxvt*color14: S_cyan
+URxvt.color6: S_cyan
+URxvt.color14: S_cyan
 
 ! white
-URxvt*color7: S_base2
-URxvt*color15: S_base3
+URxvt.color7: S_base2
+URxvt.color15: S_base3
