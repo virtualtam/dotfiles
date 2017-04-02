@@ -12,9 +12,13 @@
     cs = commit -a -s
     csm = commit -a -s -m
     d = diff
+    dm = diff master
     ds = diff --stat
     dsm = diff --stat master
+    dw = diff --word-diff=color
+    dwm = diff --word-diff=color master
     f = fetch
+    fav = fetch --all -v
     fp = fetch --prune
     fu = fetch --prune upstream
     gh  = "!f() { git com && git fetch origin pull/${1}/head:pr-${1} && git checkout pr-${1}; }; f"
@@ -44,9 +48,10 @@
     s = status --short --branch
     st = status
     sti = status --ignored
-    sb = "!f(){ git bv && echo && git dst; };f"
+    sb = "!f(){ git bv && echo && git dsm; };f"
     sm = submodule
     sma = submodule add
+    smi = submodule init
     sms = submodule sync
     smu = submodule update
     sf = submodule foreach
