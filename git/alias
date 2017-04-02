@@ -36,6 +36,7 @@
     ll = log --stat --pretty=format:'%C(yellow)%h %Cgreen%cr%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'
     lo = log --oneline
     lt = "!f(){ git lg -10; };f"
+    my = !git ll --author=$USER --since='9am yesterday' --all
 
     p = pull
     pp = pull --prune
