@@ -11,10 +11,12 @@ emacs
 
    ;; Main configuration
    (load-file "~/.dots/emacs/main.el")
-   (load-file "~/.dots/emacs/modes.el")
 
    ;; Advanced editing and project management
    (load-file "~/.dots/emacs/modes-ide.el")
+
+   ;; Major modes
+   (load-file "~/.dots/emacs/modes.el")
 
    ;; Extra modes
    (load-file "~/.dots/emacs/modes-extra.el")
