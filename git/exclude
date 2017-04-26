@@ -3,4 +3,7 @@
 *.iml
 .idea
 .ac-php-conf.json
+GPATH
+GRTAGS
+GTAGS
 TAGS
