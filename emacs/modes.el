@@ -27,6 +27,9 @@
 ;; Groovy
 (use-package groovy-mode :ensure t)
 
+;; Haskell
+(use-package haskell-mode :ensure t)
+
 ;; Java decompiled classes
 ;(add-to-list 'auto-mode-alist '("\\.jad\\'" . java-mode))
 
@@ -67,6 +70,9 @@
 ;; TOML
 (use-package toml-mode :ensure t)
 
+;; Vagrant
+(use-package vagrant-mode :ensure t)
+
 ;; Web: less, sass CSS templates
 (use-package less-css-mode :ensure t)
 (use-package sass-mode :ensure t)
@@ -85,10 +91,13 @@
     (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+    (add-to-list 'auto-mode-alist '("\\.j2\\'" . web-mode))
     (add-to-list 'auto-mode-alist '("\\.sls\\'" . web-mode))
     (setq web-mode-markup-indent-offset 2)))
 
 ;; Web: SaltStack states
+(setq web-mode-engines-alist '(("django" . "\\.html.j2\\'")))
+(setq web-mode-engines-alist '(("django" . "\\.j2\\'")))
 (setq web-mode-engines-alist '(("django" . "\\.sls\\'")))
 
 ;; YAML
