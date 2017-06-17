@@ -20,10 +20,6 @@
 ;; CMake
 (use-package cmake-mode :ensure t)
 
-;; Docker
-(use-package docker :ensure t)
-(use-package dockerfile-mode :ensure t)
-
 ;; Groovy
 (use-package groovy-mode :ensure t)
 
@@ -70,9 +66,6 @@
 ;; TOML
 (use-package toml-mode :ensure t)
 
-;; Vagrant
-(use-package vagrant-mode :ensure t)
-
 ;; Web: less, sass CSS templates
 (use-package less-css-mode :ensure t)
 (use-package sass-mode :ensure t)
@@ -95,7 +88,7 @@
     (add-to-list 'auto-mode-alist '("\\.sls\\'" . web-mode))
     (setq web-mode-markup-indent-offset 2)))
 
-;; Web: SaltStack states
+;; Web: Jinja2, SaltStack states
 (setq web-mode-engines-alist '(("django" . "\\.html.j2\\'")))
 (setq web-mode-engines-alist '(("django" . "\\.j2\\'")))
 (setq web-mode-engines-alist '(("django" . "\\.sls\\'")))
