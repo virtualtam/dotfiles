@@ -15,8 +15,14 @@ emacs
    ;; Advanced editing and project management
    (load-file "~/.dots/emacs/modes-ide.el")
 
-   ;; Major modes
+   ;; Common languages
    (load-file "~/.dots/emacs/modes.el")
+
+   ;; Audio
+   (load-file "~/.dots/emacs/modes-audio.el")
+
+   ;; DevOps
+   (load-file "~/.dots/emacs/modes-devops.el")
 
    ;; Extra modes
    (load-file "~/.dots/emacs/modes-extra.el")
