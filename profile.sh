@@ -11,10 +11,12 @@ fi
 # Qt5 theme management
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
-# Java (moved to $JAVA_HOME/jre/lib/swing.properties)
-_JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
-' -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
-' -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+# Java
+export JAVA_FONTS='/usr/share/fonts/TTF'
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'\
+' -Dswing.aatext=true'\
+' -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
+' -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 
 # Go
 export GOPATH="${HOME}/.golang"
