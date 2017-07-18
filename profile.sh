@@ -7,6 +7,7 @@ elif [ -n "${ZSH_VERSION}" ]; then
 fi
 
 [ -d "${HOME}/bin" ] && PATH="${HOME}/bin:${PATH}"
+[ -d "${HOME}/.node_modules/bin" ] && PATH="${HOME}/.node_modules/bin:${PATH}"
 
 # Qt5 theme management
 export QT_QPA_PLATFORMTHEME="qt5ct"
