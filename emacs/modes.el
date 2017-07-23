@@ -70,8 +70,11 @@
 (use-package less-css-mode :ensure t)
 (use-package sass-mode :ensure t)
 
-;; Web: html, php, django/jinja
+;; Web: JS, JSX, JSON
+(setq js-indent-level 2)
 (use-package rjsx-mode :ensure t)
+
+;; Web: html, php, django/jinja
 (use-package web-mode
   :ensure t
   :init
