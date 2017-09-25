@@ -7,8 +7,17 @@ endif
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
+
+" edition
 Plug 'editorconfig/editorconfig-vim' " .editorconfig support
+
+" scm
+Plug 'airblade/vim-gitgutter'
+
+" language support
 Plug 'aklt/plantuml-syntax'
+
 call plug#end()
 
 syntax on
+set number
