@@ -1,6 +1,7 @@
 *~
 *.pyc
 *.iml
+*.swp
 .idea
 .ac-php-conf.json
 GPATH
