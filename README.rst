@@ -19,6 +19,8 @@ They're revolving around the following elements:
 * `moc`_ player
 * `mcabber`_ XMPP client
 * `git`_ and `mercurial`_ distributed SCMs
+* `vim`_ text editor
+* `zsh`_ shell
 * some extra stuff
 
 .. _bash: https://www.gnu.org/software/bash/
@@ -30,6 +32,8 @@ They're revolving around the following elements:
 .. _rxvt-unicode: http://software.schmorp.de/pkg/rxvt-unicode.html
 .. _solarized: http://ethanschoonover.com/solarized
 .. _tmux: https://tmux.github.io/
+.. _vim: https://vim.sourceforge.io/
+.. _zsh: http://www.zsh.org/
 
 .. image:: http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png
    :target: http://www.wtfpl.net/
