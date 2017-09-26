@@ -19,5 +19,23 @@ Plug 'aklt/plantuml-syntax'
 
 call plug#end()
 
+" editor behavior
 syntax on
+set encoding=utf-8
+set fileencodings=utf-8
+set ffs=unix,dos
+
+" indentation
+set autoindent
+set smartindent
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+
+" display
 set number
+
+" buffers & windows
+set browsedir=buffer
+set splitbelow
+set splitright
