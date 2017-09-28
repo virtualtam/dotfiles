@@ -23,8 +23,6 @@ Plug 'mattn/emmet-vim'
 call plug#end()
 
 " editor behavior
-syntax on
-
 set textwidth=80
 
 set encoding=utf-8
@@ -39,7 +37,10 @@ set shiftwidth=4
 set softtabstop=4
 
 " display
+syntax on
+set cursorline
 set number
+set wildmenu
 
 " buffers & windows
 set browsedir=buffer
