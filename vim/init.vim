@@ -17,10 +17,16 @@ Plug 'airblade/vim-gitgutter'
 " language support
 Plug 'aklt/plantuml-syntax'
 
+" web
+Plug 'mattn/emmet-vim'
+
 call plug#end()
 
 " editor behavior
 syntax on
+
+set textwidth=80
+
 set encoding=utf-8
 set fileencodings=utf-8
 set ffs=unix,dos
