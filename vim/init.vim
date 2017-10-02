@@ -14,7 +14,12 @@ Plug 'editorconfig/editorconfig-vim' " .editorconfig support
 " scm
 Plug 'airblade/vim-gitgutter'
 
-" language support
+" devops
+Plug 'pearofducks/ansible-vim'
+Plug 'robbles/logstash.vim'
+Plug 'hashivim/vim-vagrant'
+
+" modeling
 Plug 'aklt/plantuml-syntax'
 
 " web
