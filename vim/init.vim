@@ -42,7 +42,6 @@ set shiftwidth=4
 set softtabstop=4
 
 " display
-color pablo
 syntax on
 
 set number
