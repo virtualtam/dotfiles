@@ -42,10 +42,19 @@ set shiftwidth=4
 set softtabstop=4
 
 " display
+color pablo
 syntax on
-set cursorline
+
 set number
+:hi LineNr       cterm=NONE ctermbg=black ctermfg=NONE
+
+set cursorline
+:hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE
+:hi CursorLineNr cterm=NONE ctermbg=NONE ctermfg=NONE
+
 set wildmenu
+set wildignore+=tags,.hg,.git,.svn,*.pyc,*.spl,*.o,*.out,*.DS_Store,*.class,*.manifest,*~,#*#,%*
+set wildignore+=*.jpg,*.jpeg,*.png,*.gif,*.svg,*.zip
 
 " buffers & windows
 set browsedir=buffer
