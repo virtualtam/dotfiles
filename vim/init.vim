@@ -14,6 +14,9 @@ Plug 'editorconfig/editorconfig-vim' " .editorconfig support
 " scm
 Plug 'airblade/vim-gitgutter'
 
+" compiler
+Plug 'hoaproject/Contributions-Vim-Pp'
+
 " devops
 Plug 'pearofducks/ansible-vim'
 Plug 'robbles/logstash.vim'
