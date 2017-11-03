@@ -9,7 +9,8 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " edition
-Plug 'editorconfig/editorconfig-vim' " .editorconfig support
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'editorconfig/editorconfig-vim'
 
 " scm
 Plug 'airblade/vim-gitgutter'
@@ -29,6 +30,9 @@ Plug 'aklt/plantuml-syntax'
 Plug 'mattn/emmet-vim'
 
 call plug#end()
+
+" explicitly disable backwards vi compatibility
+set nocompatible
 
 " editor behavior
 set textwidth=80
@@ -62,3 +66,7 @@ set wildignore+=*.jpg,*.jpeg,*.png,*.gif,*.svg,*.zip
 set browsedir=buffer
 set splitbelow
 set splitright
+
+" CtrP fuzzy-finder
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMixed'
