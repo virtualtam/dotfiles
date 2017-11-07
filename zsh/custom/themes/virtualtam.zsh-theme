@@ -33,7 +33,7 @@ local python_env=''
 
 
 PROMPT="${top_brace}${user}@${host}( ${current_dir} ) ${git_branch}
-${bot_brace}%B%D{%H:%M:%S}%b ${python_env}${user_arrow} "
+${bot_brace}%B%D{%Y-%m-%d %H:%M:%S}%b ${python_env}${user_arrow} "
 
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 RPS1="%B${return_code}%b"
