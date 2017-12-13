@@ -18,6 +18,9 @@ Plug 'airblade/vim-gitgutter'
 " compiler
 Plug 'hoaproject/Contributions-Vim-Pp'
 
+" dev
+Plug 'fatih/vim-go'
+
 " devops
 Plug 'pearofducks/ansible-vim'
 Plug 'robbles/logstash.vim'
