@@ -54,6 +54,9 @@ set softtabstop=4
 " display
 syntax on
 
+" Keep 10 lines of context
+set scrolloff=10
+
 set number
 :hi LineNr       cterm=NONE ctermbg=black ctermfg=NONE
 
