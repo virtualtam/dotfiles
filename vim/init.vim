@@ -73,3 +73,6 @@ set splitright
 " CtrP fuzzy-finder
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
+
+" Emmet abbreviation expansion
+let g:user_emmet_leader_key='<C-E>'
