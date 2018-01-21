@@ -193,8 +193,8 @@ screen.connect_signal("property::geometry", set_wallpaper)
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
 tags = {
-   names  = { ">_", "www", "mail", "jack", "ardour", "h2", "media" },
-   layout = { layouts[3], layouts[3], layouts[4], layouts[1], layouts[6], layouts[6], layouts[4] }
+   names  = { ">_", "www", "mail", "jack", "media1", "media2", "kodi" },
+   layout = { layouts[3], layouts[3], layouts[4], layouts[1], layouts[4], layouts[4], layouts[3] }
 }
 -- }}}
 
