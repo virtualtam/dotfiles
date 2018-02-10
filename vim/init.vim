@@ -19,6 +19,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'hoaproject/Contributions-Vim-Pp'
 
 " dev
+Plug 'vim-scripts/django.vim'
 Plug 'fatih/vim-go'
 
 " devops
