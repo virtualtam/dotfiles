@@ -494,9 +494,23 @@ awful.rules.rules = {
       }, properties = { titlebars_enabled = true }
     },
 
-    -- Set Firefox to always map on the tag named "2" on screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { screen = 1, tag = "2" } },
+    -- Application rules
+    { rule = { class = "Cadence" },
+      properties = { screen = 1, tag = "jack" }
+    },
+    { rule = { class = "Firefox" },
+      properties = { screen = 1, tag = "www" },
+      callback = awful.titlebar.hide
+    },
+    { rule = { class = "Steam" },
+      properties = { screen = 1, tag = "media2" }
+    },
+    { rule = { class = "Thunderbird" },
+      properties = { screen = 1, tag = "mail", fullscreen = true }
+    },
+    { rule = { class = "URxvt" },
+      properties = { size_hints_honor = false, fullscreen = true }
+    },
 }
 -- }}}
 
