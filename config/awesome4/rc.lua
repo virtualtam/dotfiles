@@ -353,7 +353,10 @@ globalkeys = awful.util.table.join(
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+              {description = "show the menubar", group = "launcher"}),
+
+    -- Screenshots
+    awful.key({}, "Print", function() awful.util.spawn_with_shell("flameshot gui") end)
 )
 
 clientkeys = awful.util.table.join(
