@@ -1,7 +1,10 @@
 [include]
     path = alias
     path = color
+    path = pager
+
 [push]
     default = simple
+
 [http "https://gopkg.in"]
-	followRedirects = true
+       followRedirects = true
