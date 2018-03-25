@@ -1,5 +1,6 @@
 [options]
-font = Noto Mono 16
+font = Hack Regular 12
+#font = Noto Mono 16
 #font = Fira Mono 13
 #font = Ubuntu Mono 14
 allow_bold = on
