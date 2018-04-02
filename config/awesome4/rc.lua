@@ -508,6 +508,9 @@ awful.rules.rules = {
     { rule = { class = "Steam" },
       properties = { screen = 1, tag = "media2" }
     },
+    { rule = { class = "Termite" },
+      properties = { screen = 1, fullscreen = true }
+    },
     { rule = { class = "Thunderbird" },
       properties = { screen = 1, tag = "mail", fullscreen = true }
     },
