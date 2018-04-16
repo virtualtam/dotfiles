@@ -1,8 +1,10 @@
 [alias]
 br = branch
+ba = branch -a
 bd = branch -d
 bdd = branch -D
 bv = branch -vv
+bva = branch -vv -a
 
 co = checkout
 cob = checkout -b
@@ -41,6 +43,7 @@ my = !git ll --author=$USER --since='9am yesterday' --all
 p = pull
 pp = pull --prune
 pum = pull upstream master
+psu = pull --set-upstream
 
 re = rebase
 rem = rebase master
@@ -69,6 +72,7 @@ sma = submodule add
 smi = submodule init
 sms = submodule sync
 smu = submodule update
+smui = submodule update --init
 sf = submodule foreach
 
 v = review
