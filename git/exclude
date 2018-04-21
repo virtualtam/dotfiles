@@ -1,11 +1,24 @@
+# Editor swap files
 *~
-*.pyc
-*.iml
 *.swp
-.idea
 .ac-php-conf.json
+
+# JetBrains IDEs
+*.iml
+.idea
+
+# Eclipse
+.settings
+
+# Python
+*.pyc
+
+# Ctags / GNU Global
 GPATH
 GRTAGS
 GSYMS
 GTAGS
 TAGS
+
+# Arch Linux packaging
+*.pkg.tar.xz
