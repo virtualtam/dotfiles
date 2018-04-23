@@ -8,6 +8,9 @@ endif
 " vim-plug
 call plug#begin('~/.vim/plugged')
 
+" solarized color scheme
+Plug 'lifepillar/vim-solarized8'
+
 " edition
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -54,16 +57,23 @@ set softtabstop=4
 
 " display
 syntax on
+set background=dark
+
+" enable true color support
+if &term =~? 'xterm-\(256color\|termite\)'
+    set termguicolors
+    colorscheme solarized8_flat
+endif
 
 " Keep 10 lines of context
 set scrolloff=10
 
 set number
-:hi LineNr       cterm=NONE ctermbg=black ctermfg=NONE
+:hi LineNr       cterm=NONE ctermbg=black ctermfg=NONE guibg=#073642 guifg=NONE
 
 set cursorline
-:hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE
-:hi CursorLineNr cterm=NONE ctermbg=NONE ctermfg=NONE
+:hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=#073642 guifg=NONE
+:hi CursorLineNr cterm=NONE ctermbg=NONE  ctermfg=NONE guibg=#002b36 guifg=NONE
 
 set wildmenu
 set wildignore+=tags,.hg,.git,.svn,*.pyc,*.spl,*.o,*.out,*.DS_Store,*.class,*.manifest,*~,#*#,%*
