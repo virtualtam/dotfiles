@@ -14,14 +14,18 @@ They're revolving around the following elements:
 * `awesomewm`_ tiling window manager
 * `git`_ distributed SCM
 * `moc`_ player
-* `solarized`_ dark color theme
 * `mcabber`_ XMPP client
+* `solarized`_ dark color theme
 * `termite`_ terminal emulator
 * `tmux`_ terminal multiplexer
 * `vim`_ text editor
 * `zathura`_ document viewer
 * `zsh`_ shell
 * some extra stuff
+
+Additional resources:
+
+- `Theming <Theming.rst>`_
 
 Un(used|maintained)
 ~~~~~~~~~~~~~~~~~~~
