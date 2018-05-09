@@ -99,5 +99,4 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 let g:user_emmet_leader_key='<C-E>'
 
 " nagios, icinga, shinken
-"au BufRead,BufNewFile */*monitoring*/*/*.cfg set filetype=nagios
 au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
