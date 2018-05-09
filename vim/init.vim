@@ -26,9 +26,10 @@ Plug 'vim-scripts/django.vim'
 Plug 'fatih/vim-go'
 
 " devops
-Plug 'pearofducks/ansible-vim'
-Plug 'robbles/logstash.vim'
-Plug 'hashivim/vim-vagrant'
+Plug 'pearofducks/ansible-vim'  " ansible yaml and hosts
+Plug 'robbles/logstash.vim'     " logstash pipelines
+Plug 'crazy-canux/nagios.vim'   " nagios, icinga, shinken
+Plug 'hashivim/vim-vagrant'     " vagrant, ruby
 
 " modeling
 Plug 'aklt/plantuml-syntax'
@@ -65,7 +66,7 @@ if &term =~? 'xterm-\(256color\|termite\)'
     colorscheme solarized8_flat
 endif
 
-" Keep 10 lines of context
+" keep 10 lines of context
 set scrolloff=10
 
 set number
@@ -84,15 +85,19 @@ set browsedir=buffer
 set splitbelow
 set splitright
 
-" split navigations
+" split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" CtrP fuzzy-finder
+" CtrlP fuzzy-finder
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 
 " Emmet abbreviation expansion
 let g:user_emmet_leader_key='<C-E>'
+
+" nagios, icinga, shinken
+"au BufRead,BufNewFile */*monitoring*/*/*.cfg set filetype=nagios
+au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
