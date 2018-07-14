@@ -23,7 +23,7 @@ Plug 'hoaproject/Contributions-Vim-Pp'
 
 " dev
 Plug 'vim-scripts/django.vim'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " devops
 Plug 'pearofducks/ansible-vim'  " ansible yaml and hosts
