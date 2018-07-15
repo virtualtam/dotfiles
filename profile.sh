@@ -6,11 +6,16 @@ elif [ -n "${ZSH_VERSION}" ]; then
     [ -f "${HOME}/.zshrc" ] && . "${HOME}/.zshrc"
 fi
 
+# User binaries
 [ -d "${HOME}/bin" ] && PATH="${HOME}/bin:${PATH}"
-[ -d "${HOME}/.node_modules/bin" ] && PATH="${HOME}/.node_modules/bin:${PATH}"
 
 # Qt5 theme management
 export QT_QPA_PLATFORMTHEME="qt5ct"
+
+# Go
+export GOPATH="${HOME}/.golang"
+export GOBIN="${GOPATH}/bin"
+[ -d "${GOBIN}" ] && PATH="${GOBIN}:${PATH}"
 
 # Java
 export JAVA_FONTS='/usr/share/fonts/TTF'
@@ -19,8 +24,6 @@ export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'\
 ' -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
 ' -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 
-# Go
-export GOPATH="${HOME}/.golang"
-export GOBIN="${GOPATH}/bin"
-
-[ -d "${GOBIN}" ] && PATH="${GOBIN}:${PATH}"
+# NodeJS
+[ -d "${HOME}/.node_modules/bin" ] && PATH="${HOME}/.node_modules/bin:${PATH}"
+[ -f /usr/share/nvm/init-nvm.sh ] && source /usr/share/nvm/init-nvm.sh
