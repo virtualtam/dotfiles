@@ -1,7 +1,7 @@
 #!/bin/zsh
 # Docker helpers
 #
-# See:
+# Formatting:
 # - https://docs.docker.com/config/formatting/
 # - https://docs.docker.com/engine/reference/commandline/images/
 # - https://docs.docker.com/engine/reference/commandline/inspect/
@@ -9,6 +9,14 @@
 # - https://www.katacoda.com/courses/docker/formatting-ps-output
 # - https://container42.com/2016/03/27/docker-quicktip-7-psformat/
 # - https://stackoverflow.com/questions/17157721/how-to-get-a-docker-containers-ip-address-from-the-host
+#
+# Registry:
+# - https://docs.docker.com/registry/spec/api/
+# - https://stackoverflow.com/questions/24481564/how-can-i-find-docker-image-with-specific-tag-in-docker-registry-in-docker-comma
+
+# Docker Hub - Public image registry
+DOCKER_HUB_URL=https://registry.hub.docker.com
+DOCKER_HUB_REPO_URL=${DOCKER_HUB_URL}/v2/repositories
 
 # Formatting options
 DOCKER_IMG_FMT='table {{.Repository}}\t{{.Tag}}\t{{.Size}}'
@@ -36,6 +44,17 @@ function dk() {
             ;;
         ps)
             docker ps --format ${DOCKER_PS_FMT} $@
+            ;;
+        search-tags)
+            for image in $@
+            do
+                echo "Searching tags for image: ${image}"
+                [[ ! -z "${image##*/*}" ]] && image="library/${image}"
+                curl -s -S "${DOCKER_HUB_REPO_URL}/${image}/tags/" \
+                    | jq -c -M -r '."results"[]["name"]' \
+                    | sort -V
+                echo
+            done
             ;;
         *)
             docker ${command} $@
