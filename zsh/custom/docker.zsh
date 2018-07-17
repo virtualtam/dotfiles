@@ -6,6 +6,7 @@
 # - https://docs.docker.com/engine/reference/commandline/images/
 # - https://docs.docker.com/engine/reference/commandline/inspect/
 # - https://docs.docker.com/engine/reference/commandline/ps/
+# - https://docs.docker.com/engine/reference/commandline/search/
 # - https://www.katacoda.com/courses/docker/formatting-ps-output
 # - https://container42.com/2016/03/27/docker-quicktip-7-psformat/
 # - https://stackoverflow.com/questions/17157721/how-to-get-a-docker-containers-ip-address-from-the-host
@@ -24,6 +25,7 @@ DOCKER_IP_FMT='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
 DOCKER_MAC_FMT='{{range .NetworkSettings.Networks}}{{.MacAddress}}{{end}}'
 DOCKER_PORT_FMT='{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}'
 DOCKER_PS_FMT='table {{.Names}}\t{{.Image}}\t{{.Ports}}'
+DOCKER_SEARCH_FMT='table {{.Name}}\t{{printf "%.40s" .Description}}\t{{.IsOfficial}}\t{{.StarCount}}'
 
 function dk() {
     command="${1}"
@@ -45,6 +47,9 @@ function dk() {
         ps)
             docker ps --format ${DOCKER_PS_FMT} $@
             ;;
+        search)
+            docker search --limit 5 --filter stars=1 --format ${DOCKER_SEARCH_FMT} $@
+            ;;
         search-tags)
             for image in $@
             do
@@ -55,6 +60,9 @@ function dk() {
                     | sort -V
                 echo
             done
+            ;;
+        x)
+            docker exec -ti $@
             ;;
         *)
             docker ${command} $@
