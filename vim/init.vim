@@ -29,6 +29,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'pearofducks/ansible-vim'  " ansible yaml and hosts
 Plug 'robbles/logstash.vim'     " logstash pipelines
 Plug 'crazy-canux/nagios.vim'   " nagios, icinga, shinken
+Plug 'chr4/nginx.vim'           " nginx
 Plug 'hashivim/vim-vagrant'     " vagrant, ruby
 
 " modeling
