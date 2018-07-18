@@ -26,4 +26,4 @@ export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'\
 
 # NodeJS
 [ -d "${HOME}/.node_modules/bin" ] && PATH="${HOME}/.node_modules/bin:${PATH}"
-[ -f /usr/share/nvm/init-nvm.sh ] && source /usr/share/nvm/init-nvm.sh
+[ -f /usr/share/nvm/init-nvm.sh ] && . /usr/share/nvm/init-nvm.sh
