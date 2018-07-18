@@ -7,9 +7,11 @@ git
 .. code-block:: ini
 
    [user]
-       email = user@domain.tld
-       name = Us3r
+   email = user@domain.tld
+   name = Us3r
+
    [core]
-       excludesfile = ~/<dotfiles>/git/exclude
+   excludesfile = ~/<dotfiles>/git/exclude
+
    [include]
-       path = ~/<dotfiles>/git/main
+   path = ~/<dotfiles>/git/main
