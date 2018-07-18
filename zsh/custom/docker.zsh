@@ -61,6 +61,16 @@ function dk() {
                 echo
             done
             ;;
+        tail)
+            docker logs --tail=100 -f $@
+            ;;
+        prune)
+            for component in container image network volume
+            do
+                echo "== Pruning ${component}s =="
+                docker ${component} prune --force
+            done
+            ;;
         x)
             docker exec -ti $@
             ;;
