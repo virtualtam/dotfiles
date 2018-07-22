@@ -21,9 +21,9 @@ DOCKER_HUB_REPO_URL=${DOCKER_HUB_URL}/v2/repositories
 
 # Formatting options
 DOCKER_IMG_FMT='table {{.Repository}}\t{{.Tag}}\t{{.Size}}'
-DOCKER_IP_FMT='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
-DOCKER_MAC_FMT='{{range .NetworkSettings.Networks}}{{.MacAddress}}{{end}}'
-DOCKER_PORT_FMT='{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}'
+DOCKER_IP_FMT='{{range .NetworkSettings.Networks}}{{println .IPAddress}}{{end}}'
+DOCKER_MAC_FMT='{{range .NetworkSettings.Networks}}{{println .MacAddress}}{{end}}'
+DOCKER_PORT_FMT='{{range $p, $conf := .NetworkSettings.Ports}}{{printf "%s -> %s\n" $p (index $conf 0).HostPort}}{{end}}'
 DOCKER_PS_FMT='table {{.Names}}\t{{.Image}}\t{{.Ports}}'
 DOCKER_SEARCH_FMT='table {{.Name}}\t{{printf "%.40s" .Description}}\t{{.IsOfficial}}\t{{.StarCount}}'
 
