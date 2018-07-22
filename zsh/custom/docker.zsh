@@ -19,36 +19,36 @@
 DOCKER_HUB_URL=https://registry.hub.docker.com
 DOCKER_HUB_REPO_URL=${DOCKER_HUB_URL}/v2/repositories
 
-# Formatting options
-DOCKER_IMG_FMT='table {{.Repository}}\t{{.Tag}}\t{{.Size}}'
-DOCKER_IP_FMT='{{range .NetworkSettings.Networks}}{{println .IPAddress}}{{end}}'
-DOCKER_MAC_FMT='{{range .NetworkSettings.Networks}}{{println .MacAddress}}{{end}}'
-DOCKER_PORT_FMT='{{range $p, $conf := .NetworkSettings.Ports}}{{printf "%s -> %s\n" $p (index $conf 0).HostPort}}{{end}}'
-DOCKER_PS_FMT='table {{.Names}}\t{{.Image}}\t{{.Ports}}'
-DOCKER_SEARCH_FMT='table {{.Name}}\t{{printf "%.40s" .Description}}\t{{.IsOfficial}}\t{{.StarCount}}'
 
 function dk() {
-    command="${1}"
+    local fmt=""
+    local cmd="${1}"
     shift
 
-    case "${command}" in
+    case "${cmd}" in
         img)
-            docker images --format ${DOCKER_IMG_FMT}
+            fmt='table {{.Repository}}\t{{.Tag}}\t{{.Size}}'
+            docker images --format ${fmt}
             ;;
         ip)
-            docker inspect --format ${DOCKER_IP_FMT} $@
+            fmt='{{range .NetworkSettings.Networks}}{{println .IPAddress}}{{end}}'
+            docker inspect --format ${fmt} $@
             ;;
         mac)
-            docker inspect --format ${DOCKER_MAC_FMT} $@
+            fmt='{{range .NetworkSettings.Networks}}{{println .MacAddress}}{{end}}'
+            docker inspect --format ${fmt} $@
             ;;
         port)
-            docker inspect --format ${DOCKER_PORT_FMT} $@
+            fmt='{{range $p, $conf := .NetworkSettings.Ports}}{{printf "%s -> %s\n" $p (index $conf 0).HostPort}}{{end}}'
+            docker inspect --format ${fmt} $@
             ;;
         ps)
-            docker ps --format ${DOCKER_PS_FMT} $@
+            fmt='table {{.Names}}\t{{.Image}}\t{{.Ports}}'
+            docker ps --format ${fmt} $@
             ;;
         search)
-            docker search --limit 5 --filter stars=1 --format ${DOCKER_SEARCH_FMT} $@
+            fmt='table {{.Name}}\t{{printf "%.40s" .Description}}\t{{.IsOfficial}}\t{{.StarCount}}'
+            docker search --limit 5 --filter stars=1 --format ${fmt} $@
             ;;
         search-tags)
             for image in $@
@@ -75,7 +75,35 @@ function dk() {
             docker exec -ti $@
             ;;
         *)
-            docker ${command} $@
+            docker ${cmd} $@
             ;;
     esac
+}
+
+function dkj() {
+    local cmd=""
+    local jq_filter=""
+
+    if [[ "$#" -gt 1 ]]
+    then
+        cmd="${1}"
+        shift
+    fi
+
+    case "${cmd}" in
+        labels)
+            jq_filter=".[0].Config.Labels"
+            ;;
+        mounts)
+            jq_filter=".[0].Mounts"
+            ;;
+        net)
+            jq_filter=".[0].NetworkSettings.Networks"
+            ;;
+        *)
+            jq_filter=".[0]"
+            ;;
+    esac
+
+    docker inspect $@ | jq ${jq_filter}
 }
