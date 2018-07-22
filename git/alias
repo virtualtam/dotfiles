@@ -8,6 +8,7 @@ bva = branch -vv -a
 
 co = checkout
 cob = checkout -b
+cod = checkout dev
 com = checkout master
 
 ca = commit -a --amend
@@ -45,11 +46,14 @@ pp = pull --prune
 pum = pull upstream master
 
 psu = push --set-upstream
+puf = push --force
 
 re = rebase
+red = rebase dev
 rem = rebase master
 rbm = "!f(){ git checkout master && git pull && git checkout ${1} && git rebase -i master; };f"
 ri = rebase -i
+rid = rebase -i dev
 rim = rebase -i master
 
 rt = remote
