@@ -13,6 +13,7 @@ Plug 'lifepillar/vim-solarized8'
 
 " edition
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/vim-easy-align'
 Plug 'editorconfig/editorconfig-vim'
 
 " scm
@@ -91,6 +92,12 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " CtrlP fuzzy-finder
 let g:ctrlp_map = '<c-p>'
