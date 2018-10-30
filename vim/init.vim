@@ -93,10 +93,13 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Start interactive EasyAlign in visual mode (e.g. vipga)
+" Ansible: Reset indentation after 2 newlines in insert-mode
+let g:ansible_unindent_after_newline = 1
+
+" EasyAlign: Start interactively in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+" EasyAlign: Start interactively for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
 " CtrlP fuzzy-finder
