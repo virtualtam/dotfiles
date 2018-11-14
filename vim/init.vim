@@ -113,3 +113,7 @@ let g:user_emmet_leader_key='<C-E>'
 
 " nagios, icinga, shinken
 au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
+
+" Terraform
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
