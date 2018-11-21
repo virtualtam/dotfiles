@@ -1,7 +1,6 @@
 # Display
 set adjust-open "width"
 set font "DejaVu Sans Mono normal 9"
-set recolor true
 
 # Zenburn theme
 set default-bg "#1f1f1f"
@@ -10,5 +9,8 @@ set inputbar-bg "#709080"
 set inputbar-fg "#dcdccc"
 set statusbar-bg "#1f1f1f"
 set statusbar-fg "#709080"
+
+# Whether to recolor pages
+set recolor false
 set recolor-darkcolor "#dcdccc"
 set recolor-lightcolor "#1f1f1f"
