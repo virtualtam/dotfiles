@@ -15,6 +15,8 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " scm
 Plug 'airblade/vim-gitgutter'
@@ -63,6 +65,10 @@ set softtabstop=4
 " display
 syntax on
 set background=dark
+
+let g:airline_theme='base16'
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
 
 " enable true color support
 if &term =~? 'xterm-\(256color\|termite\)'
