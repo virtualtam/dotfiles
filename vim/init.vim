@@ -19,7 +19,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " scm
-Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 
 " compiler
 Plug 'hoaproject/Contributions-Vim-Pp'
@@ -125,6 +125,9 @@ let g:user_emmet_leader_key='<C-E>'
 
 " nagios, icinga, shinken
 au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
+
+" Signify
+let g:signify_vcs_list = [ 'git', 'hg' ]
 
 " Terraform
 let g:terraform_align=1
