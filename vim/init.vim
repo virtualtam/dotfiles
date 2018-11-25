@@ -19,6 +19,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " scm
+Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 
 " compiler
