@@ -101,6 +101,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" tab navigation
+nnoremap <C-right> :tabnext<CR>
+nnoremap <C-left>  :tabprevious<CR>
+inoremap <C-right> <Esc>:tabnext<CR>
+inoremap <C-left>  <Esc>:tabprevious<CR>
+
 " Ansible: Reset indentation after 2 newlines in insert-mode
 let g:ansible_unindent_after_newline = 1
 
