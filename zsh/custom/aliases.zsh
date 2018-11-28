@@ -11,6 +11,10 @@ function mcd() {
     cd ${1}
 }
 
+# infrastructure
+alias vg='vagrant'
+alias tf='terraform'
+
 # tree
 alias tl='tree -ph'
 alias ta='tree -pha'
