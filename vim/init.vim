@@ -8,8 +8,10 @@ endif
 " vim-plug
 call plug#begin('~/.vim/plugged')
 
-" solarized color scheme
+" interface and themes
 Plug 'lifepillar/vim-solarized8'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " edition
 Plug 'ctrlpvim/ctrlp.vim'
@@ -17,8 +19,6 @@ Plug 'junegunn/vim-easy-align'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 
 " scm
 Plug 'tpope/vim-fugitive'
