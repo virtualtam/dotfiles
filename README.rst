@@ -11,10 +11,9 @@ spent editing stuff from the command-line ;-)
 
 They're revolving around the following elements:
 
-* `awesomewm`_ tiling window manager
 * `git`_ distributed SCM
+* `i3`_ tiling window manager
 * `moc`_ player
-* `mcabber`_ XMPP client
 * `solarized`_ dark color theme
 * `termite`_ terminal emulator
 * `tmux`_ terminal multiplexer
@@ -30,8 +29,10 @@ Additional resources:
 Un(used|maintained)
 ~~~~~~~~~~~~~~~~~~~
 
+* `awesomewm`_ tiling window manager
 * `bash`_, the good ol' shell
 * `emacs`_ text editor (and many other things)
+* `mcabber`_ XMPP client
 * `mercurial`_ distributed SCM
 * `rxvt-unicode`_ terminal emulator
 
@@ -39,6 +40,7 @@ Un(used|maintained)
 .. _bash: https://www.gnu.org/software/bash/
 .. _emacs: https://www.gnu.org/software/emacs/
 .. _git: http://git-scm.com/
+.. _i3: https://i3wm.org
 .. _mcabber: http://mcabber.com/
 .. _mercurial: https://www.mercurial-scm.org/
 .. _moc: http://moc.daper.net/
