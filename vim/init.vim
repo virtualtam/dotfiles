@@ -31,8 +31,9 @@ Plug 'hoaproject/Contributions-Vim-Pp'
 Plug 'vim-scripts/django.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
-" devops
+" system
 Plug 'pearofducks/ansible-vim'  " ansible yaml and hosts
+Plug 'vim-scripts/ferm.vim'     " ferm firewall
 Plug 'robbles/logstash.vim'     " logstash pipelines
 Plug 'crazy-canux/nagios.vim'   " nagios, icinga, shinken
 Plug 'chr4/nginx.vim'           " nginx
