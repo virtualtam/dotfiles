@@ -143,6 +143,14 @@ bindsym $mod+Shift+underscore move container to workspace $ws8
 bindsym $mod+Shift+ccedilla   move container to workspace $ws9
 bindsym $mod+Shift+agrave     move container to workspace $ws10
 
+# workspace assignments
+assign [class="Firefox"]     2
+assign [class="Thunderbird"] 3
+assign [class="Cadence"]     4
+assign [class="Thunar"]      5
+assign [class="Steam"]       6
+assign [class="Kodi"]        7
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
