@@ -1,6 +1,15 @@
 #!/bin/zsh
 # ZSH Theme
 
+# If this parameter is nonzero, the shell will receive an ALRM signal if a
+# command is not entered within the specified number of seconds after issuing
+# a prompt
+TMOUT=1
+
+TRAPALRM() {
+    zle reset-prompt
+}
+
 case "${TERM}" in
     screen | rxvt-unicode* | xterm*)
         # fancy unicode
@@ -9,7 +18,7 @@ case "${TERM}" in
         local arrow='≻'
         ;;
     *)
-        # simple terms
+        # simple terms (for simple ricks)
         local top_brace=''
         local bot_brace=''
         local arrow='>'
