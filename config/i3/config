@@ -88,6 +88,12 @@ bindsym $mod+s layout stacking
 bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
+# default workspace layout
+workspace_layout tabbed
+
+# hide borders adjacent to the screen edge
+hide_edge_borders smart
+
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
