@@ -41,7 +41,7 @@ bindsym Print exec flameshot gui
 bindsym Ctrl+$alt+l exec light-locker-command -l
 
 # kill focused window
-bindsym $mod+Shift+a kill
+bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
