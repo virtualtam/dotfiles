@@ -5,7 +5,7 @@
 # If this parameter is nonzero, the shell will receive an ALRM signal if a
 # command is not entered within the specified number of seconds after issuing
 # a prompt
-TMOUT=1
+TMOUT=10
 
 TRAPALRM() {
     zle reset-prompt
