@@ -114,18 +114,21 @@ inoremap <C-left>  <Esc>:tabprevious<CR>
 " Ansible: Reset indentation after 2 newlines in insert-mode
 let g:ansible_unindent_after_newline = 1
 
+" CtrlP fuzzy-finder
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPMixed'
+
 " EasyAlign: Start interactively in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 
 " EasyAlign: Start interactively for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-" CtrlP fuzzy-finder
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPMixed'
-
 " Emmet abbreviation expansion
 let g:user_emmet_leader_key='<C-E>'
+
+" Go
+let g:go_version_warning = 0
 
 " nagios, icinga, shinken
 au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
