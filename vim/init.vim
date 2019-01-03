@@ -19,6 +19,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 
 " scm
 Plug 'tpope/vim-fugitive'
@@ -149,3 +150,7 @@ map <F2> :TagbarToggle<CR>
 " Terraform
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
+
+" YouCompleteMe
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
