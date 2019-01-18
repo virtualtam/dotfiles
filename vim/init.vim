@@ -15,6 +15,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 " edition
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'junegunn/vim-easy-align'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
