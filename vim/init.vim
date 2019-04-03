@@ -135,7 +135,30 @@ nmap ga <Plug>(EasyAlign)
 let g:user_emmet_leader_key='<C-E>'
 
 " Go
+" See the tutorial at https://github.com/fatih/vim-go-tutorial
 let g:go_version_warning = 0
+" let g:go_auto_sameids = 1
+let g:go_auto_type_info = 1
+let g:go_fmt_command = "goimports"
+
+let g:go_highlight_types = 1
+" let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+" let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+" let g:go_highlight_extra_types = 1
+
+au BufRead,BufNewFile *.gohtml set filetype=gohtmltmpl
+
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
+autocmd FileType go nmap <Leader>i <Plug>(go-info)
+autocmd FileType go nmap <leader>t  <Plug>(go-test)
+autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
+autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
+autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
+autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 
 " nagios, icinga, shinken
 au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
