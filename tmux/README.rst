@@ -25,3 +25,4 @@ Threads
   <https://superuser.com/questions/249659/how-to-detach-a-tmux-session-that-itself-already-in-a-tmux>`_
 - `tmux split panes not rendering properly in Conemu
   <https://superuser.com/questions/834754/tmux-split-panes-not-rendering-properly-in-conemu>`_
+- `Tmux 2.8.X to 2.9.X migration <https://github.com/tmux/tmux/issues/1689>`_
