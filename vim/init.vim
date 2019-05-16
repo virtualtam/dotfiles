@@ -37,6 +37,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " system
 Plug 'pearofducks/ansible-vim'  " ansible yaml and hosts
 Plug 'vim-scripts/ferm.vim'     " ferm firewall
+Plug 'infobip/haproxy.vim'      " HAProxy
 Plug 'robbles/logstash.vim'     " logstash pipelines
 Plug 'tmatilai/vim-monit'       " monit
 Plug 'crazy-canux/nagios.vim'   " nagios, icinga, shinken
