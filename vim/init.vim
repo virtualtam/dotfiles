@@ -33,6 +33,7 @@ Plug 'hoaproject/Contributions-Vim-Pp'
 Plug 'vim-scripts/django.vim'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'seeamkhan/robotframework-vim'
 
 " system
 Plug 'pearofducks/ansible-vim'  " ansible yaml and hosts
