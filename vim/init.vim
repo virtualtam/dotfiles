@@ -30,9 +30,11 @@ Plug 'mhinz/vim-signify'
 Plug 'hoaproject/Contributions-Vim-Pp'
 
 " dev
-Plug 'vim-scripts/django.vim'
-Plug 'vim-scripts/indentpython.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'python/black'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plug 'vim-scripts/django.vim'
+" Plug 'vim-scripts/indentpython.vim'
 Plug 'seeamkhan/robotframework-vim'
 
 " system
@@ -170,6 +172,9 @@ au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
 map <F1> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeIgnore=['\.pyc$', '\~$']
+
+" Python
+let g:pymode_python = 'python3'
 
 " Signify
 let g:signify_vcs_list = [ 'git', 'hg' ]
