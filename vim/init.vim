@@ -31,6 +31,10 @@ Plug 'hoaproject/Contributions-Vim-Pp'
 
 " dev
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+
 Plug 'python/black'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/django.vim'
@@ -163,6 +167,9 @@ autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
 autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
 autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
 autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
+
+" Javascript / JSX / Typescript
+let g:jsx_ext_required = 1
 
 " nagios, icinga, shinken
 au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
