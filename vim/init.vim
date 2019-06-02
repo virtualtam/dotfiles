@@ -34,7 +34,6 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'python/black'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/django.vim'
-" Plug 'vim-scripts/indentpython.vim'
 Plug 'seeamkhan/robotframework-vim'
 
 " system
