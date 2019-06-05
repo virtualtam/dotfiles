@@ -34,6 +34,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'posva/vim-vue'
 
 Plug 'python/black'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
