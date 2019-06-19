@@ -18,10 +18,13 @@ cs = commit -a -s
 csm = commit -a -s -m
 
 d = diff
-dm = diff master
 ds = diff --stat
-dsm = diff --stat master
 dw = diff --word-diff=color
+dh = diff HEAD
+dsh = diff --stat HEAD
+dwh = diff --word-diff=color HEAD
+dm = diff master
+dsm = diff --stat master
 dwm = diff --word-diff=color master
 
 f = fetch
