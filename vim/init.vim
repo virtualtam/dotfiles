@@ -45,6 +45,7 @@ Plug 'seeamkhan/robotframework-vim'
 Plug 'pearofducks/ansible-vim'  " ansible yaml and hosts
 Plug 'vim-scripts/ferm.vim'     " ferm firewall
 Plug 'infobip/haproxy.vim'      " HAProxy
+Plug 'moon-musick/vim-logrotate'
 Plug 'robbles/logstash.vim'     " logstash pipelines
 Plug 'tmatilai/vim-monit'       " monit
 Plug 'crazy-canux/nagios.vim'   " nagios, icinga, shinken
