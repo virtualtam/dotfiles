@@ -162,11 +162,13 @@ let g:go_highlight_operators = 1
 au BufRead,BufNewFile *.gohtml set filetype=gohtmltmpl
 
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
-autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>b <Plug>(go-build)
 autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
 autocmd FileType go nmap <Leader>i <Plug>(go-info)
-autocmd FileType go nmap <leader>t  <Plug>(go-test)
-autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
+autocmd FileType go nmap <Leader>r <Plug>(go-run)
+autocmd FileType go nmap <leader>t <Plug>(go-test)
+autocmd FileType go nmap <leader>v <Plug>(go-vet)
+autocmd Filetype go command! -bang A  call go#alternate#Switch(<bang>0, 'edit')
 autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
 autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
 autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
