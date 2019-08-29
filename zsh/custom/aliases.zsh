@@ -15,6 +15,9 @@ function mcd() {
 alias vg='vagrant'
 alias tf='terraform'
 
+# media
+alias ydl='youtube-dl'
+
 # tree
 alias tl='tree -ph'
 alias ta='tree -pha'
