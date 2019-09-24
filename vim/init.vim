@@ -42,7 +42,7 @@ Plug 'vim-scripts/django.vim'
 Plug 'seeamkhan/robotframework-vim'
 
 " doc
-Plug 'jszakmeister/rst2ctags'
+" Plug 'jszakmeister/rst2ctags'
 
 " system
 Plug 'pearofducks/ansible-vim'  " ansible yaml and hosts
@@ -192,20 +192,20 @@ let g:pymode_python = 'python3'
 
 " reStructuredText
 " Add support for reStructuredText files in tagbar.
-let g:tagbar_type_rst = {
-    \ 'ctagstype': 'rst',
-    \ 'ctagsbin' : '~/.vim/plugged/rst2ctags/rst2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes --sro=»',
-    \ 'kinds' : [
-        \ 's:sections',
-        \ 'i:images'
-    \ ],
-    \ 'sro' : '»',
-    \ 'kind2scope' : {
-        \ 's' : 'section',
-    \ },
-    \ 'sort': 0,
-\ }
+" let g:tagbar_type_rst = {
+"     \ 'ctagstype': 'rst',
+"     \ 'ctagsbin' : '~/.vim/plugged/rst2ctags/rst2ctags.py',
+"     \ 'ctagsargs' : '-f - --sort=yes --sro=»',
+"     \ 'kinds' : [
+"         \ 's:sections',
+"         \ 'i:images'
+"     \ ],
+"     \ 'sro' : '»',
+"     \ 'kind2scope' : {
+"         \ 's' : 'section',
+"     \ },
+"     \ 'sort': 0,
+" \ }
 
 " Signify
 let g:signify_vcs_list = [ 'git', 'hg' ]
