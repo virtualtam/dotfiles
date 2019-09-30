@@ -18,6 +18,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'junegunn/vim-easy-align'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
@@ -62,9 +63,6 @@ Plug 'hashivim/vim-vagrant'     " vagrant, ruby
 
 " modeling
 Plug 'aklt/plantuml-syntax'
-
-" web
-Plug 'mattn/emmet-vim'
 
 call plug#end()
 
