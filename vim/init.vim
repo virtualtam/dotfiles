@@ -39,7 +39,7 @@ Plug 'posva/vim-vue'
 
 Plug 'sophacles/vim-processing'
 
-Plug 'python/black'
+Plug 'psf/black'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/django.vim'
 Plug 'seeamkhan/robotframework-vim'
