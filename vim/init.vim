@@ -60,6 +60,7 @@ Plug 'chr4/nginx.vim'           " nginx
 Plug 'hashivim/vim-packer'      " packer
 Plug 'hashivim/vim-terraform'   " terraform
 Plug 'hashivim/vim-vagrant'     " vagrant, ruby
+Plug 'fgsch/vim-varnish'        " varnish, vcl
 
 " modeling
 Plug 'aklt/plantuml-syntax'
