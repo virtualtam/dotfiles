@@ -42,6 +42,7 @@ Plug 'sophacles/vim-processing'
 Plug 'psf/black'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/django.vim'
+Plug 'raimon49/requirements.txt.vim'
 Plug 'seeamkhan/robotframework-vim'
 
 " doc
