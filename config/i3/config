@@ -145,11 +145,12 @@ bindsym $mod+Shift+agrave     move container to workspace $ws10
 
 # workspace assignments
 assign [class="Firefox"]     2
+assign [class="Slack"]       3
 assign [class="Thunderbird"] 3
-assign [class="Cadence"]     4
 assign [class="Thunar"]      5
 assign [class="Steam"]       6
-assign [class="Kodi"]        7
+assign [class="Cadence"]     8
+assign [class="Kodi"]        9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
