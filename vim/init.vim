@@ -25,6 +25,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 
 " scm
 Plug 'tpope/vim-fugitive'
+Plug 'gisphm/vim-gitignore'
 Plug 'mhinz/vim-signify'
 
 " compiler
@@ -44,6 +45,8 @@ Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/django.vim'
 Plug 'raimon49/requirements.txt.vim'
 Plug 'seeamkhan/robotframework-vim'
+
+Plug 'cespare/vim-toml'
 
 " doc
 " Plug 'jszakmeister/rst2ctags'
