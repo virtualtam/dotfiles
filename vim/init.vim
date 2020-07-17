@@ -54,6 +54,7 @@ Plug 'cespare/vim-toml'
 " system
 Plug 'pearofducks/ansible-vim'  " ansible yaml and hosts
 Plug 'vim-scripts/ferm.vim'     " ferm firewall
+Plug 'itkq/fluentd-vim'         " fluentd, td-agent
 Plug 'infobip/haproxy.vim'      " HAProxy
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'google/vim-jsonnet'       " jsonnet, grafonnet, ksonnet
