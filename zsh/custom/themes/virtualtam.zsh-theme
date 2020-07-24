@@ -26,14 +26,17 @@
 # If this parameter is nonzero, the shell will receive an ALRM signal if a
 # command is not entered within the specified number of seconds after issuing
 # a prompt.
-TMOUT=10
+TMOUT=20
 
 TRAPALRM() {
     # Reset the prompt after ${TMOUT} seconds of inactivity
     #
     # Set TMOUT to a high enough value to avoid breaking ZSH widgets, such as
     # completion, suggestions and history browsing.
-    zle reset-prompt
+    if [[ ! "$WIDGET" =~ "complete" ]]
+    then
+        zle reset-prompt
+    fi
 }
 
 # SCM
