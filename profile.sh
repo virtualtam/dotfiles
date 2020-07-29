@@ -17,6 +17,10 @@ export GOPATH="${HOME}/.golang"
 export GOBIN="${GOPATH}/bin"
 [ -d "${GOBIN}" ] && PATH="${GOBIN}:${PATH}"
 
+# Java / GraalVM
+GRAALVM_HOME=/usr/lib/jvm/java-11-graalvm
+[ -d ${GRAALVM_HOME} ] && export GRAALVM_HOME
+
 # Java
 export JAVA_FONTS='/usr/share/fonts/TTF'
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'\
