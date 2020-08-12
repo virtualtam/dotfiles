@@ -127,13 +127,13 @@ set splitright
 " leader key
 :let mapleader = ","
 
-" split navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
 " tab navigation
+nnoremap <C-H> :tabprevious<CR>
+nnoremap <C-L> :tabnext<CR>
+inoremap <C-H> <Esc>:tabprevious<CR>
+inoremap <C-L> <Esc>:tabnext<CR>
+
+" tab navigation (arrows)
 nnoremap <C-right> :tabnext<CR>
 nnoremap <C-left>  :tabprevious<CR>
 inoremap <C-right> <Esc>:tabnext<CR>
