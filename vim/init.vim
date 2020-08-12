@@ -40,7 +40,7 @@ Plug 'posva/vim-vue'
 
 Plug 'sophacles/vim-processing'
 
-Plug 'psf/black'
+Plug 'psf/black', { 'branch': 'stable' }
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/django.vim'
 Plug 'raimon49/requirements.txt.vim'
