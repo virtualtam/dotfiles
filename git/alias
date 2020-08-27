@@ -31,6 +31,7 @@ f = fetch
 fav = fetch --all -v
 fp = fetch --prune
 fu = fetch --prune upstream
+fetchez-la-vache = "!f() { git fetch --prune 2>&1 | cowsay -w -f small; }; f"
 
 gh  = "!f() { git com && git fetch origin pull/${1}/head:pr-${1} && git checkout pr-${1}; }; f"
 ghu = "!f() { git com && git fetch upstream pull/${1}/head:pr-${1} && git checkout pr-${1}; }; f"
