@@ -32,6 +32,9 @@ Plug 'mhinz/vim-signify'
 Plug 'hoaproject/Contributions-Vim-Pp'
 
 " dev
+Plug 'elixir-editors/vim-elixir'
+Plug 'vim-erlang/vim-erlang-runtime'
+
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'pangloss/vim-javascript'
