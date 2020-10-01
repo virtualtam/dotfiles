@@ -1,5 +1,5 @@
 # Display
-set adjust-open "width"
+set adjust-open "best-fit"
 set font "DejaVu Sans Mono normal 9"
 
 # Zenburn theme
