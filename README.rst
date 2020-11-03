@@ -13,7 +13,7 @@ They're revolving around the following elements:
 
 * `git`_ distributed SCM
 * `i3`_ tiling window manager
-* `moc`_ player
+* `mpd_`_ Music Player Daemon and `ncmpc`_ ncurses client
 * `solarized`_ dark color theme
 * `termite`_ terminal emulator
 * `tmux`_ terminal multiplexer
@@ -34,6 +34,7 @@ Un(used|maintained)
 * `emacs`_ text editor (and many other things)
 * `mcabber`_ XMPP client
 * `mercurial`_ distributed SCM
+* `moc`_ player
 * `rxvt-unicode`_ terminal emulator
 
 .. _awesomewm: https://awesomewm.org/
@@ -44,6 +45,8 @@ Un(used|maintained)
 .. _mcabber: http://mcabber.com/
 .. _mercurial: https://www.mercurial-scm.org/
 .. _moc: http://moc.daper.net/
+.. _mpd: https://www.musicpd.org/
+.. _ncmpc: https://www.musicpd.org/clients/ncmpc/
 .. _rxvt-unicode: http://software.schmorp.de/pkg/rxvt-unicode.html
 .. _solarized: http://ethanschoonover.com/solarized
 .. _termite: https://github.com/thestinger/termite/
