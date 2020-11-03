@@ -99,16 +99,16 @@
 #visible-bitrate = no
 
 ## Change the XTerm title (ncmpc will not restore the title).
-#set-xterm-title = no
+set-xterm-title = yes
 
 ## The format used to for the xterm title when ncmpc is playing.
-#xterm-title-format = "ncmpc: [%name%|[[%artist%|%performer%|%composer%] - ][%title%|%shortfile%]]"
+xterm-title-format = "ncmpc: [%name%|[[%artist%|%performer%|%composer%] - ][%title%|%shortfile%]]"
 
 ## Automatically save the lyrics after receiving them.
 #lyrics-autosave = no
 
 ## The text editor used for editing lyrics.
-#text-editor = emacs
+text-editor = vim
 
 ## Ask before starting an editor.
 #text-editor-ask = yes
@@ -117,7 +117,7 @@
 #chat-prefix = "<user> "
 
 ## Display song length in second column
-#second-column = yes
+second-column = yes
 
 ############## Colors #######################
 ## colors: none, black, red, green, yellow, blue, magenta, cyan, white
@@ -127,46 +127,46 @@
 ## color code. The special color, none, represents the terminals default color.
 
 ## Enable/disable colors.
-#enable-colors = no
+enable-colors = yes
 
 ## Set the background color.
-#color background = black
+color background = none
 
 ## Set the text color for the title row.
-#color title = yellow
+color title = none/black
 
 ## Set the text color for the title row (the bold part).
-#color title-bold = yellow,bold
+color title-bold = none,bold
 
 ## Set the color of the line on the second row.
-#color line = white
+color line = green/none
 
 ## Set the text color used to indicate mpd flags on the second row.
-#color line-flags = white,bold
+color line-flags = none,bold
 
 ## Set the text color in the main area of ncmpc.
-#color list = green
+color list = none
 
 ## Set the bold text color in the main area of ncmpc.
-#color list-bold = green,bold
+color list-bold = green
 
 ## Sets the text color of directories in the browser
-#color browser-directory = yellow
+color browser-directory = none
 
 ## Sets the text color of playlists in the browser
-#color browser-playlist = red
+color browser-playlist = red
 
 ## Set the color of the progress indicator.
-#color progressbar = white
+color progressbar = green/none
 
 ## Set the text color used to display mpd status in the status window.
-#color status-state = yellow,bold
+color status-state = none,bold
 
 ## Set the text color used to display song names in the status window.
-#color status-song  = yellow
+color status-song  = none/black
 
 ## Set the text color used to display time the status window.
-#color status-time  = red
+color status-time  = none
 
 ## Text color used to display alerts in the status window.
 #color alert = red,bold
