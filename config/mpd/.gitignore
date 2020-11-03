@@ -1,0 +1,6 @@
+*.log
+*.sql
+database
+pid
+playlists
+state
