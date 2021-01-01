@@ -3,6 +3,9 @@ path = alias
 path = color
 path = pager
 
+[init]
+defaultBranch= main
+
 [pull]
 ff = only
 
