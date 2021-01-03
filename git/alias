@@ -9,7 +9,8 @@ bva = branch -vv -a
 co = checkout
 cob = checkout -b
 cod = checkout dev
-com = checkout master
+com = checkout main
+comr = checkout master
 
 ca = commit -a --amend
 can = commit -a --amend --no-edit
@@ -23,9 +24,11 @@ dw = diff --word-diff=color
 dh = diff HEAD
 dsh = diff --stat HEAD
 dwh = diff --word-diff=color HEAD
-dm = diff master
-dsm = diff --stat master
-dwm = diff --word-diff=color master
+dm = diff main
+dmr = diff master
+dsm = diff --stat main
+dsmr = diff --stat master
+dwm = diff --word-diff=color main
 
 f = fetch
 fav = fetch --all -v
@@ -47,25 +50,27 @@ my = !git ll --author=$USER --since='9am yesterday' --all
 
 p = pull
 pp = pull --prune
-pum = pull upstream master
+pum = pull upstream main
+pumr = pull upstream master
 
 psu = push --set-upstream
 puf = push --force
 
 re = rebase
 red = rebase dev
-rem = rebase master
-rbm = "!f(){ git checkout master && git pull && git checkout ${1} && git rebase -i master; };f"
+rem = rebase main
+remr = rebase master
+rbm = "!f(){ git checkout main && git pull && git checkout ${1} && git rebase -i main; };f"
 ri = rebase -i
 rid = rebase -i dev
-rim = rebase -i master
+rim = rebase -i main
+rimr = rebase -i master
 recon = rebase --continue
 rehab = rebase --abort
 
 rt = remote
 rv = remote -v
 rh = reset --hard
-rhom = reset --hard origin/master
 
 sh = show
 shst = show --stat
