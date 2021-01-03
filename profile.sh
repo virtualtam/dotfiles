@@ -6,6 +6,10 @@ elif [ -n "${ZSH_VERSION}" ]; then
     [ -f "${HOME}/.zshrc" ] && . "${HOME}/.zshrc"
 fi
 
+# Text Editor
+export EDITOR="vim"
+export VISUAL="${EDITOR}"
+
 # User binaries
 [ -d "${HOME}/bin" ] && PATH="${HOME}/bin:${PATH}"
 
