@@ -12,6 +12,10 @@ cod = checkout dev
 com = checkout main
 comr = checkout master
 
+ch = cherry-pick
+chab = cherry-pick --abort
+chcon = cherry-pick --continue
+
 ca = commit -a --amend
 can = commit -a --amend --no-edit
 ci = commit
