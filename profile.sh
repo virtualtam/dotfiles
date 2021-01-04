@@ -16,6 +16,9 @@ export VISUAL="${EDITOR}"
 # Qt5 theme management
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
+# Erlang / Elixir
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 # Go
 export GOPATH="${HOME}/.golang"
 export GOBIN="${GOPATH}/bin"
