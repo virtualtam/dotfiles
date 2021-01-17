@@ -18,7 +18,6 @@ IEx.configure([
   default_prompt: "%prefix(%counter)>",
   history_size: 50,
   inspect: [
-    charlists: :as_lists,
     pretty: true,
   ],
 ])
