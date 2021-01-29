@@ -5,6 +5,7 @@ bd = branch -d
 bdd = branch -D
 bv = branch -vv
 bva = branch -vv -a
+begone = "! f(){ (git branch -vv | rg --quiet ': gone') && git branch -vv | rg ': gone' | awk '{ print $1 }' | xargs git branch -D; }; f"
 
 co = checkout
 cob = checkout -b
@@ -49,7 +50,7 @@ lg = log --graph --pretty=format:'%C(yellow)%h%Creset%C(yellow)%d%Creset %s %Cgr
 lh = log --graph --pretty=format:'%C(yellow)%H%Creset %Cgreen%cd%Creset %C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --date=iso --color
 ll = log --stat --pretty=format:'%C(yellow)%h %Cgreen%cr%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'
 lo = log --oneline
-lt = "!f(){ git --no-pager lg -10; };f"
+lt = "!f(){ git --no-pager lg -10 $@; };f"
 my = !git ll --author=$USER --since='9am yesterday' --all
 
 p = pull
