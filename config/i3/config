@@ -120,16 +120,16 @@ set $ws9  "9"
 set $ws10 "10"
 
 # switch to workspace (azerty)
-bindsym $mod+ampersand  workspace $ws1
-bindsym $mod+eacute     workspace $ws2
-bindsym $mod+quotedbl   workspace $ws3
-bindsym $mod+apostrophe workspace $ws4
-bindsym $mod+parenleft  workspace $ws5
-bindsym $mod+minus      workspace $ws6
-bindsym $mod+egrave     workspace $ws7
-bindsym $mod+underscore workspace $ws8
-bindsym $mod+ccedilla   workspace $ws9
-bindsym $mod+agrave     workspace $ws10
+#bindsym $mod+ampersand  workspace $ws1
+#bindsym $mod+eacute     workspace $ws2
+#bindsym $mod+quotedbl   workspace $ws3
+#bindsym $mod+apostrophe workspace $ws4
+#bindsym $mod+parenleft  workspace $ws5
+#bindsym $mod+minus      workspace $ws6
+#bindsym $mod+egrave     workspace $ws7
+#bindsym $mod+underscore workspace $ws8
+#bindsym $mod+ccedilla   workspace $ws9
+#bindsym $mod+agrave     workspace $ws10
 
 # switch to workspace (qwerty)
 bindsym $mod+1 workspace $ws1
@@ -144,16 +144,16 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
 # move focused container to workspace (azerty)
-bindsym $mod+Shift+ampersand  move container to workspace $ws1
-bindsym $mod+Shift+eacute     move container to workspace $ws2
-bindsym $mod+Shift+quotedbl   move container to workspace $ws3
-bindsym $mod+Shift+apostrophe move container to workspace $ws4
-bindsym $mod+Shift+parenleft  move container to workspace $ws5
-bindsym $mod+Shift+minus      move container to workspace $ws6
-bindsym $mod+Shift+egrave     move container to workspace $ws7
-bindsym $mod+Shift+underscore move container to workspace $ws8
-bindsym $mod+Shift+ccedilla   move container to workspace $ws9
-bindsym $mod+Shift+agrave     move container to workspace $ws10
+#bindsym $mod+Shift+ampersand  move container to workspace $ws1
+#bindsym $mod+Shift+eacute     move container to workspace $ws2
+#bindsym $mod+Shift+quotedbl   move container to workspace $ws3
+#bindsym $mod+Shift+apostrophe move container to workspace $ws4
+#bindsym $mod+Shift+parenleft  move container to workspace $ws5
+#bindsym $mod+Shift+minus      move container to workspace $ws6
+#bindsym $mod+Shift+egrave     move container to workspace $ws7
+#bindsym $mod+Shift+underscore move container to workspace $ws8
+#bindsym $mod+Shift+ccedilla   move container to workspace $ws9
+#bindsym $mod+Shift+agrave     move container to workspace $ws10
 
 # move focused container to workspace (qwerty)
 bindsym $mod+Shift+1 move container to workspace $ws1
