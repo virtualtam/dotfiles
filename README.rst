@@ -25,6 +25,7 @@ They're revolving around the following elements:
 Additional resources:
 
 - `Theming <Theming.rst>`_
+- `Keyboard Layouts <KeyboardLayouts.rst>`_
 
 Un(used|maintained)
 ~~~~~~~~~~~~~~~~~~~
