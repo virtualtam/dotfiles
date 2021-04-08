@@ -45,4 +45,4 @@ SNAPBIN=/snap/bin
 [ -d ${SNAPBIN} ] && PATH="${SNAPBIN}:${PATH}"
 
 # Terraform Plugin Cache
-export TF_PLUGIN_CACHE_DIR="${HOME}/.terraform.d/plugin-cache"
+export TF_PLUGIN_CACHE_DIR="${HOME}/.terraform.d/plugins"
