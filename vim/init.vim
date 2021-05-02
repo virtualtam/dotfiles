@@ -103,8 +103,11 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 
 " enable true color support
-if &term =~? 'xterm-\(256color\|termite\)'
+if (has("termguicolors"))
     set termguicolors
+    let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+    let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
+
     colorscheme solarized8_flat
 endif
 
@@ -112,11 +115,7 @@ endif
 set scrolloff=10
 
 set number
-:hi LineNr       cterm=NONE ctermbg=black ctermfg=NONE guibg=#073642 guifg=NONE
-
 set cursorline
-:hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=#073642 guifg=NONE
-:hi CursorLineNr cterm=NONE ctermbg=NONE  ctermfg=NONE guibg=#002b36 guifg=NONE
 
 set wildmenu
 set wildignore+=tags,.hg,.git,.svn,*.pyc,*.spl,*.o,*.out,*.DS_Store,*.class,*.manifest,*~,#*#,%*
