@@ -11,6 +11,12 @@ True Color
 - http://invisible-island.net/ncurses/ncurses.faq.html#xterm_16MegaColors
 - https://lists.gnu.org/archive/html/bug-ncurses/2018-01/msg00045.html
 
+Alacritty
+---------
+
+- https://github.com/alacritty/alacritty/issues/109
+- https://github.com/alacritty/alacritty/issues/3347
+
 Shell
 -----
 
@@ -37,6 +43,7 @@ Tmux
 - https://github.com/tmux/tmux/pull/112
 - https://github.com/morhetz/gruvbox/issues/98
 - https://sunaku.github.io/tmux-24bit-color.html
+- https://stackoverflow.com/questions/41783367/tmux-tmux-true-color-is-not-working-properly/41786092
 
 Vim
 ---
@@ -54,6 +61,7 @@ Vim
 - https://stackoverflow.com/questions/10592715/ansi-color-codes-in-vim
 - http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 - https://codeyarns.com/2011/07/29/vim-chart-of-color-names/
+- https://stackoverflow.com/questions/62702766/termguicolors-in-vim-makes-everything-black-and-white
 
 User configurations
 -------------------
