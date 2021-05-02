@@ -80,7 +80,7 @@ function _virtualenv_info() {
 
 # Unicode eye candy
 case "${TERM}" in
-    screen | rxvt-unicode* | xterm*)
+    alacritty | screen | rxvt-unicode* | tmux-* | xterm*)
         # fancy unicode
         local top_brace='╭ '
         local bot_brace='╰ '
