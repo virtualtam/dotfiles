@@ -18,6 +18,9 @@ alias tf='terraform'
 # media
 alias ydl='youtube-dl'
 
+# ssh
+alias tssh='TERM=xterm ssh'
+
 # tree
 alias tl='tree -ph'
 alias ta='tree -pha'
