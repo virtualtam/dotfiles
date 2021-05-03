@@ -189,6 +189,10 @@ autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 " Javascript / JSX / Typescript
 let g:jsx_ext_required = 1
 
+" Jenkins
+autocmd BufNewFile,BufRead */jenkins/dev set ft=Jenkinsfile
+autocmd BufNewFile,BufRead */jenkins/build-and-publish set ft=Jenkinsfile
+
 " nagios, icinga, shinken
 au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
 
