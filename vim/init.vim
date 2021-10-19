@@ -151,6 +151,9 @@ let g:ansible_unindent_after_newline = 1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 
+" Docker
+autocmd FileType dockerfile setlocal fo-=t
+
 " EasyAlign: Start interactively in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 
@@ -192,6 +195,7 @@ autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 let g:jsx_ext_required = 1
 
 " Jenkins
+autocmd FileType Jenkinsfile setlocal fo-=t
 autocmd BufNewFile,BufRead */jenkins/dev set ft=Jenkinsfile
 autocmd BufNewFile,BufRead */jenkins/build-and-publish set ft=Jenkinsfile
 
@@ -224,6 +228,9 @@ let g:pymode_lint_options_pep8 = {'max_line_length': g:pymode_options_max_line_l
 "     \ },
 "     \ 'sort': 0,
 " \ }
+
+" Shell
+autocmd FileType sh setlocal fo-=t
 
 " Signify
 let g:signify_vcs_list = [ 'git', 'hg' ]
