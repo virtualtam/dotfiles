@@ -56,9 +56,6 @@ Plug 'rust-lang/rust.vim'
 
 Plug 'cespare/vim-toml'
 
-" doc
-" Plug 'jszakmeister/rst2ctags'
-
 " system
 Plug 'pearofducks/ansible-vim'  " ansible yaml and hosts
 Plug 'vim-scripts/ferm.vim'     " ferm firewall
@@ -213,23 +210,6 @@ let NERDTreeIgnore=['\.pyc$', '\~$']
 let g:pymode_python = 'python3'
 let g:pymode_options_max_line_length = 120
 let g:pymode_lint_options_pep8 = {'max_line_length': g:pymode_options_max_line_length}
-
-" reStructuredText
-" Add support for reStructuredText files in tagbar.
-" let g:tagbar_type_rst = {
-"     \ 'ctagstype': 'rst',
-"     \ 'ctagsbin' : '~/.vim/plugged/rst2ctags/rst2ctags.py',
-"     \ 'ctagsargs' : '-f - --sort=yes --sro=»',
-"     \ 'kinds' : [
-"         \ 's:sections',
-"         \ 'i:images'
-"     \ ],
-"     \ 'sro' : '»',
-"     \ 'kind2scope' : {
-"         \ 's' : 'section',
-"     \ },
-"     \ 'sort': 0,
-" \ }
 
 " Shell
 autocmd FileType sh setlocal fo-=t
