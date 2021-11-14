@@ -220,6 +220,9 @@ autocmd FileType sh setlocal fo-=t
 " Signify
 let g:signify_vcs_list = [ 'git', 'hg' ]
 
+" SSH
+autocmd BufNewFile,BufRead */.ssh/config.d/* set ft=sshconfig
+
 " Tagbar
 map <F2> :TagbarToggle<CR>
 
