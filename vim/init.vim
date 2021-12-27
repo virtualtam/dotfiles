@@ -162,6 +162,10 @@ nmap ga <Plug>(EasyAlign)
 " Emmet abbreviation expansion
 let g:user_emmet_leader_key='<C-E>'
 
+" Git
+autocmd BufNewFile,BufRead */gitconfig   set ft=gitconfig
+autocmd BufNewFile,BufRead */.dots/git/* set ft=gitconfig
+
 " Go
 " See the tutorial at https://github.com/fatih/vim-go-tutorial
 let g:go_version_warning = 0
