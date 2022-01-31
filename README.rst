@@ -11,11 +11,11 @@ spent editing stuff from the command-line ;-)
 
 They're revolving around the following elements:
 
+* `alacritty`_ terminal emulator
 * `git`_ distributed SCM
 * `i3`_ tiling window manager
-* `mpd_`_ Music Player Daemon and `ncmpc`_ ncurses client
+* `mpd`_ Music Player Daemon and `ncmpc`_ ncurses client
 * `solarized`_ dark color theme
-* `termite`_ terminal emulator
 * `tmux`_ terminal multiplexer
 * `vim`_ text editor
 * `zathura`_ document viewer
@@ -32,14 +32,19 @@ Un(used|maintained)
 
 * `awesomewm`_ tiling window manager
 * `bash`_, the good ol' shell
+* `cmder`_, the `ConEmu`_-based Windows terminal emulator
 * `emacs`_ text editor (and many other things)
 * `mcabber`_ XMPP client
 * `mercurial`_ distributed SCM
 * `moc`_ player
 * `rxvt-unicode`_ terminal emulator
+* `termite`_ terminal emulator
 
+.. _alacritty: https://github.com/alacritty/alacritty
 .. _awesomewm: https://awesomewm.org/
 .. _bash: https://www.gnu.org/software/bash/
+.. _cmder: https://cmder.net/
+.. _ConEmu: https://conemu.github.io/
 .. _emacs: https://www.gnu.org/software/emacs/
 .. _git: http://git-scm.com/
 .. _i3: https://i3wm.org
