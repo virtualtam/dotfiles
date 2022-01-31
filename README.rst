@@ -61,6 +61,7 @@ Un(used|maintained)
 .. _zathura: https://pwmt.org/projects/zathura/
 .. _zsh: http://www.zsh.org/
 
-.. image:: http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png
-   :target: http://www.wtfpl.net/
-   :alt: WTFPL - What The Fuck Public License
+License
+-------
+
+These dotfiles are licensed under the Creative Commons CC0 1.0 Universal license.
