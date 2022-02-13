@@ -19,7 +19,7 @@
 DOCKER_HUB_URL=https://registry.hub.docker.com
 DOCKER_HUB_REPO_URL=${DOCKER_HUB_URL}/v2/repositories
 
-alias dkc='docker-compose'
+alias dkc='docker compose'
 
 function dk() {
     local fmt=""
