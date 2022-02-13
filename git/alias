@@ -20,6 +20,7 @@ chcon = cherry-pick --continue
 ca = commit -a --amend
 can = commit -a --amend --no-edit
 ci = commit
+cif = commit -a --fixup
 cs = commit -a -s
 csm = commit -a -s -m
 
@@ -68,8 +69,8 @@ remr = rebase master
 rbm = "!f(){ git checkout main && git pull && git checkout ${1} && git rebase -i main; };f"
 ri = rebase -i
 rid = rebase -i dev
-rim = rebase -i main
-rimr = rebase -i master
+rim = rebase -i --autosquash main
+rimr = rebase -i --autosquash master
 recon = rebase --continue
 rehab = rebase --abort
 
