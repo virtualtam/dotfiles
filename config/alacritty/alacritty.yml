@@ -1,3 +1,28 @@
+---
+#font-family: &family Hack
+#font-family: &family Ubuntu Mono
+#font-family: &family Fira Code
+font-family: &family Fira Mono
+
+font:
+  size: 12
+
+  normal:
+    family: *family
+    style: Regular
+
+  bold:
+    family: *family
+    style: Bold
+
+  italic:
+    family: *family
+    style: Italic
+
+  bold_italic:
+    family: *family
+    style: Bold Italic
+
 # Project:    Nord Alacritty
 # Version:    0.1.0
 # Repository: https://github.com/arcticicestudio/nord-alacritty
