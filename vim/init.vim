@@ -31,9 +31,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'gisphm/vim-gitignore'
 Plug 'mhinz/vim-signify'
 
-" compiler
-Plug 'hoaproject/Contributions-Vim-Pp'
-
 " dev
 Plug 'elixir-editors/vim-elixir'
 Plug 'vim-erlang/vim-erlang-runtime'
