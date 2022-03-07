@@ -28,11 +28,6 @@ Source Code Management
 - https://github.com/tpope/vim-fugitive
 - https://github.com/mhinz/vim-signify
 
-Compilers
-~~~~~~~~~
-
-- https://github.com/hoaproject/Contributions-Vim-Pp
-
 Language and development
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
