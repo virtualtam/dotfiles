@@ -15,14 +15,17 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " edition
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'tpope/vim-commentary'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/goyo.vim'
+Plug 'cohama/lexima.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'AndrewRadev/splitjoin.vim'
 Plug 'majutsushi/tagbar'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer --rust-completer' }
 
@@ -31,7 +34,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'gisphm/vim-gitignore'
 Plug 'mhinz/vim-signify'
 
-" dev
+" language support
 Plug 'elixir-editors/vim-elixir'
 Plug 'vim-erlang/vim-erlang-runtime'
 
@@ -40,6 +43,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'posva/vim-vue'
+
+Plug 'aklt/plantuml-syntax'
 
 Plug 'sophacles/vim-processing'
 
@@ -69,9 +74,6 @@ Plug 'hashivim/vim-packer'      " packer
 Plug 'hashivim/vim-terraform'   " terraform
 Plug 'hashivim/vim-vagrant'     " vagrant, ruby
 Plug 'fgsch/vim-varnish'        " varnish, vcl
-
-" modeling
-Plug 'aklt/plantuml-syntax'
 
 call plug#end()
 
