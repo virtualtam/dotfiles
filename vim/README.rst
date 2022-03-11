@@ -16,8 +16,8 @@ Edition
 ~~~~~~~
 
 - https://github.com/AndrewRadev/splitjoin.vim
+- https://github.com/Raimondi/delimitMate
 - https://github.com/Valloric/YouCompleteMe
-- https://github.com/cohama/lexima.vim
 - https://github.com/ctrlpvim/ctrlp.vim
 - https://github.com/editorconfig/editorconfig-vim
 - https://github.com/junegunn/goyo.vim
