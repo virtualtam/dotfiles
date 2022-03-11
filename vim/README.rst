@@ -28,6 +28,7 @@ Edition
 - https://github.com/ntpeters/vim-better-whitespace
 - https://github.com/scrooloose/nerdtree
 - https://github.com/tpope/vim-commentary
+- https://github.com/tpope/vim-surround
 
 Source Code Management
 ~~~~~~~~~~~~~~~~~~~~~~
