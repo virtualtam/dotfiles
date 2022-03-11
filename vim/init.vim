@@ -18,11 +18,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-commentary'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Raimondi/delimitMate'
 Plug 'junegunn/vim-easy-align'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/goyo.vim'
-Plug 'cohama/lexima.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'AndrewRadev/splitjoin.vim'
@@ -148,6 +148,9 @@ let g:ansible_unindent_after_newline = 1
 " CtrlP fuzzy-finder
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
+
+" delimitMate
+let g:delimitMate_expand_cr = 1
 
 " Docker
 autocmd FileType dockerfile setlocal fo-=t
