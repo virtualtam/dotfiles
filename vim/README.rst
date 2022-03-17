@@ -25,6 +25,7 @@ Edition
 - https://github.com/junegunn/vim-easy-align
 - https://github.com/majutsushi/tagbar
 - https://github.com/mattn/emmet-Vim
+- https://github.com/mbbill/undotree
 - https://github.com/ntpeters/vim-better-whitespace
 - https://github.com/scrooloose/nerdtree
 - https://github.com/tpope/vim-commentary

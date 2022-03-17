@@ -29,6 +29,7 @@ Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'majutsushi/tagbar'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer --rust-completer' }
+Plug 'mbbill/undotree'
 
 " scm
 Plug 'tpope/vim-fugitive'
@@ -236,6 +237,11 @@ map <F2> :TagbarToggle<CR>
 " Terraform
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
+
+" Undotree
+let g:undotree_WindowLayout=4
+let g:undotree_ShortIndicators=1
+map <leader>u :UndotreeToggle<CR>
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion=1
