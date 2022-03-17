@@ -132,6 +132,8 @@ set splitright
 " leader key
 :let mapleader = ","
 
+set pastetoggle=<leader>p
+
 " tab navigation
 nnoremap <C-H> :tabprevious<CR>
 nnoremap <C-L> :tabnext<CR>
@@ -213,7 +215,7 @@ autocmd BufNewFile,BufRead */jenkins/build-and-publish set ft=Jenkinsfile
 au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
 
 " NerdTree
-map <F1> :NERDTreeToggle<CR>
+map <leader>1 :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
@@ -232,7 +234,7 @@ let g:signify_vcs_list = [ 'git', 'hg' ]
 autocmd BufNewFile,BufRead */.ssh/config.d/* set ft=sshconfig
 
 " Tagbar
-map <F2> :TagbarToggle<CR>
+map <leader>2 :TagbarToggle<CR>
 
 " Terraform
 let g:terraform_align=1
