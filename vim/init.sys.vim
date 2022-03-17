@@ -105,6 +105,8 @@ set splitright
 " leader key
 :let mapleader = ","
 
+set pastetoggle=<leader>p
+
 " tab navigation
 nnoremap <C-H> :tabprevious<CR>
 nnoremap <C-L> :tabnext<CR>
@@ -137,7 +139,7 @@ let g:user_emmet_leader_key='<C-E>'
 au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
 
 " NerdTree
-map <F1> :NERDTreeToggle<CR>
+map <leader>1 :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
@@ -150,7 +152,7 @@ let g:pymode_lint_options_pep8 = {'max_line_length': g:pymode_options_max_line_l
 let g:signify_vcs_list = [ 'git', 'hg' ]
 
 " Tagbar
-map <F2> :TagbarToggle<CR>
+map <leader>2 :TagbarToggle<CR>
 
 " Terraform
 let g:terraform_align=1
