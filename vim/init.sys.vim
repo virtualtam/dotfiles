@@ -93,6 +93,8 @@ set cursorline
 :hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=#073642 guifg=NONE
 :hi CursorLineNr cterm=NONE ctermbg=NONE  ctermfg=NONE guibg=#002b36 guifg=NONE
 
+set history=1000
+
 set wildmenu
 set wildignore+=tags,.hg,.git,.svn,*.pyc,*.spl,*.o,*.out,*.DS_Store,*.class,*.manifest,*~,#*#,%*
 set wildignore+=*.jpg,*.jpeg,*.png,*.gif,*.svg,*.zip

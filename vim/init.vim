@@ -120,6 +120,8 @@ set scrolloff=10
 set number
 set cursorline
 
+set history=1000
+
 set wildmenu
 set wildignore+=tags,.hg,.git,.svn,*.pyc,*.spl,*.o,*.out,*.DS_Store,*.class,*.manifest,*~,#*#,%*
 set wildignore+=*.jpg,*.jpeg,*.png,*.gif,*.svg,*.zip
