@@ -37,6 +37,9 @@ Plug 'gisphm/vim-gitignore'
 Plug 'mhinz/vim-signify'
 
 " language support
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-salve'
+
 Plug 'elixir-editors/vim-elixir'
 Plug 'vim-erlang/vim-erlang-runtime'
 
@@ -150,6 +153,9 @@ inoremap <C-left>  <Esc>:tabprevious<CR>
 
 " Ansible: Reset indentation after 2 newlines in insert-mode
 let g:ansible_unindent_after_newline = 1
+
+" Clojure
+autocmd FileType clojure nnoremap <leader>e :silent :Eval<CR>
 
 " CtrlP fuzzy-finder
 let g:ctrlp_map = '<c-p>'

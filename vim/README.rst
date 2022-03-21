@@ -54,6 +54,8 @@ Language and development
 - https://github.com/rust-lang/rust.vim
 - https://github.com/seeamkhan/robotframework-vim
 - https://github.com/sophacles/vim-processing
+- https://github.com/tpope/vim-fireplace
+- https://github.com/tpope/vim-salve
 - https://github.com/vim-erlang/vim-erlang-runtime
 - https://github.com/vim-scripts/django.vim
 
