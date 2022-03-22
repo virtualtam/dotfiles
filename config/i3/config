@@ -172,7 +172,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 assign [class="firefox"]       2
 assign [class="^Slack$"]       3
 assign [class="^Thunderbird$"] 3
-assign [class="Thunar"]        5
+assign [class="Discord"]       5
 assign [class="Steam"]         6
 assign [class="Cadence"]       8
 assign [class="^Kodi$"]        9
