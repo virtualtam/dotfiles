@@ -59,3 +59,11 @@ ZSH_CUSTOM=~/.dots/zsh/custom
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+# Extra plugins
+if [[ ! -d ~/.zsh-autopair ]]; then
+    git clone https://github.com/hlissner/zsh-autopair ~/.zsh-autopair
+fi
+
+source ~/.zsh-autopair/autopair.zsh
+autopair-init
