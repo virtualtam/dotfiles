@@ -137,7 +137,20 @@ set splitright
 " leader key
 :let mapleader = ","
 
+" grep
+nnoremap <leader>/ :silent grep<Space>
+autocmd QuickFixCmdPost *grep* cwindow 15
+
+if executable('rg')
+    set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+endif
+
+" paste mode
 set pastetoggle=<leader>p
+
+" quickfix
+nnoremap <silent> [q :cprevious<CR>
+nnoremap <silent> ]q :cnext<CR>
 
 " tab navigation
 nnoremap <C-H> :tabprevious<CR>
