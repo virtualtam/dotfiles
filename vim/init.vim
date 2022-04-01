@@ -53,6 +53,8 @@ Plug 'aklt/plantuml-syntax'
 
 Plug 'sophacles/vim-processing'
 
+Plug 'uarun/vim-protobuf'
+
 Plug 'psf/black', { 'branch': 'stable' }
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/django.vim'
