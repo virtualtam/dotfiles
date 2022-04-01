@@ -53,6 +53,7 @@ Language and development
 - `sophacles/vim-processing <https://github.com/sophacles/vim-processing>`_
 - `tpope/vim-fireplace <https://github.com/tpope/vim-fireplace>`_
 - `tpope/vim-salve <https://github.com/tpope/vim-salve>`_
+- `uarun/vim-protobuf <https://github.com/uarun/vim-protobuf>`_
 - `vim-erlang/vim-erlang-runtime <https://github.com/vim-erlang/vim-erlang-runtime>`_
 - `vim-scripts/django.vim <https://github.com/vim-scripts/django.vim>`_
 
