@@ -37,6 +37,8 @@ Plug 'gisphm/vim-gitignore'
 Plug 'mhinz/vim-signify'
 
 " language support
+Plug 'vim-scripts/dbext.vim'
+
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-salve'
 
