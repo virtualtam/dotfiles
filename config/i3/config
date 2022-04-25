@@ -52,7 +52,10 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # start Rofi as a desktop program launcher
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d   exec rofi -show drun
+
+# start Rofi as a window switcher
+bindsym $mod+Tab exec rofi -show window
 
 # change focus
 bindsym $mod+h focus left
