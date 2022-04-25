@@ -63,6 +63,8 @@ Plug 'vim-scripts/django.vim'
 Plug 'raimon49/requirements.txt.vim'
 Plug 'seeamkhan/robotframework-vim'
 
+Plug 'Fymyte/rasi.vim', { 'branch': 'main' }
+
 Plug 'rust-lang/rust.vim'
 
 Plug 'cespare/vim-toml'

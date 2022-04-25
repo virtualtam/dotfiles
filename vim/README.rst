@@ -41,6 +41,7 @@ Language and development
 - `aklt/plantuml-syntax <https://github.com/aklt/plantuml-syntax>`_
 - `cespare/vim-toml <https://github.com/cespare/vim-toml>`_
 - `fatih/vim-go <https://github.com/fatih/vim-go>`_
+- `fymyte/rasi.vim <https://github.com/fymyte/rasi.vim>`_
 - `elixir-editors/vim-elixir <https://github.com/elixir-editors/vim-elixir>`_
 - `mxw/vim-jsx <https://github.com/mxw/vim-jsx>`_
 - `pangloss/vim-javascript <https://github.com/pangloss/vim-javascript>`_
