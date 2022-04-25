@@ -14,7 +14,7 @@ configuration {
   run-shell-command: "{terminal} -e {cmd}";
   window-command: "wmctrl -i -R {window}";
 /*  window-match-fields: "all";*/
-  icon-theme: "Breeze Dark";
+  icon-theme: "breeze-dark";
 /*  drun-match-fields: "name,generic,exec,categories,keywords";*/
   drun-match-fields: "name,generic";
 /*  drun-categories: ;*/
@@ -146,3 +146,5 @@ configuration {
       sorting-method:    "name";
   }
 }
+
+@theme "nord"

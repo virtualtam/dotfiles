@@ -1,0 +1,115 @@
+/**
+ * Nord theme for Rofi
+ */
+* {
+    nord0: #2e3440;
+    nord1: #3b4252;
+    nord2: #434c5e;
+    nord3: #4c566a;
+
+    nord4: #d8dee9;
+    nord5: #e5e9f0;
+    nord6: #eceff4;
+
+    nord7: #8fbcbb;
+    nord8: #88c0d0;
+    nord9: #81a1c1;
+    nord10: #5e81ac;
+    nord11: #bf616a;
+
+    nord12: #d08770;
+    nord13: #ebcb8b;
+    nord14: #a3be8c;
+    nord15: #b48ead;
+
+    background-color: @nord1;
+    foreground: @nord9;
+    highlight: underline bold #eceff4;
+}
+
+window {
+    children:  [mainbox];
+    orientation: horizontal;
+
+    border-radius: 6px;
+}
+
+mainbox {
+    children: [ inputbar, message, listview ];
+    spacing: 0;
+}
+
+inputbar {
+    children: [ "prompt","entry","num-filtered-rows","textbox-num-sep","num-rows" ];
+
+    border: 1px;
+    border-color: @nord10;
+    border-radius: 6px 6px 0px 0px;
+
+    padding: 10px;
+
+    color: @nord6;
+    background-color: @nord1;
+}
+
+entry, prompt, case-indicator {
+    text-font: inherit;
+    text-color: inherit;
+}
+
+entry {
+    placeholder: "Type to filter";
+    placeholder-color: @nord9;
+}
+
+num-filtered-rows, num-rows, textbox-num-sep {
+    expand:     false;
+    text-color: @nord4;
+}
+
+textbox-num-sep {
+    str: "/";
+}
+
+prompt {
+    margin: 0px 0.3em 0em 0em ;
+}
+
+listview {
+    scrollbar: true;
+
+    border: 0px 1px 1px 1px;
+    border-color: @nord10;
+    border-radius: 0px 0px 6px 6px;
+
+    padding: 10px;
+
+    background-color: @nord0;
+}
+
+scrollbar {
+    handle-color: @nord3;
+}
+
+element {
+    padding: 3px;
+    vertical-align: 0.5;
+    border-radius: 4px;
+    background-color: @nord0;
+    color: @foreground;
+    text-color: @nord4;
+}
+
+element selected.normal {
+    background-color: @nord3;
+}
+
+element-text, element-icon {
+    padding: 0 5px;
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+element-icon {
+    size: 1em;
+}
