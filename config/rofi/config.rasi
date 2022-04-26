@@ -49,7 +49,7 @@ configuration {
 /*  matching-negate-char: '-' /* unsupported */;*/
 /*  cache-dir: ;*/
 /*  window-thumbnail: false;*/
-/*  drun-use-desktop-cache: false;*/
+  drun-use-desktop-cache: true;
 /*  drun-reload-desktop-cache: false;*/
 /*  normalize-match: false;*/
 /*  steal-focus: false;*/
