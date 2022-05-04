@@ -57,7 +57,7 @@ Plug 'sophacles/vim-processing'
 
 Plug 'uarun/vim-protobuf'
 
-Plug 'psf/black', { 'branch': 'stable' }
+Plug 'psf/black', { 'branch': 'main' }
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/django.vim'
 Plug 'raimon49/requirements.txt.vim'
