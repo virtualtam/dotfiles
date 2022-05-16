@@ -40,6 +40,12 @@ export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'\
 [ -d "${HOME}/.yarn/bin" ] && PATH="${HOME}/.yarn/bin:${PATH}"
 [ -f /usr/share/nvm/init-nvm.sh ] && . /usr/share/nvm/init-nvm.sh
 
+# Ruby
+if which ruby >/dev/null && which gem >/dev/null
+then
+    PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:${PATH}"
+fi
+
 # Snaps
 SNAPBIN=/snap/bin
 [ -d ${SNAPBIN} ] && PATH="${SNAPBIN}:${PATH}"
