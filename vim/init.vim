@@ -97,6 +97,7 @@ set textwidth=80
 set encoding=utf-8
 set fileencodings=utf-8
 set ffs=unix,dos
+set backspace=indent,eol,start
 
 " indentation
 filetype plugin indent on
