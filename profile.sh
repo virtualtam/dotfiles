@@ -28,13 +28,6 @@ export GOBIN="${GOPATH}/bin"
 GRAALVM_HOME=/usr/lib/jvm/java-11-graalvm
 [ -d ${GRAALVM_HOME} ] && export GRAALVM_HOME
 
-# Java
-export JAVA_FONTS='/usr/share/fonts/TTF'
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd'\
-' -Dswing.aatext=true'\
-' -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'\
-' -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
-
 # NodeJS
 [ -d "${HOME}/.node_modules/bin" ] && PATH="${HOME}/.node_modules/bin:${PATH}"
 [ -d "${HOME}/.yarn/bin" ] && PATH="${HOME}/.yarn/bin:${PATH}"
