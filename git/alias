@@ -9,7 +9,7 @@ begone = "! f(){ (git branch -vv | rg --quiet ': gone') && git branch -vv | rg '
 
 co = checkout
 cob = checkout -b
-cod = checkout dev
+cod = checkout devel
 com = checkout main
 comr = checkout master
 
@@ -63,12 +63,12 @@ psu = push --set-upstream
 puf = push --force
 
 re = rebase
-red = rebase dev
+red = rebase devel
 rem = rebase main
 remr = rebase master
 rbm = "!f(){ git checkout main && git pull && git checkout ${1} && git rebase -i main; };f"
 ri = rebase -i
-rid = rebase -i dev
+rid = rebase -i devel
 rim = rebase -i --autosquash main
 rimr = rebase -i --autosquash master
 recon = rebase --continue
