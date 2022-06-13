@@ -29,6 +29,8 @@ PATH="${PATH}:/opt/homebrew/opt/python@3.9/bin"
 PATH="${PATH}:/opt/homebrew/opt/python@3.10/bin"
 
 # Ruby
+[ -d /opt/homebrew/opt/ruby/bin ] && PATH="/opt/homebrew/opt/ruby/bin:${PATH}"
+
 if which ruby >/dev/null && which gem >/dev/null
 then
     PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:${PATH}"
