@@ -6,6 +6,9 @@ elif [ -n "${ZSH_VERSION}" ]; then
     [ -f "${HOME}/.zshrc" ] && . "${HOME}/.zshrc"
 fi
 
+# SSH Agent
+export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
+
 # Text Editor
 export EDITOR="vim"
 export VISUAL="${EDITOR}"
