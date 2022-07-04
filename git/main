@@ -12,5 +12,8 @@ ff = only
 [push]
 default = simple
 
+[tag]
+sort = -version:refname
+
 [http "https://gopkg.in"]
 followRedirects = true
