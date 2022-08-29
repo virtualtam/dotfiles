@@ -182,8 +182,13 @@ assign [class="^Slack$"]       3
 assign [class="^Thunderbird$"] 3
 assign [class="Discord"]       5
 assign [class="Steam"]         6
-assign [class="Cadence"]       8
-assign [class="^Kodi$"]        9
+
+# Zoom
+# - https://www.reddit.com/r/i3wm/comments/m27dwc/i3_settings_for_zoom/
+# - https://www.reddit.com/r/i3wm/comments/tqou2x/zoom_settings_not_working_in_i3wm/
+for_window [class="(.*join\?action\=join.*|.*zoom.*)"] floating enable
+for_window [class="(.*join\?action\=join.*|.*zoom.*)" title="Zoom - Licensed Account"] floating disable
+for_window [class="(.*join\?action\=join.*|.*zoom.*)" title="Zoom Meeting"] floating disable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
