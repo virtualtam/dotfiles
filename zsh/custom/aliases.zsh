@@ -16,7 +16,7 @@ alias vg='vagrant'
 alias tf='terraform'
 
 # media
-alias ydl='youtube-dl'
+alias ydl='yt-dlp'
 
 # ssh
 alias tssh='TERM=xterm ssh'
