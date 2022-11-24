@@ -42,6 +42,9 @@ then
     PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:${PATH}"
 fi
 
+# Rust
+[ -d "${HOME}/.cargo/bin" ] && PATH="${HOME}/.cargo/bin:${PATH}"
+
 # Snaps
 SNAPBIN=/snap/bin
 [ -d ${SNAPBIN} ] && PATH="${SNAPBIN}:${PATH}"
