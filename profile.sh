@@ -27,6 +27,10 @@ export GOPATH="${HOME}/.golang"
 export GOBIN="${GOPATH}/bin"
 [ -d "${GOBIN}" ] && PATH="${GOBIN}:${PATH}"
 
+# Google Cloud SDK
+# https://cloud.google.com/iap/docs/using-tcp-forwarding#increasing_the_tcp_upload_bandwidth
+export CLOUDSDK_PYTHON_SITEPACKAGES=1
+
 # Java / GraalVM
 GRAALVM_HOME=/usr/lib/jvm/java-11-graalvm
 [ -d ${GRAALVM_HOME} ] && export GRAALVM_HOME
