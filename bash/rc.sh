@@ -59,9 +59,35 @@ if [[ -x /usr/bin/dircolors ]]; then
     alias egrep='egrep --color=auto'
 fi
 
-# Alias definitions
-[[ -f  ~/.bash_aliases ]] && . ~/.bash_aliases
-
 # Programmable completion features
 complete -cf sudo
 [[ -f /etc/bash_completion ]] && . /etc/bash_completion
+
+# Show all completion matches and select the first one
+#
+# https://unix.stackexchange.com/questions/261687/is-it-possible-to-configure-bash-to-autocomplete-with-one-tab-like-zsh
+# https://superuser.com/questions/288714/bash-autocomplete-like-zsh
+# https://superuser.com/questions/1172624/bash-completion-always-show-all-files
+set completion-ignore-case on
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+
+# Bind up/down arrows to cycle through history *search* results instead of
+# previous/next history entry
+#
+# https://stackoverflow.com/questions/42299437/zsh-like-history-in-bash
+# https://askubuntu.com/questions/59846/bash-history-search-partial-up-arrow
+bind '"\e[A": history-search-backward'
+bind '"\eOA": history-previous-history'
+bind '"\e[B": history-search-forward'
+bind '"\eOB": history-next-history'
+
+# Bind C-w to kill a single word (until the next delimiter)
+#
+# https://superuser.com/questions/212446/binding-backward-kill-word-to-ctrlw
+stty werase undef
+bind '\C-w: backward-kill-word'
+
+# Alias definitions
+[[ -f  ~/.bash_aliases ]] && . ~/.bash_aliases
+
