@@ -230,3 +230,6 @@ bar {
     position top
     status_command i3status
 }
+
+# Start picom compositor
+exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
