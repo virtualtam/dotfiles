@@ -10,6 +10,9 @@ docker-compose.override.yml
 *.iml
 .idea
 
+# Visual Studio Code / Codium
+.vscode
+
 # Eclipse
 .settings
 
