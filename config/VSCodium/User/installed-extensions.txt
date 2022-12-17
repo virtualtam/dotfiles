@@ -1,0 +1,16 @@
+arcticicestudio.nord-visual-studio-code
+bungcip.better-toml
+EditorConfig.EditorConfig
+golang.go
+hashicorp.hcl
+hashicorp.terraform
+mrmlnc.vscode-apache
+ms-azuretools.vscode-docker
+ms-vscode.cpptools
+PKief.material-icon-theme
+redhat.java
+redhat.vscode-microprofile
+redhat.vscode-yaml
+rust-lang.rust-analyzer
+vadimcn.vscode-lldb
+vscjava.vscode-java-debug

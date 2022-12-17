@@ -18,6 +18,7 @@ They're revolving around the following elements:
 * `nord`_ and `solarized`_ color themes
 * `tmux`_ terminal multiplexer
 * `vim`_ text editor
+* `vscodium_` text editor
 * `zathura`_ document viewer
 * `zsh`_ shell
 * some extra stuff
@@ -59,6 +60,7 @@ Un(used|maintained)
 .. _termite: https://github.com/thestinger/termite/
 .. _tmux: https://tmux.github.io/
 .. _vim: https://vim.sourceforge.io/
+.. _vscodium: https://github.com/VSCodium/vscodium
 .. _zathura: https://pwmt.org/projects/zathura/
 .. _zsh: http://www.zsh.org/
 
