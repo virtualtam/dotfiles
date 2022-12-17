@@ -1,0 +1,17 @@
+{
+    "go.toolsManagement.autoUpdate": true,
+    "window.zoomLevel": 1,
+    "editor.guides.bracketPairs": "active",
+    "workbench.colorTheme": "Nord",
+    "editor.renderFinalNewline": false,
+    "files.insertFinalNewline": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.tree.indent": 20,
+    "workbench.iconTheme": "material-icon-theme",
+    "files.exclude": {
+        "**/.vscode": true,
+        "**/heaptrack*.zst": true
+    },
+    "editor.minimap.enabled": false
+}
