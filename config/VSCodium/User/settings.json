@@ -16,5 +16,6 @@
     "editor.minimap.enabled": false,
     "files.associations": {
         "Cargo.lock": "toml"
-    }
+    },
+    "redhat.telemetry.enabled": false
 }
