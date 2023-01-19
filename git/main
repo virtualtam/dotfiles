@@ -15,5 +15,8 @@ default = simple
 [tag]
 sort = -version:refname
 
+[advice]
+skippedCherryPicks = false
+
 [http "https://gopkg.in"]
 followRedirects = true
