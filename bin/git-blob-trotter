@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# git-blob-trotter
+#
+# Displays the N largest blobs in the current repository tree
+#
+# See:
+# - https://stackoverflow.com/questions/10622179/how-to-find-identify-large-commits-in-git-history
+# - https://stackoverflow.com/questions/223678/which-commit-has-this-blob
+#
+# Find which commits add a given blob with:
+#
+#   git find-object <BLOB>
+
+N_BLOBS=${1:-10}
+
+git rev-list --objects --all \
+    | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' \
+    | sed -n 's/^blob //p' \
+    | sort --numeric-sort --key=2 --reverse \
+    | head -n ${N_BLOBS} \
+    | numfmt --field=2 --to=iec-i --padding=7 --suffix=B
