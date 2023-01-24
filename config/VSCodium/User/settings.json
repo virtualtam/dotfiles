@@ -17,5 +17,7 @@
     "files.associations": {
         "Cargo.lock": "toml"
     },
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "update.mode": "none",
+    "workbench.startupEditor": "none"
 }
