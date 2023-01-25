@@ -18,7 +18,7 @@ They're revolving around the following elements:
 * `nord`_ and `solarized`_ color themes
 * `tmux`_ terminal multiplexer
 * `vim`_ text editor
-* `vscodium_` text editor
+* `vscodium`_ text editor
 * `zathura`_ document viewer
 * `zsh`_ shell
 * some extra stuff
