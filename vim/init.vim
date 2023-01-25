@@ -185,7 +185,7 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 let g:delimitMate_expand_cr = 1
 
 " Docker
-autocmd FileType dockerfile setlocal fo-=t
+autocmd FileType dockerfile setlocal textwidth=0
 
 " EasyAlign: Start interactively in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
@@ -236,7 +236,7 @@ autocmd BufNewFile,BufRead */haproxy.cfg set ft=haproxy
 let g:jsx_ext_required = 1
 
 " Jenkins
-autocmd FileType Jenkinsfile setlocal fo-=t
+autocmd FileType Jenkinsfile setlocal textwidth=0
 autocmd BufNewFile,BufRead */jenkins/dev set ft=Jenkinsfile
 autocmd BufNewFile,BufRead */jenkins/build-and-publish set ft=Jenkinsfile
 
@@ -254,7 +254,7 @@ let g:pymode_options_max_line_length = 120
 let g:pymode_lint_options_pep8 = {'max_line_length': g:pymode_options_max_line_length}
 
 " Shell
-autocmd FileType sh setlocal fo-=t
+autocmd FileType sh setlocal textwidth=0
 
 " Signify
 let g:signify_vcs_list = [ 'git', 'hg' ]
