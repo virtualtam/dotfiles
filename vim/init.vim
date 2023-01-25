@@ -240,6 +240,9 @@ autocmd FileType Jenkinsfile setlocal textwidth=0
 autocmd BufNewFile,BufRead */jenkins/dev set ft=Jenkinsfile
 autocmd BufNewFile,BufRead */jenkins/build-and-publish set ft=Jenkinsfile
 
+" JSON
+autocmd FileType json setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+
 " nagios, icinga, shinken
 au BufRead,BufNewFile */\(monitoring\|shinken\)/*/*.cfg set filetype=nagios
 
@@ -273,6 +276,9 @@ let g:terraform_fmt_on_save=1
 let g:undotree_WindowLayout=4
 let g:undotree_ShortIndicators=1
 map <leader>u :UndotreeToggle<CR>
+
+" YAML
+autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_completion=1
