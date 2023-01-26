@@ -20,6 +20,7 @@ chcon = cherry-pick --continue
 ca = commit -a --amend
 can = commit -a --amend --no-edit
 ci = commit -s
+cim = commit -s -m
 cif = commit -a --fixup
 cs = commit -a -s
 csm = commit -a -s -m
