@@ -19,5 +19,6 @@
     },
     "redhat.telemetry.enabled": false,
     "update.mode": "none",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "editor.formatOnSave": true
 }
