@@ -51,7 +51,7 @@ lf = ls-files
 lg = log --graph --pretty=format:'%C(yellow)%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset%C(bold blue)<%an>%Creset' --color
 lh = log --graph --pretty=format:'%C(yellow)%H%Creset %Cgreen%cd%Creset %C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --date=iso --color
 ll = log --stat --pretty=format:'%C(yellow)%h %Cgreen%cr%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'
-lt = !git --no-pager lg -10
+lt = !git lg -10
 find-object = !git --no-pager log --oneline --raw --find-object
 my = !git ll --author=$USER --since='9am yesterday' --all
 
