@@ -1,15 +1,11 @@
 # ~/.bash_aliases
 
-function mcd() {
+function take() {
     # create and switch to a directory
     mkdir -p ${1}
     cd ${1}
 }
 alias md='mkdir'
-
-# editor
-export EDITOR='emacs'
-export VISUAL='emacs'
 
 # less colors
 export LESS_TERMCAP_mb=$'\e[1;31m'    # begin blinking
