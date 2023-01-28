@@ -16,6 +16,7 @@ ms-toolsai.vscode-jupyter-cell-tags
 ms-toolsai.vscode-jupyter-slideshow
 ms-vscode.cpptools
 PKief.material-icon-theme
+redhat.ansible
 redhat.java
 redhat.vscode-microprofile
 redhat.vscode-yaml

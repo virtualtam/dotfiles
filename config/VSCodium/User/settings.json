@@ -20,5 +20,7 @@
     "redhat.telemetry.enabled": false,
     "update.mode": "none",
     "workbench.startupEditor": "none",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "ansible.validation.enabled": false,
+    "ansible.validation.lint.enabled": false
 }
