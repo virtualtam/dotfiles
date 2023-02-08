@@ -3,7 +3,7 @@
     "window.zoomLevel": 1,
     "editor.guides.bracketPairs": "active",
     "workbench.colorTheme": "Nord",
-    "editor.renderFinalNewline": false,
+    "editor.renderFinalNewline": "off",
     "files.insertFinalNewline": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
