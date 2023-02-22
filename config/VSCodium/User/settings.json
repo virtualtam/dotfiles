@@ -22,5 +22,6 @@
     "workbench.startupEditor": "none",
     "editor.formatOnSave": true,
     "ansible.validation.enabled": false,
-    "ansible.validation.lint.enabled": false
+    "ansible.validation.lint.enabled": false,
+    "git.openRepositoryInParentFolders": "never"
 }
