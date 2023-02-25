@@ -12,6 +12,8 @@ cob = checkout -b
 cod = checkout devel
 com = checkout main
 comr = checkout master
+coz = "!f(){ git checkout $(git branch --format '%(refname:short)' | fzf); }; f"
+coza = "!f(){ git checkout $(git branch --all --format '%(refname:short)' | fzf); }; f"
 
 ch = cherry-pick
 chab = cherry-pick --abort
