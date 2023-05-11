@@ -1,32 +1,27 @@
 {
-    "ansible.validation.enabled": false,
-    "ansible.validation.lint.enabled": false,
-    "editor.formatOnSave": true,
+    "go.toolsManagement.autoUpdate": true,
+    "window.zoomLevel": 1,
     "editor.guides.bracketPairs": "active",
-    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Nord",
     "editor.renderFinalNewline": "off",
+    "files.insertFinalNewline": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "files.associations": {
-        "Cargo.lock": "toml"
-    },
+    "workbench.tree.indent": 20,
+    "workbench.iconTheme": "material-icon-theme",
     "files.exclude": {
         "**/.vscode": true,
         "**/heaptrack*.zst": true
     },
-    "files.insertFinalNewline": true,
-    "git.openRepositoryInParentFolders": "never",
-    "go.toolsManagement.autoUpdate": true,
-    "python.formatting.provider": "black",
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.minimap.enabled": false,
+    "files.associations": {
+        "Cargo.lock": "toml"
     },
     "redhat.telemetry.enabled": false,
     "update.mode": "none",
-    "window.zoomLevel": 1,
-    "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Nord",
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
-    "workbench.tree.indent": 20
+    "editor.formatOnSave": true,
+    "ansible.validation.enabled": false,
+    "ansible.validation.lint.enabled": false,
+    "git.openRepositoryInParentFolders": "never"
 }
