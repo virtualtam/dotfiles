@@ -23,5 +23,8 @@
     "editor.formatOnSave": true,
     "ansible.validation.enabled": false,
     "ansible.validation.lint.enabled": false,
-    "git.openRepositoryInParentFolders": "never"
+    "git.openRepositoryInParentFolders": "never",
+    "security.workspace.trust.untrustedFiles": "open",
+    "lldb.suppressUpdateNotifications": true,
+    "docker.languageserver.formatter.ignoreMultilineInstructions": true
 }
