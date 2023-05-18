@@ -1,30 +1,34 @@
 {
-    "go.toolsManagement.autoUpdate": true,
-    "window.zoomLevel": 1,
+    "ansible.validation.enabled": false,
+    "ansible.validation.lint.enabled": false,
+    "docker.languageserver.formatter.ignoreMultilineInstructions": true,
+    "editor.formatOnSave": true,
     "editor.guides.bracketPairs": "active",
-    "workbench.colorTheme": "Nord",
+    "editor.minimap.enabled": false,
     "editor.renderFinalNewline": "off",
-    "files.insertFinalNewline": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "workbench.tree.indent": 20,
-    "workbench.iconTheme": "material-icon-theme",
+    "files.associations": {
+        "Cargo.lock": "toml"
+    },
     "files.exclude": {
         "**/.vscode": true,
         "**/heaptrack*.zst": true
     },
-    "editor.minimap.enabled": false,
-    "files.associations": {
-        "Cargo.lock": "toml"
-    },
-    "redhat.telemetry.enabled": false,
-    "update.mode": "none",
-    "workbench.startupEditor": "none",
-    "editor.formatOnSave": true,
-    "ansible.validation.enabled": false,
-    "ansible.validation.lint.enabled": false,
+    "files.insertFinalNewline": true,
     "git.openRepositoryInParentFolders": "never",
-    "security.workspace.trust.untrustedFiles": "open",
+    "go.toolsManagement.autoUpdate": true,
     "lldb.suppressUpdateNotifications": true,
-    "docker.languageserver.formatter.ignoreMultilineInstructions": true
+    "redhat.telemetry.enabled": false,
+    "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "rust-analyzer.lens.implementations.enable": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "update.mode": "none",
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Nord",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 20
 }
