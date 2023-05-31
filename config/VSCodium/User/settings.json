@@ -9,7 +9,8 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.associations": {
-        "Cargo.lock": "toml"
+        "Cargo.lock": "toml",
+        "*.gohtml": "html"
     },
     "files.exclude": {
         "**/.vscode": true,
