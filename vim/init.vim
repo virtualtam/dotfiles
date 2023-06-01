@@ -92,7 +92,7 @@ call plug#end()
 set nocompatible
 
 " editor behavior
-set textwidth=80
+set textwidth=100
 
 set encoding=utf-8
 set fileencodings=utf-8
@@ -215,6 +215,7 @@ let g:go_highlight_operators = 1
 " let g:go_highlight_extra_types = 1
 
 au BufRead,BufNewFile *.gohtml set filetype=gohtmltmpl
+autocmd FileType gohtmltmpl setlocal textwidth=0
 
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
 autocmd FileType go nmap <leader>b <Plug>(go-build)
