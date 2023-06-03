@@ -41,6 +41,11 @@ GRAALVM_HOME=/usr/lib/jvm/java-11-graalvm
 [ -f /usr/share/nvm/init-nvm.sh ] && . /usr/share/nvm/init-nvm.sh
 
 # Ruby
+if which rbenv >/dev/null
+then
+    eval "$(rbenv init -)"
+fi
+
 if which ruby >/dev/null && which gem >/dev/null
 then
     PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:${PATH}"
