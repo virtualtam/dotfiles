@@ -21,6 +21,9 @@
     "go.toolsManagement.autoUpdate": true,
     "lldb.suppressUpdateNotifications": true,
     "redhat.telemetry.enabled": false,
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.intellisense": "rubyLocate",
+    "ruby.useLanguageServer": true,
     "rust-analyzer.inlayHints.closingBraceHints.enable": false,
     "rust-analyzer.inlayHints.parameterHints.enable": false,
     "rust-analyzer.inlayHints.typeHints.enable": false,
@@ -31,5 +34,5 @@
     "workbench.colorTheme": "Nord",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
-    "workbench.tree.indent": 20
+    "workbench.tree.indent": 20,
 }
