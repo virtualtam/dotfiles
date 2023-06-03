@@ -16,8 +16,8 @@ export VISUAL="${EDITOR}"
 # User binaries
 [ -d "${HOME}/bin" ] && PATH="${HOME}/bin:${PATH}"
 
-# Qt5 theme management
-export QT_QPA_PLATFORMTHEME="qt5ct"
+# Qt theme management
+export QT_QPA_PLATFORMTHEME="qt6ct"
 
 # Erlang / Elixir
 export ERL_AFLAGS="-kernel shell_history enabled"
