@@ -1,15 +1,15 @@
 #!/bin/zsh
 # ZSH aliases
 
+# directories
+alias mcd='takedir'
+
+# helix
+alias hx='helix'
+
 # ip
 alias ip='ip --color'
 alias ipb='ip --brief'
-
-# directories
-function mcd() {
-    mkdir -p ${1}
-    cd ${1}
-}
 
 # infrastructure
 alias vg='vagrant'
