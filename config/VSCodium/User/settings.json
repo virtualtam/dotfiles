@@ -31,6 +31,7 @@
     "security.workspace.trust.untrustedFiles": "open",
     "update.mode": "none",
     "window.zoomLevel": 1,
+    "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Nord",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
