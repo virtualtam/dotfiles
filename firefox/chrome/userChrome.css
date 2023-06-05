@@ -1,0 +1,5 @@
+#TabsToolbar,
+#sidebar-header,
+#sidebar-splitter {
+  display: none;
+}
