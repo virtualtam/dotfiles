@@ -1,0 +1,89 @@
+/* 
+ * Nord color theme for Sidebery v5
+ * 
+ * https://github.com/mbnuqw/sidebery
+ * https://www.nordtheme.com/docs/colors-and-palettes
+ */
+
+:root {
+    /* Polar Night */
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+
+    /* Snow Storm */
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+
+    /* Frost */
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+
+    /* Aurora */
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+}
+
+/* Hide the discarded tab icon */
+.TabsPanel .bottom-bar {
+    display: none;
+}
+
+/* Set opacity for unloaded tabs
+ * https://github.com/mbnuqw/sidebery/issues/345#issuecomment-1057943906
+ * https://github.com/mbnuqw/sidebery/blob/v5/src/styles/themes/proton/sidebar/tab.styl
+ */
+.Tab[data-discarded="true"]>.body>.fav,
+.Tab[data-discarded="true"]>.body>.t-box,
+.Tab[data-discarded="true"]>.body>.ctx {
+    opacity: .8;
+}
+
+#root.root {
+    /* General */
+    --frame-bg: var(--nord0);
+    --frame-fg: var(--nord4);
+    --frame-el-bg: var(--nord1);
+    --frame-el-overlay-hover-bg: var(--nord3);
+    --frame-el-overlay-selected-bg: var(--nord10);
+    --frame-el-overlay-selected-border: var(--nord10);
+
+    /* Navigation */
+    --nav-btn-height: 32px;
+    --nav-btn-width: 32px;
+
+    /* Toolbar */
+    --toolbar-bg: var(--nord0);
+    --toolbar-fg: var(--nord4);
+    --toolbar-el-overlay-hover-bg: var(--nord3);
+    --toolbar-el-overlay-selected-bg: var(--nord10);
+    --toolbar-el-overlay-selected-border: var(--nord10);
+
+    /* Tabs */
+    --tabs-pinned-height: 32px;
+    --tabs-pinned-width: 32px;
+    --tabs-height: 38px;
+    --tabs-indent: 24px;
+    --tabs-activated-bg: var(--nord3);
+    --tabs-activated-fg: var(--nord5);
+    --tabs-progress-bg: var(--nord3);
+
+    /* Bookmarks */
+    --bookmarks-bookmark-height: 32px;
+    --bookmarks-folder-height: 32px;
+    --bookmarks-indent: 24px;
+
+    /* Context Menu */
+    --ctx-menu-bg: var(--nord1);
+    --ctx-menu-fg: var(--nord4);
+
+    /* Other */
+    --status-ok: var(--nord14);
+}
