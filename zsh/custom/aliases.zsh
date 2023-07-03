@@ -5,7 +5,10 @@
 alias mcd='takedir'
 
 # helix
-alias hx='helix'
+if [[ ! -x $(which hx) ]]
+then
+    alias hx='helix'
+fi
 
 # ip
 alias ip='ip --color'
