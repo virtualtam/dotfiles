@@ -1,5 +1,6 @@
 arcticicestudio.nord-visual-studio-code
 bungcip.better-toml
+eamodio.gitlens
 EditorConfig.EditorConfig
 golang.go
 hashicorp.hcl
@@ -20,3 +21,4 @@ rust-lang.rust-analyzer
 sumneko.lua
 vadimcn.vscode-lldb
 wingrunr21.vscode-ruby
+zxh404.vscode-proto3
