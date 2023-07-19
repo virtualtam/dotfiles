@@ -3,6 +3,7 @@ br = branch
 ba = branch -a
 bd = branch -d
 bdd = branch -D
+bt = "!f(){ git for-each-ref --count ${1:-10} --sort=-committerdate --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:green)%(committerdate:relative)|%(color:reset)%(subject)|%(color:bold blue)%(authorname)%(color:reset)' --color=always | column -ts'|'; }; f"
 bv = branch -vv
 bva = branch -vv -a
 begone = "! f(){ (git branch -vv | rg --quiet ': gone') && git branch -vv | rg ': gone' | awk '{ print $1 }' | xargs git branch -D; }; f"
