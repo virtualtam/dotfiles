@@ -8,6 +8,7 @@
     "editor.renderFinalNewline": "off",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
     "files.associations": {
         "*.gohtml": "html",
         "Cargo.lock": "toml"
@@ -42,5 +43,5 @@
     "workbench.colorTheme": "Nord",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
-    "workbench.tree.indent": 20
+    "workbench.tree.indent": 20,
 }
