@@ -10,7 +10,8 @@
     "explorer.confirmDragAndDrop": false,
     "files.associations": {
         "Cargo.lock": "toml",
-        "*.gohtml": "html"
+        "*.gohtml": "html",
+        "*.slide": "markdown",
     },
     "files.exclude": {
         "**/.vscode": true,
@@ -23,7 +24,6 @@
     "html.format.indentInnerHtml": true,
     "html.format.wrapAttributes": "preserve-aligned",
     "html.format.wrapAttributesIndentSize": 2,
-    "lldb.suppressUpdateNotifications": true,
     "redhat.telemetry.enabled": false,
     "ruby.codeCompletion": "rcodetools",
     "ruby.intellisense": "rubyLocate",
