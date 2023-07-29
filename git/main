@@ -4,7 +4,7 @@ path = color
 path = pager
 
 [init]
-defaultBranch= main
+defaultBranch = main
 
 [pull]
 ff = only
