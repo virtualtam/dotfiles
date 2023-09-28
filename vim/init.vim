@@ -9,7 +9,6 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " interface and themes
-Plug 'arcticicestudio/nord-vim'
 Plug 'lifepillar/vim-solarized8'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -164,12 +163,6 @@ nnoremap <C-H> :tabprevious<CR>
 nnoremap <C-L> :tabnext<CR>
 inoremap <C-H> <Esc>:tabprevious<CR>
 inoremap <C-L> <Esc>:tabnext<CR>
-
-" tab navigation (arrows)
-nnoremap <C-right> :tabnext<CR>
-nnoremap <C-left>  :tabprevious<CR>
-inoremap <C-right> <Esc>:tabnext<CR>
-inoremap <C-left>  <Esc>:tabprevious<CR>
 
 " Ansible: Reset indentation after 2 newlines in insert-mode
 let g:ansible_unindent_after_newline = 1
