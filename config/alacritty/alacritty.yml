@@ -1,8 +1,8 @@
 ---
 #font-family: &family Hack
 #font-family: &family Ubuntu Mono
-#font-family: &family Fira Code
-font-family: &family Fira Mono
+font-family: &family Fira Code
+#font-family: &family Fira Mono
 
 font:
   size: 12
