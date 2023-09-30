@@ -1,7 +1,11 @@
 # Neovim configuration
-## Neovim documentation
+## Documentation
 - [Lua Guide](https://neovim.io/doc/user/lua-guide.html)
 - [neovim/neovim#21342] - survey: options defaults
+
+## Lua
+- [The Lua programming language](https://www.lua.org/)
+- [luarocks/lua-style-guide](https://github.com/luarocks/lua-style-guide)
 
 ## Guides
 - [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
@@ -39,6 +43,9 @@
 
 #### Snippets
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip) - Snippet Engine
+
+### Language integrations
+- [ray-x/go.nvim](https://github.com/ray-x/go.nvim) - Go development plugin, leveraging gopls, treesitter AST, Dap, and various Go tools
 
 ### Navigation
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder
