@@ -4,7 +4,6 @@ Vim Plugins
 Interface
 ---------
 
-- `arcticicestudio/nord-vim <https://github.com/arcticicestudio/nord-vim>`_
 - `lifepillar/vim-solarized8 <https://github.com/lifepillar/vim-solarized8>`_
 - `vim-airline/vim-airline <https://github.com/vim-airline/vim-airline>`_
 - `vim-airline/vim-airline-themes <https://github.com/vim-airline/vim-airline-themes>`_
@@ -17,8 +16,6 @@ Edition
 - `Valloric/YouCompleteMe <https://github.com/Valloric/YouCompleteMe>`_
 - `ctrlpvim/ctrlp.vim <https://github.com/ctrlpvim/ctrlp.vim>`_
 - `editorconfig/editorconfig-vim <https://github.com/editorconfig/editorconfig-vim>`_
-- `junegunn/goyo.vim <https://github.com/junegunn/goyo.vim>`_
-- `junegunn/limelight.vim <https://github.com/junegunn/limelight.vim>`_
 - `junegunn/vim-easy-align <https://github.com/junegunn/vim-easy-align>`_
 - `majutsushi/tagbar <https://github.com/majutsushi/tagbar>`_
 - `mattn/emmet-Vim <https://github.com/mattn/emmet-Vim>`_
