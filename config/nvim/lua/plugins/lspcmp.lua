@@ -1,8 +1,12 @@
 -- Language Server Protocol & Code Completion
 return {
     {
+        "folke/neodev.nvim",
+    },
+    {
         "hrsh7th/nvim-cmp",
         dependencies = {
+            "folke/neodev.nvim",
             "neovim/nvim-lspconfig",
             "hrsh7th/cmp-nvim-lsp",
             "hrsh7th/cmp-buffer",
@@ -13,6 +17,8 @@ return {
         },
         config = function()
             -- Global configuration
+            require("neodev").setup({})
+
             local lspconfig = require('lspconfig')
             local lsp_defaults = lspconfig.util.default_config
 
@@ -27,13 +33,10 @@ return {
             lspconfig.lua_ls.setup({
                 settings = {
                     Lua = {
-                        diagnostics = {
-                            globals = { 'vim' }
-                        }
+                        callSnippet = "Replace",
                     }
                 }
             })
-            lspconfig.rust_analyzer.setup({})
 
             -- Autocompletion
             vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
