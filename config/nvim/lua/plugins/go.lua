@@ -16,6 +16,9 @@ return {
                 lsp_cfg = {
                     capabilities = capabilities,
                 },
+                lsp_inlay_hints = {
+                    enable = false,
+                },
             })
 
             -- Format on save
