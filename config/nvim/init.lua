@@ -1,5 +1,6 @@
 -- global configuration
 require("keymap")
+require("ft")
 require("global")
 
 -- lazy.nvim - install plugins
