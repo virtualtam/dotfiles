@@ -10,6 +10,8 @@
 ## Guides
 - [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
 - [Setup nvim-lspconfig + nvim-cmp](https://vonheikemen.github.io/devlog/tools/setup-nvim-lspconfig-plus-nvim-cmp/)
+- [Rust and Neovim - A Thorough Guide and Walkthrough](https://rsdlt.github.io/posts/rust-nvim-ide-guide-walkthrough-development-debug/)
+- [Neovim and Rust](https://sharksforarms.dev/posts/neovim-rust/)
 
 ## Plugins
 ### Plugin management
@@ -52,6 +54,7 @@
 ### Language integrations
 - [ray-x/go.nvim](https://github.com/ray-x/go.nvim) - Go development plugin, leveraging gopls, treesitter AST, Dap, and various Go tools
 - [folke/neodev.nvim](https://github.com/folke/neodev.nvim) - Neovim setup for init.lua and plugin development
+- [simrat39/rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim) - Rust development tools
 
 ### Navigation
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder
