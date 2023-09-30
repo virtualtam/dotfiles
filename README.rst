@@ -15,6 +15,7 @@ They're revolving around the following elements:
 * `git`_ distributed SCM
 * `i3`_ tiling window manager
 * `mpd`_ Music Player Daemon and `ncmpc`_ ncurses client
+* `neovim`_ text editor
 * `nord`_ and `solarized`_ color themes
 * `tmux`_ terminal multiplexer
 * `vim`_ text editor
@@ -54,6 +55,7 @@ Un(used|maintained)
 .. _moc: http://moc.daper.net/
 .. _mpd: https://www.musicpd.org/
 .. _ncmpc: https://www.musicpd.org/clients/ncmpc/
+.. _neovim: https://neovim.io/
 .. _nord: https://www.nordtheme.com/docs/colors-and-palettes
 .. _rxvt-unicode: http://software.schmorp.de/pkg/rxvt-unicode.html
 .. _solarized: http://ethanschoonover.com/solarized
