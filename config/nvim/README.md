@@ -51,6 +51,7 @@
 
 ### Language integrations
 - [ray-x/go.nvim](https://github.com/ray-x/go.nvim) - Go development plugin, leveraging gopls, treesitter AST, Dap, and various Go tools
+- [folke/neodev.nvim](https://github.com/folke/neodev.nvim) - Neovim setup for init.lua and plugin development
 
 ### Navigation
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder
