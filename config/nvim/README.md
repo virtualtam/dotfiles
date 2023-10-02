@@ -10,6 +10,7 @@
 ## Guides
 - [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
 - [Setup nvim-lspconfig + nvim-cmp](https://vonheikemen.github.io/devlog/tools/setup-nvim-lspconfig-plus-nvim-cmp/)
+- [Configuring NeoVim as a Python IDE](https://www.playfulpython.com/configuring-neovim-as-a-python-ide/)
 - [Rust and Neovim - A Thorough Guide and Walkthrough](https://rsdlt.github.io/posts/rust-nvim-ide-guide-walkthrough-development-debug/)
 - [Neovim and Rust](https://sharksforarms.dev/posts/neovim-rust/)
 
@@ -35,6 +36,9 @@
 
 #### Language Server Protocol
 - [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - Quickstart configs for Nvim LSP
+- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) - Install and manage LSP servers, DAP servers, linters, and formatters
+- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) - Use lspconfig with mason.nvim
+- [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) - Inject LSP diagnostics, code actions, and more via Lua
 
 #### Debug Adapter Protocol
 - [mfussenegger/nvim-dap](https://github.com/mfussenegger/nvim-dap) - Debug Adapter Protocol client implementation

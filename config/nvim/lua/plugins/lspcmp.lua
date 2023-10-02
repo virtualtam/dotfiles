@@ -1,19 +1,25 @@
 -- Language Server Protocol & Code Completion
 return {
     {
-        "folke/neodev.nvim",
-    },
-    {
         "hrsh7th/nvim-cmp",
         dependencies = {
-            "folke/neodev.nvim",
+            -- LSP
             "neovim/nvim-lspconfig",
+
+            -- cmp libraries
             "hrsh7th/cmp-nvim-lsp",
             "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-path",
             "hrsh7th/cmp-cmdline",
+
+            -- Snippets
             "L3MON4D3/LuaSnip",
             "saadparwaiz1/cmp_luasnip",
+
+            -- LSP integrations
+            "williamboman/mason.nvim",
+            "williamboman/mason-lspconfig.nvim",
+            "folke/neodev.nvim",
         },
         config = function()
             -- Global configuration
@@ -23,9 +29,9 @@ return {
             local lsp_defaults = lspconfig.util.default_config
 
             lsp_defaults.capabilities = vim.tbl_deep_extend(
-            'force',
-            lsp_defaults.capabilities,
-            require('cmp_nvim_lsp').default_capabilities()
+                "force",
+                lsp_defaults.capabilities,
+                require('cmp_nvim_lsp').default_capabilities()
             )
 
             -- Language servers
@@ -37,6 +43,15 @@ return {
                     }
                 }
             })
+
+            require('mason').setup()
+            local mason_lspconfig = require "mason-lspconfig"
+            mason_lspconfig.setup {
+                ensure_installed = { "pyright" }
+            }
+            require("lspconfig").pyright.setup {
+                capabilities = lsp_defaults.capabilities,
+            }
 
             -- Autocompletion
             vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
