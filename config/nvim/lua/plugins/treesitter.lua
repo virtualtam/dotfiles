@@ -9,6 +9,39 @@ return {
         config = function()
             require("nvim-treesitter.configs").setup {
                 auto_install = true,
+                ensure_installed = {
+                    -- Default grammars
+                    "c",
+                    "lua",
+                    "query",
+                    "vim",
+                    "vimdoc",
+
+                    -- Language grammars
+                    "bash",
+                    "css",
+                    "dockerfile",
+                    "git_config",
+                    "gitcommit",
+                    "gitignore",
+                    "go",
+                    "gomod",
+                    "gosum",
+                    "html",
+                    "javascript",
+                    "json",
+                    "latex",
+                    "make",
+                    "markdown",
+                    "markdown_inline",
+                    "python",
+                    "rst",
+                    "ruby",
+                    "rust",
+                    "ssh_config",
+                    "toml",
+                    "yaml",
+                },
                 highlight = {
                     enable = true,
                 },
