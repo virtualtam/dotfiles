@@ -28,3 +28,6 @@ TAGS
 
 # Arch Linux packaging
 *.pkg.tar.xz
+
+# macOs
+.DS_Store
