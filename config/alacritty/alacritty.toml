@@ -1,0 +1,10 @@
+# Alacritty configuration
+# See:
+# - man 5 alacritty
+# - https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
+# - https://github.com/alacritty/alacritty/issues/6592 - Switch to TOML for configuration file
+
+import = [
+    "~/.config/alacritty/font.toml",
+    "~/.config/alacritty/theme_nord.toml",
+]
