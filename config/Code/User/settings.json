@@ -39,9 +39,9 @@
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.defaultProfile.linux": "zsh",
     "window.zoomLevel": 1,
-    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Nord",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 20,
+    "notebook.output.scrolling": true,
 }
