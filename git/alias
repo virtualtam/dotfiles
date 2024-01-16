@@ -73,6 +73,9 @@ rimr = rebase --autosquash -i master
 recon = rebase --continue
 rehab = rebase --abort
 
+rl = reflog --format='%C(yellow)%h%C(reset) %C(green)%cr%C(reset) %gs'
+rlh = reflog --format='%C(yellow)%H%C(reset) %C(green)%cd%C(reset) %gs'
+
 rt = remote
 rv = remote -v
 rh = reset --hard
