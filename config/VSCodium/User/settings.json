@@ -2,6 +2,7 @@
     "ansible.validation.enabled": false,
     "ansible.validation.lint.enabled": false,
     "docker.languageserver.formatter.ignoreMultilineInstructions": true,
+    "editor.accessibilitySupport": "on",
     "editor.formatOnSave": true,
     "editor.guides.bracketPairs": "active",
     "editor.minimap.enabled": false,
