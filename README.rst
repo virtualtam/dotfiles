@@ -18,7 +18,6 @@ They're revolving around the following elements:
 * `neovim`_ text editor
 * `nord`_ and `solarized`_ color themes
 * `tmux`_ terminal multiplexer
-* `vim`_ text editor
 * `vscodium`_ text editor
 * `zathura`_ document viewer
 * `zsh`_ shell
@@ -41,6 +40,7 @@ Un(used|maintained)
 * `moc`_ player
 * `rxvt-unicode`_ terminal emulator
 * `termite`_ terminal emulator
+* `vim`_ text editor
 
 .. _alacritty: https://github.com/alacritty/alacritty
 .. _awesomewm: https://awesomewm.org/
