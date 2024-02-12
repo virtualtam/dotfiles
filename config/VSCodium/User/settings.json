@@ -7,6 +7,7 @@
     "editor.guides.bracketPairs": "active",
     "editor.minimap.enabled": false,
     "editor.renderFinalNewline": "off",
+    "editor.stickyScroll.enabled": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.associations": {
@@ -34,11 +35,13 @@
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "rust-analyzer.lens.implementations.enable": false,
     "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.stickyScroll.enabled": true,
     "update.mode": "none",
     "window.zoomLevel": 1,
-    "workbench.activityBar.location": "hidden",
     "workbench.colorTheme": "Nord",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 20,
+    "workbench.activityBar.location": "hidden",
+    "workbench.tree.enableStickyScroll": true,
 }
