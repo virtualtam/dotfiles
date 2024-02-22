@@ -1,5 +1,5 @@
 arcticicestudio.nord-visual-studio-code
-bungcip.better-toml
+charliermarsh.ruff
 eamodio.gitlens
 EditorConfig.EditorConfig
 elixir-lsp.elixir-ls
@@ -17,8 +17,12 @@ ms-python.python
 PKief.material-icon-theme
 rebornix.ruby
 redhat.ansible
+redhat.fabric8-analytics
 redhat.java
+redhat.vscode-xml
 redhat.vscode-yaml
 rust-lang.rust-analyzer
+tamasfe.even-better-toml
+vadimcn.vscode-lldb
 wingrunr21.vscode-ruby
 zxh404.vscode-proto3
