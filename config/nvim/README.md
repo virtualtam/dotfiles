@@ -38,7 +38,7 @@
 - [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - Quickstart configs for Nvim LSP
 - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim) - Install and manage LSP servers, DAP servers, linters, and formatters
 - [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) - Use lspconfig with mason.nvim
-- [jose-elias-alvarez/null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) - Inject LSP diagnostics, code actions, and more via Lua
+- [nvimtools/none-ls.nvim](https://github.com/nvimtools/none-ls.nvim) - Inject LSP diagnostics, code actions, and more via Lua
 
 #### Debug Adapter Protocol
 - [mfussenegger/nvim-dap](https://github.com/mfussenegger/nvim-dap) - Debug Adapter Protocol client implementation

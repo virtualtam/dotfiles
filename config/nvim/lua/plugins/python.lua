@@ -1,7 +1,7 @@
 -- Python
 return {
     {
-        "jose-elias-alvarez/null-ls.nvim",
+        "nvimtools/none-ls.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
         ft = { "python" },
         config = function()
