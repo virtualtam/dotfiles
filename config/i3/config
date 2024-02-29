@@ -179,8 +179,10 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # workspace assignments
-# use xprop to get window information (class, name, etc)
-assign [class="firefox"]       2
+# use xprop to get window information (class, name, etc):
+#   $ xprop
+#   $ xprom WM_CLASS
+assign [class="firefox" title="- Mozilla Firefox$"]       2
 assign [class="^Slack$"]       3
 assign [class="^Thunderbird$"] 3
 assign [class="Discord"]       5
