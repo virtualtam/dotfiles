@@ -35,6 +35,11 @@
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "rust-analyzer.lens.implementations.enable": false,
     "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen",
+        "-workbench.action.terminal.clear",
+    ],
     "terminal.integrated.stickyScroll.enabled": true,
     "update.mode": "none",
     "window.zoomLevel": 1,
