@@ -15,6 +15,7 @@ export VISUAL="${EDITOR}"
 
 # User binaries
 [ -d "${HOME}/bin" ] && PATH="${HOME}/bin:${PATH}"
+[ -d "${HOME}/.local/bin" ] && PATH="${HOME}/.local/bin:${PATH}"
 
 # Qt theme management
 export QT_QPA_PLATFORMTHEME="qt6ct"
