@@ -30,6 +30,8 @@ export GOBIN="${GOPATH}/bin"
 
 # Google Cloud SDK
 # https://cloud.google.com/iap/docs/using-tcp-forwarding#increasing_the_tcp_upload_bandwidth
+[ -f /opt/google-cloud-cli/completion.zsh.inc ] && source /opt/google-cloud-cli/completion.zsh.inc
+[ -f /opt/google-cloud-cli/path.zsh.inc ] && source /opt/google-cloud-cli/path.zsh.inc
 export CLOUDSDK_PYTHON_SITEPACKAGES=1
 
 # Java / GraalVM
