@@ -1,9 +1,11 @@
+42crunch.vscode-openapi
 arcticicestudio.nord-visual-studio-code
 charliermarsh.ruff
 eamodio.gitlens
-EditorConfig.EditorConfig
+editorconfig.editorconfig
 elixir-lsp.elixir-ls
 erlang-ls.erlang-ls
+ginfuru.ginfuru-better-solarized-dark-theme
 golang.go
 hashicorp.hcl
 hashicorp.terraform
@@ -14,7 +16,7 @@ ms-kubernetes-tools.vscode-kubernetes-tools
 ms-pyright.pyright
 ms-python.isort
 ms-python.python
-PKief.material-icon-theme
+pkief.material-icon-theme
 rebornix.ruby
 redhat.ansible
 redhat.fabric8-analytics

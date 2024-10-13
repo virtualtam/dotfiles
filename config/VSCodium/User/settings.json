@@ -43,7 +43,7 @@
     "terminal.integrated.stickyScroll.enabled": true,
     "update.mode": "none",
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "Better Solarized Light",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 20,
