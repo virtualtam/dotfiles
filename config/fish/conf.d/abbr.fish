@@ -15,6 +15,9 @@ end
 
 abbr --add ipb ip --brief
 
+# mkdir
+abbr --add md mkdir -p
+
 # media
 abbr --add ydl yt-dlp
 
