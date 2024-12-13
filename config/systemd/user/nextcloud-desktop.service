@@ -1,0 +1,17 @@
+# https://github.com/nextcloud/desktop/issues/728
+# https://github.com/nextcloud/desktop/pull/3510
+
+[Unit]
+Description=Nextcloud desktop user service
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+[Service]
+ExecStart=/usr/bin/nextcloud --background
+Restart=on-failure
+RestartSec=5s
+NoNewPrivileges=true
+RestrictRealtime=true
+
+[Install]
+WantedBy=default.target
