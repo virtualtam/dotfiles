@@ -70,4 +70,3 @@ function dk --description 'Docker wrapper with concise output'
             docker $argv
     end
 end
-
