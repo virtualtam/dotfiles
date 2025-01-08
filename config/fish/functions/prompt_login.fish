@@ -22,7 +22,7 @@ function prompt_login --description "display user name for the prompt"
     set -l color_user $fish_color_user
     if functions -q fish_is_root_user; and fish_is_root_user
         if set -q fish_color_user_root
-            set -l color_user $fish_color_user_root
+            set color_user $fish_color_user_root
         end
     end
 
