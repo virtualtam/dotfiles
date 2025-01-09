@@ -50,7 +50,7 @@ then
     . /usr/share/nvm/init-nvm.sh
 else
     # nvm is installed for the current user
-    export NVM_DIR="~/.nvm"
+    export NVM_DIR="${HOME}/.nvm"
     [ -s "${NVM_DIR}/nvm.sh" ] && . "${NVM_DIR}/nvm.sh"
 
     if [ -n "${BASH_VERSION}" ]; then
