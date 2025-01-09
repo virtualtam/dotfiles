@@ -41,7 +41,20 @@ GRAALVM_HOME=/usr/lib/jvm/java-11-graalvm
 # NodeJS
 [ -d "${HOME}/.node_modules/bin" ] && PATH="${HOME}/.node_modules/bin:${PATH}"
 [ -d "${HOME}/.yarn/bin" ] && PATH="${HOME}/.yarn/bin:${PATH}"
-[ -f /usr/share/nvm/init-nvm.sh ] && . /usr/share/nvm/init-nvm.sh
+
+if [ -f /usr/share/nvm/init-nvm.sh ]
+then
+    # nvm is installed system-wide
+    . /usr/share/nvm/init-nvm.sh
+else
+    # nvm is installed for the current user
+    export NVM_DIR="~/.nvm"
+    [ -s "${NVM_DIR}/nvm.sh" ] && . "${NVM_DIR}/nvm.sh"
+
+    if [ -n "${BASH_VERSION}" ]; then
+        [ -s "${NVM_DIR}/bash_completion" ] && . "${NVM_DIR}/bash_completion"
+    fi
+fi
 
 # Ruby
 if which rbenv >/dev/null
