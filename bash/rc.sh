@@ -16,7 +16,7 @@ else
 fi
 
 case "$TERM" in
-    screen | rxvt-unicode* | xterm*)
+    alacritty | screen | tmux* | xterm*)
         # fancy colorized unicode prompt
         PS1='╭ \[\033[01;${USERCOLOR}m\]\u\[\033[01;39m\]@\[\033[01;35m\]\h\[\033[00m\]'
         PS1+='( \[\033[01;34m\]\w\[\033[00m\] )'
@@ -90,4 +90,3 @@ bind '\C-w: backward-kill-word'
 
 # Alias definitions
 [[ -f  ~/.bash_aliases ]] && . ~/.bash_aliases
-
