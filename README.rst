@@ -9,9 +9,11 @@ Hello, fellow GitHub wanderer!
 These are my dotfiles, some of them having survived and mutated through years
 spent editing stuff from the command-line ;-)
 
-They're revolving around the following elements:
+Actively maintained
+~~~~~~~~~~~~~~~~~~~
 
 * `alacritty`_ terminal emulator
+* `fish`_ shell
 * `git`_ distributed SCM
 * `i3`_ tiling window manager
 * `mpd`_ Music Player Daemon and `ncmpc`_ ncurses client
@@ -20,7 +22,6 @@ They're revolving around the following elements:
 * `tmux`_ terminal multiplexer
 * `vscodium`_ text editor
 * `zathura`_ document viewer
-* `zsh`_ shell
 * some extra stuff
 
 Additional resources:
@@ -28,19 +29,24 @@ Additional resources:
 - `Theming <Theming.rst>`_
 - `Keyboard Layouts <KeyboardLayouts.rst>`_
 
-Un(used|maintained)
-~~~~~~~~~~~~~~~~~~~
+Unmaintained
+~~~~~~~~~~~~
+
+* `bash`_, the good ol' shell
+* `mercurial`_ distributed SCM
+* `vim`_ text editor
+* `zsh`_ shell
+
+Retired
+~~~~~~~
 
 * `awesomewm`_ tiling window manager
-* `bash`_, the good ol' shell
 * `cmder`_, the `ConEmu`_-based Windows terminal emulator
 * `emacs`_ text editor (and many other things)
 * `mcabber`_ XMPP client
-* `mercurial`_ distributed SCM
 * `moc`_ player
 * `rxvt-unicode`_ terminal emulator
 * `termite`_ terminal emulator
-* `vim`_ text editor
 
 .. _alacritty: https://github.com/alacritty/alacritty
 .. _awesomewm: https://awesomewm.org/
@@ -48,6 +54,7 @@ Un(used|maintained)
 .. _cmder: https://cmder.net/
 .. _ConEmu: https://conemu.github.io/
 .. _emacs: https://www.gnu.org/software/emacs/
+.. _fish: https://fishshell.com/
 .. _git: http://git-scm.com/
 .. _i3: https://i3wm.org
 .. _mcabber: http://mcabber.com/
