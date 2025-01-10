@@ -6,7 +6,6 @@ abbr --add gti git
 
 # infrastructure
 abbr --add vg vagrant
-abbr --add tf terraform
 
 # ip
 function ip
