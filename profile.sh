@@ -71,10 +71,6 @@ fi
 # Rust
 [ -d "${HOME}/.cargo/bin" ] && PATH="${HOME}/.cargo/bin:${PATH}"
 
-# SDKMAN!
-export SDKMAN_DIR="${HOME}/.sdkman"
-[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ] && . "${SDKMAN_DIR}/bin/sdkman-init.sh"
-
 # Snaps
 SNAPBIN=/snap/bin
 [ -d ${SNAPBIN} ] && PATH="${SNAPBIN}:${PATH}"
