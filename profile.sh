@@ -62,12 +62,6 @@ else
     fi
 fi
 
-# Ruby
-if which rbenv >/dev/null
-then
-    eval "$(rbenv init -)"
-fi
-
 # Rust
 [ -d "${HOME}/.cargo/bin" ] && PATH="${HOME}/.cargo/bin:${PATH}"
 
