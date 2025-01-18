@@ -2,13 +2,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# Source OS-specific configuration
-set current_directory (dirname (status --current-filename))
-switch (uname)
-    case Darwin
-        source $current_directory/config_darwin.fish
-end
-
 # Source host-specific configuration
 set fish_local_dir ~/.config/fish_local
 
