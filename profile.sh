@@ -46,7 +46,6 @@ GRAALVM_HOME=/usr/lib/jvm/java-11-graalvm
 
 # NodeJS
 [ -d "${HOME}/.node_modules/bin" ] && PATH="${HOME}/.node_modules/bin:${PATH}"
-[ -d "${HOME}/.yarn/bin" ] && PATH="${HOME}/.yarn/bin:${PATH}"
 
 if [ -f /usr/share/nvm/init-nvm.sh ]
 then
