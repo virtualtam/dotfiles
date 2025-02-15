@@ -7,31 +7,28 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
-        "sway/scratchpad",
-        "custom/media"
+        "hyprland/workspaces",
     ],
     "modules-center": [
-        "sway/window"
+        "hyprland/window"
     ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
+     // "mpd",
+     // "idle_inhibitor",
         "pulseaudio",
-        "network",
-        "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
-        "backlight",
-        "keyboard-state",
-        "sway/language",
-        "battery",
-        "battery#bat2",
+     // "network",
+     // "power-profiles-daemon",
+     // "cpu",
+     // "memory",
+     // "temperature",
+     // "backlight",
+     //   "keyboard-state",
+        "hyprland/language",
+     // "battery",
+     // "battery#bat2",
         "clock",
-        "tray",
-        "custom/power"
+        "tray"
+     // "custom/power"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -50,6 +47,9 @@
     //         "default": ""
     //     }
     // },
+    "hyprland/window": {
+        "separate-outputs": true
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
