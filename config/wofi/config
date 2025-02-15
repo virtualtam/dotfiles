@@ -1,0 +1,5 @@
+mode=drun
+allow_images=true
+insensitive=true
+no_actions=true
+term=alacritty
