@@ -26,28 +26,11 @@
         "hyprland/language",
      // "battery",
      // "battery#bat2",
-        "clock#date",
-        "clock#time",
+        "clock",
         "tray"
      // "custom/power"
     ],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
     "hyprland/window": {
         "separate-outputs": true
     },
@@ -59,16 +42,6 @@
             "locked": "",
             "unlocked": ""
         }
-    },
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
     },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
@@ -107,10 +80,10 @@
         // "icon-size": 21,
         "spacing": 10
     },
-    "clock#date": {
+    "clock": {
         // https://fmt.dev/latest/syntax/#chrono-format-specifications
-        "format": " {:%e %b}",
-        "interval": 60,
+        "format": "{:%Y-%m-%d %H:%M} ",
+        "interval": 5,
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "year",
@@ -125,11 +98,6 @@
                 "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
             }
         }
-    },
-    "clock#time": {
-        "interval": 5,
-        "format": " {:%H:%M}",
-        "tooltip": false
     },
     "cpu": {
         "format": "{usage}% ",
@@ -191,7 +159,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% {icon}\t{format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
