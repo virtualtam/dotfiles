@@ -51,9 +51,9 @@ ghu = "!f() { git com && git fetch upstream pull/${1}/head:pr-${1} && git checko
 
 lf = ls-files
 
-lg = log --graph --pretty=format:'%C(yellow)%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset%C(bold blue)<%an>%Creset' --color
-lh = log --graph --pretty=format:'%C(yellow)%H%Creset %Cgreen%cd%Creset %C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --date=iso --color
-ll = log --stat --pretty=format:'%C(yellow)%h %Cgreen%cr%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset'
+lg = log --graph --pretty=format:'%C(yellow)%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset%C(bold blue)<%aN>%Creset' --color
+lh = log --graph --pretty=format:'%C(yellow)%H%Creset %Cgreen%cd%Creset %C(yellow)%d%Creset %s %C(bold blue)<%aN>%Creset' --date=iso --color
+ll = log --stat --pretty=format:'%C(yellow)%h %Cgreen%cr%Creset%C(yellow)%d%Creset %s %C(bold blue)<%aN>%Creset'
 lt = !git lg -10
 find-object = !git --no-pager log --oneline --raw --find-object
 my = !git ll --author=$USER --since='9am yesterday' --all
