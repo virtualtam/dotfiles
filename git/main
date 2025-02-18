@@ -6,6 +6,9 @@ path = pager
 [init]
 defaultBranch = main
 
+[log]
+mailmap = true
+
 [pull]
 ff = only
 
