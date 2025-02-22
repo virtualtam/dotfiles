@@ -1,27 +1,37 @@
+/**
+ * Wofi - Nord Theme
+ *
+ * https://cloudninja.pw/docs/wofi.html
+ */
+
 * {
-	font-family: "Hack", monospace;
+	font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
 }
 
 window {
-	background-color: #3B4252;
+	background-color: #3b4252;
+    border-radius: 10px;
+    border: 2px solid #4c566a;
 }
 
 #input {
 	margin: 5px;
 	border-radius: 0px;
 	border: none;
-	background-color: #3B4252;
-	color: white;
+	background-color: #434c5e;
+	color: #d8dee9;
 }
 
 #inner-box {
-	background-color: #383C4A;
+	background-color: #3b4252;
 }
 
 #outer-box {
 	margin: 2px;
 	padding: 10px;
-	background-color: #383C4A;
+    border-radius: 10px;
+	background-color: #3b4252;
 }
 
 #scroll {
@@ -29,18 +39,15 @@ window {
 }
 
 #text {
-	padding: 4px;
-	color: white;
+    padding-left: 1em;
+	color: #d8dee9;
 }
 
 #entry:nth-child(even){
-	background-color: #404552;
+	background-color: #434c5e;
 }
 
 #entry:selected {
-	background-color: #4C566A;
-}
-
-#text:selected {
-	background: transparent;
+	background-color: #4c566a;
+    border: 1px solid #5e81ac;
 }
