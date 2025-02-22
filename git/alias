@@ -99,6 +99,10 @@ smu = submodule update
 smui = submodule update --init
 sf = submodule foreach
 
+tla = for-each-ref --format '%(color:yellow)%(refname:short)%(color:reset) %09 %(color:green)%(authordate:iso8601)%(color:reset) %09 %(subject) %(color:bold blue)<%(authorname)>' refs/tags  --sort=-authordate
+tlc = for-each-ref --format '%(color:yellow)%(refname:short)%(color:reset) %09 %(color:green)%(committerdate:iso8601)%(color:reset) %09 %(subject) %(color:bold blue)<%(committername)>' refs/tags  --sort=-committerdate
+tlt = for-each-ref --format '%(color:yellow)%(refname:short)%(color:reset) %09 %(color:green)%(taggerdate:iso8601)%(color:reset) %09 %(subject) %(color:bold blue)<%(taggername)>' refs/tags  --sort=-taggerdate
+
 v = review
 vd = review -d
 vl = review -l
