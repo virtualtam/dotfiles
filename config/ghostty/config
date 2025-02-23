@@ -1,0 +1,11 @@
+font-family = Fira Code
+
+# Dark Themes
+theme = nord
+#theme = Retro
+
+# Light Themes
+#theme = Builtin Solarized Light
+#theme = flexoki-light
+#theme = iceberg-light
+#theme = rose-pine-dawn
