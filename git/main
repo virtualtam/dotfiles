@@ -3,6 +3,21 @@ path = alias
 path = color
 path = pager
 
+[advice]
+skippedCherryPicks = false
+
+[column]
+ui = auto
+
+[diff]
+algorithm = histogram
+colorMoved = plain
+mnemonicPrefix = true
+renames = true
+
+[fetch]
+prune = true
+
 [init]
 defaultBranch = main
 
@@ -16,11 +31,16 @@ ff = only
 default = simple
 autoSetupRemote = true
 
+[rebase]
+autoSquash = true
+updateRefs = true
+
+[rerere]
+enabled = true
+autoupdate = true
+
 [tag]
 sort = -version:refname
-
-[advice]
-skippedCherryPicks = false
 
 [http "https://gopkg.in"]
 followRedirects = true
