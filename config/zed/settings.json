@@ -1,0 +1,33 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "auto_install_extensions": {
+    "asciidoc": true,
+    "catppuccin-icons": true,
+    "dockerfile": true,
+    "git-firefly": true,
+    "ini": true,
+    "just": true,
+    "latex": true,
+    "make": true,
+    "html": true,
+    "ruff": true,
+    "sql": true,
+    "terraform": true,
+    "toml": true
+  },
+  "icon_theme": "Catppuccin Latte",
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "theme": {
+    "mode": "system",
+    "light": "Gruvbox Light",
+    "dark": "Gruvbox Light"
+  }
+}
