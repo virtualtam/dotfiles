@@ -1,23 +1,30 @@
-# Docker
-docker-compose.override.yml
+# Editor / Eclipse
+.settings
 
-# Editor swap files
+# Editor / Emacs
 *~
-*.swp
-.ac-php-conf.json
 
-# JetBrains IDEs
+# Editor / JetBrains
 *.iml
 .idea
 
-# Visual Studio Code / Codium
+# Editor / Vim
+*.swp
+
+# Editor / Visual Studio Code / Codium
 .vscode
 
-# Eclipse
-.settings
+# Editor / Zed
+.lsp
 
-# Python
-*.pyc
+# OS / Arch Linux / Packaging
+*.pkg.tar.xz
+
+# OS / Mac
+.DS_Store
+
+# OS / Windows
+Thumbs.db
 
 # Ctags / GNU Global
 GPATH
@@ -26,8 +33,21 @@ GSYMS
 GTAGS
 TAGS
 
-# Arch Linux packaging
-*.pkg.tar.xz
+# Docker
+docker-compose.override.yml
 
-# macOs
-.DS_Store
+# Programming / Go
+__debug_bin*
+coverage.out
+coverage.html
+
+# Programming / PHP
+.ac-php-conf.json
+/.phpcs-cache
+/phpcs.xml
+
+# Programming / Python
+.tox/
+.venv/
+__pycache__/
+*.pyc
