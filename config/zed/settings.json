@@ -28,12 +28,15 @@
     "terraform": true,
     "toml": true
   },
-  "icon_theme": "Catppuccin Latte",
-  "ui_font_size": 14,
   "buffer_font_size": 14,
+  "icon_theme": "Catppuccin Latte",
+  "telemetry": {
+    "metrics": false
+  },
   "theme": {
     "mode": "system",
     "light": "Gruvbox Light",
     "dark": "Gruvbox Light"
-  }
+  },
+  "ui_font_size": 14
 }
