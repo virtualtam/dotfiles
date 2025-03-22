@@ -29,14 +29,14 @@
     "toml": true
   },
   "buffer_font_size": 14,
-  "icon_theme": "Catppuccin Latte",
+  "icon_theme": "Catppuccin Macchiato",
   "telemetry": {
     "metrics": false
   },
   "theme": {
     "mode": "system",
     "light": "Gruvbox Light",
-    "dark": "Gruvbox Light"
+    "dark": "One Dark"
   },
   "ui_font_size": 14
 }
