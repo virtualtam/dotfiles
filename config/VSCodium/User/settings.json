@@ -47,6 +47,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 20,
-    "workbench.activityBar.location": "hidden",
+    // "workbench.activityBar.location": "hidden",
     "workbench.tree.enableStickyScroll": true,
 }
