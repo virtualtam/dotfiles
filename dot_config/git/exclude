@@ -8,6 +8,9 @@
 *.iml
 .idea
 
+# Editor / LSP
+.lsp/
+
 # Editor / Vim
 *.swp
 

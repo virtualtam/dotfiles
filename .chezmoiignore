@@ -1,0 +1,23 @@
+# Documentation
+*.rst
+docs/**
+
+# LICENSE
+COPYING
+
+# TODO
+bash/**
+etc/**
+firefox/**
+usr/**
+vim/**
+zsh/**
+
+# TODO - Profiles
+profile.sh
+xprofile
+Xresources
+zprofile.mac
+
+# TODO - Windows
+Documents/**

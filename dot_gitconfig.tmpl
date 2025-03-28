@@ -1,0 +1,9 @@
+[user]
+    email = {{ .email | quote }}
+    name = {{ .name | quote }}
+[core]
+    editor = {{ .editor | quote }}
+    excludesfile = ~/.config/git/exclude
+    fsmonitor = true
+[include]
+    path = ~/.config/git/main
