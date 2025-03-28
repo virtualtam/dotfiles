@@ -1,8 +1,6 @@
-Theming
-=======
+# Theming
 
-True Color
-----------
+## True Color
 
 - https://en.wikipedia.org/wiki/ANSI_escape_code
 - https://en.wikipedia.org/wiki/ANSI_escape_code#24-bit
@@ -11,29 +9,25 @@ True Color
 - http://invisible-island.net/ncurses/ncurses.faq.html#xterm_16MegaColors
 - https://lists.gnu.org/archive/html/bug-ncurses/2018-01/msg00045.html
 
-Alacritty
----------
+## Alacritty
 
 - https://github.com/alacritty/alacritty/issues/109
 - https://github.com/alacritty/alacritty/issues/3347
 
-Shell
------
+## Shell
 
 - https://github.com/seebi/dircolors-solarized
 - https://github.com/joel-porquet/zsh-dircolors-solarized
 - https://superuser.com/questions/665274/how-to-make-ls-color-its-output-by-default-without-setting-up-an-alias
 
-Termite
--------
+## Termite
 
 - https://github.com/thestinger/termite
 - https://wiki.archlinux.org/index.php/Termite
 - https://github.com/alpha-omega/termite-colors-solarized
 - https://www.reddit.com/r/archlinux/comments/6gufp8/termite_configuration/
 
-Tmux
-----
+## Tmux
 
 - https://github.com/tmux/tmux/wiki/FAQ
 - https://wiki.archlinux.org/index.php/tmux#24-bit_color
@@ -45,8 +39,7 @@ Tmux
 - https://sunaku.github.io/tmux-24bit-color.html
 - https://stackoverflow.com/questions/41783367/tmux-tmux-true-color-is-not-working-properly/41786092
 
-Vim
----
+## Vim
 
 - https://wiki.archlinux.org/index.php/Vim
 - https://github.com/altercation/vim-colors-solarized
@@ -63,8 +56,7 @@ Vim
 - https://codeyarns.com/2011/07/29/vim-chart-of-color-names/
 - https://stackoverflow.com/questions/62702766/termguicolors-in-vim-makes-everything-black-and-white
 
-User configurations
--------------------
+## User configurations
 
 - https://framagit.org/mpo/dotfiles/blob/master/vim/.vimrc
 - https://github.com/lifepillar/vimrc
@@ -72,16 +64,13 @@ User configurations
 - https://github.com/lifepillar/dotfiles/tree/master/dot-terminfo
 - https://github.com/sunaku/.vim/tree/qwerty
 
-Threads
--------
+## Threads
 
 - https://www.reddit.com/r/vim/comments/75zvux/why_is_vim_background_different_inside_tmux/
 - https://www.reddit.com/r/unixporn/comments/50y2gh/issues_with_solarized_termite_and_vim/
-
   - https://imgur.com/a/nl64O
   - https://imgur.com/XHrAfkL
   - https://imgur.com/a/HQGT8
-
 - https://adrien.is/configuring-solarized-colors/
 - https://bbs.archlinux.org/viewtopic.php?id=164108
 - https://www.linuxquestions.org/questions/slackware-14/tip-24-bit-true-color-terminal-tmux-vim-4175582631/
