@@ -10,7 +10,6 @@ bash/**
 etc/**
 firefox/**
 usr/**
-vim/**
 zsh/**
 
 # TODO - Profiles

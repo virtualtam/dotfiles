@@ -26,15 +26,16 @@ Actively maintained
 
 Additional resources:
 
-- `Theming <Theming.rst>`_
-- `Keyboard Layouts <KeyboardLayouts.rst>`_
+- `Theming <./docs/theming.rst>`_
+- `Keyboard Layouts <./docs/keyboard-layouts.rst>`_
+- `Tmux <./docs/tmux.rst>`_
+- `Mercurial (Hg) <./docs/hg.rst>`_
 
 Unmaintained
 ~~~~~~~~~~~~
 
 * `bash`_, the good ol' shell
 * `mercurial`_ distributed SCM
-* `vim`_ text editor
 * `zsh`_ shell
 
 Retired
@@ -47,6 +48,7 @@ Retired
 * `moc`_ player
 * `rxvt-unicode`_ terminal emulator
 * `termite`_ terminal emulator
+* `vim`_ text editor
 
 .. _alacritty: https://github.com/alacritty/alacritty
 .. _awesomewm: https://awesomewm.org/
