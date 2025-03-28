@@ -1,5 +1,5 @@
 # Documentation
-*.rst
+README.md
 docs/**
 
 # LICENSE
