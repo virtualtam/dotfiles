@@ -10,7 +10,6 @@ bash/**
 etc/**
 firefox/**
 usr/**
-zsh/**
 
 # TODO - Profiles
 profile.sh
