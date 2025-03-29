@@ -1,0 +1,23 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+shift+l",
+        "command": "-windsurf.prioritized.chat.openNewConversation",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-windsurf.prioritized.chat.openNewConversationFromTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-windsurf.prioritized.chat.openFromTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-windsurf.prioritized.chat.open",
+        "when": "!terminalFocus"
+    }
+]
