@@ -22,9 +22,5 @@ COPYING
 Documents/**
 {{- end }}
 
-# TODO - Relocate to Anarres
-etc/**
-usr/**
-
 # TODO - Relocate to docs?
 firefox/**
