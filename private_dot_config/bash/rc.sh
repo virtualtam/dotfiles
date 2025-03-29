@@ -87,6 +87,3 @@ bind '"\eOB": history-next-history'
 # https://superuser.com/questions/212446/binding-backward-kill-word-to-ctrlw
 stty werase undef
 bind '\C-w: backward-kill-word'
-
-# Alias definitions
-[[ -f  ~/.bash_aliases ]] && . ~/.bash_aliases
