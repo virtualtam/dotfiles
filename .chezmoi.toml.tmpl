@@ -5,9 +5,11 @@
 {{- $email := promptStringOnce . "email" "User Email Address" -}}
 {{- $name := promptStringOnce . "name" "User Name" -}}
 {{- $editor := promptStringOnce . "editor" "Default Editor" -}}
+{{- $pager := promptStringOnce . "pager" "Default Pager" -}}
 
 [data]
     email = {{ $email | quote }}
     name = {{ $name | quote }}
     editor = {{ $editor | quote }}
+    pager = {{ $pager | quote }}
     osid = {{ $osid | quote }}

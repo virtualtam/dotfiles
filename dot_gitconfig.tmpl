@@ -1,9 +1,24 @@
 [user]
-    email = {{ .email | quote }}
-    name = {{ .name | quote }}
+    email = {{ .email }}
+    name = {{ .name }}
 [core]
-    editor = {{ .editor | quote }}
+    editor = {{ .editor }}
     excludesfile = ~/.config/git/exclude
     fsmonitor = true
 [include]
     path = ~/.config/git/main
+
+# Duplicate entry for Cargo new/init
+# This section must be defined in ~/.gitconfig (and not in an included file).
+[init]
+    defaultBranch = main
+
+[filter "modignore"]
+    clean = sed '/modignore$/'d
+    smudge = cat
+
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
