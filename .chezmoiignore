@@ -5,16 +5,24 @@ docs/**
 # LICENSE
 COPYING
 
-# TODO
+# OS-Specific / Linux
+{{- if ne .chezmoi.os "linux" }}
+.xprofile
+.Xresources
+{{- end }}
+
+# OS-Specific / Windows
+{{- if ne .chezmoi.os "windows" }}
+Documents/**
+{{- end }}
+
+# TODO - Relocate to Anarres
 etc/**
-firefox/**
 usr/**
+
+# TODO - Relocate to docs?
+firefox/**
 
 # TODO - Profiles
 profile.sh
-xprofile
-Xresources
 zprofile.mac
-
-# TODO - Windows
-Documents/**

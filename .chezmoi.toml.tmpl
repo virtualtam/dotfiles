@@ -2,6 +2,8 @@
 {{- if hasKey .chezmoi.osRelease "id" -}}
 {{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
 {{- end -}}
+{{- $lockerChoices := list "light-locker" "gdmflexiserver" -}}
+{{- $locker := promptChoice "Screen Locker" $lockerChoices -}}
 {{- $email := promptStringOnce . "email" "User Email Address" -}}
 {{- $name := promptStringOnce . "name" "User Name" -}}
 {{- $editor := promptStringOnce . "editor" "Default Editor" -}}
@@ -12,4 +14,5 @@
     name = {{ $name | quote }}
     editor = {{ $editor | quote }}
     pager = {{ $pager | quote }}
+    locker = {{ $locker | quote }}
     osid = {{ $osid | quote }}

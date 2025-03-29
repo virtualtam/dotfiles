@@ -1,0 +1,19 @@
+# Disable bell
+xset -b
+
+# Disable screensaver
+xset s off
+
+# Disable DPMS
+xset -dpms
+
+{{ if eq .locker "light-locker" -}}
+# Enable LightDM screen locker
+light-locker &
+{{- end }}
+
+# Start notification handler
+dunst &
+
+# Set desktop background
+~/.fehbg
