@@ -11,3 +11,7 @@
 - [.chezmoi.toml.tmpl](https://www.chezmoi.io/reference/special-files/chezmoi-format-tmpl/)
 - [.chezmoiignore](https://www.chezmoi.io/reference/special-files/chezmoiignore/)
 - [.chezmoitemplates/](https://www.chezmoi.io/reference/special-directories/chezmoitemplates/)
+
+### Functions
+- [promptChoice](https://www.chezmoi.io/reference/templates/init-functions/promptChoice/)
+- [promptString](https://www.chezmoi.io/reference/templates/init-functions/promptString/)
