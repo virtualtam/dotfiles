@@ -7,8 +7,14 @@ COPYING
 
 # OS-Specific / Linux
 {{- if ne .chezmoi.os "linux" }}
+.profile
 .xprofile
 .Xresources
+{{- end }}
+
+# OS-Specific / macOs
+{{- if ne .chezmoi.os "darwin" }}
+.zprofile
 {{- end }}
 
 # OS-Specific / Windows
@@ -22,7 +28,3 @@ usr/**
 
 # TODO - Relocate to docs?
 firefox/**
-
-# TODO - Profiles
-profile.sh
-zprofile.mac
