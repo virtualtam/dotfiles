@@ -7,6 +7,7 @@ COPYING
 
 # OS-Specific / Linux
 {{- if ne .chezmoi.os "linux" }}
+.config/systemd
 .profile
 .xprofile
 .Xresources
@@ -18,7 +19,35 @@ COPYING
 {{- end }}
 
 # OS-Specific / Windows
-{{- if ne .chezmoi.os "windows" }}
+{{- if eq .chezmoi.os "windows" }}
+.config/Code
+.config/VSCodium
+.config/Windsurf
+.config/alacritty
+.config/dunst
+.config/fish
+.config/gh
+.config/ghostty
+.config/htop
+.config/hypr
+.config/i3
+.config/i3status
+.config/k9s
+.config/mpd
+.config/ncmpc
+.config/picom
+.config/rofi
+.config/sway
+.config/waybar
+.config/wofi
+.config/zathura
+.config/zsh
+.iex.exs
+.lein
+.local
+.tmux.conf
+.zshrc
+{{- else }}
 Documents/**
 {{- end }}
 

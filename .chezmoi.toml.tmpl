@@ -2,7 +2,7 @@
 {{- if hasKey .chezmoi.osRelease "id" -}}
 {{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
 {{- end -}}
-{{- $lockerChoices := list "light-locker" "gdmflexiserver" -}}
+{{- $lockerChoices := list "light-locker" "gdmflexiserver" "none" -}}
 {{- $locker := promptChoice "Screen Locker" $lockerChoices -}}
 {{- $email := promptStringOnce . "email" "User Email Address" -}}
 {{- $name := promptStringOnce . "name" "User Name" -}}
