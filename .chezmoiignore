@@ -50,6 +50,3 @@ COPYING
 {{- else }}
 Documents/**
 {{- end }}
-
-# TODO - Relocate to docs?
-firefox/**
