@@ -26,7 +26,7 @@ font pango:Hack 10
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, its unicode glyph coverage is limited, the old
 # X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
+# font, it doesn't scale on retina/hidpi displays.
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -38,7 +38,11 @@ bindsym $mod+Return exec alacritty
 bindsym Print exec flameshot gui
 
 # screen locking
+{{- if eq .locker "light-locker" }}
 bindsym Ctrl+$alt+l exec light-locker-command -l
+{{- else if eq .locker "gdmflexiserver" }}
+bindsym Ctrl+$alt+l exec gdmflexiserver --lock
+{{- end }}
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -109,7 +113,7 @@ hide_edge_borders smart
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+q focus parent
