@@ -1,3 +1,6 @@
+# chezmoi
+abbr --add cz chezmoi
+
 # docker
 abbr --add dkc docker compose
 
