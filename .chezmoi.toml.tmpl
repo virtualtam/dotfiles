@@ -8,11 +8,20 @@
 {{- $name := promptStringOnce . "name" "User Name" -}}
 {{- $editor := promptStringOnce . "editor" "Default Editor" -}}
 {{- $pager := promptStringOnce . "pager" "Default Pager" -}}
+{{- $gitMailmap := promptStringOnce . "gitMailmap" "Git Mailmap File" -}}
+{{- $gitSigningKey := promptStringOnce . "gitSigningKey" "Git Signing Key" -}}
 
 [data]
+    # OS
+    osid = {{ $osid | quote }}
+    locker = {{ $locker | quote }}
+
+    # User
     email = {{ $email | quote }}
     name = {{ $name | quote }}
     editor = {{ $editor | quote }}
     pager = {{ $pager | quote }}
-    locker = {{ $locker | quote }}
-    osid = {{ $osid | quote }}
+
+    # Git
+    gitMailmap = {{ $gitMailmap | quote }}
+    gitSigningKey = {{ $gitSigningKey | quote }}

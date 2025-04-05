@@ -1,12 +1,23 @@
 [user]
     email = {{ .email }}
     name = {{ .name }}
+{{- if ne .gitSigningKey "" }}
+    signingkey = {{ .gitSigningKey }}
+{{- end }}
 [core]
     editor = {{ .editor }}
     excludesfile = ~/.config/git/exclude
     fsmonitor = true
 [include]
     path = ~/.config/git/main
+{{- if ne .gitSigningKey "" }}
+[commit]
+    gpgsign = true
+{{- end }}
+{{- if ne .gitMailmap "" }}
+[mailmap]
+    file = {{ .gitMailmap }}
+{{- end }}
 
 # Duplicate entry for Cargo new/init
 # This section must be defined in ~/.gitconfig (and not in an included file).
