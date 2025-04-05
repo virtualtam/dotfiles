@@ -24,6 +24,8 @@ setw -g window-status-style         fg=brightblue,bg=default
 setw -g window-status-current-style fg=yellow,bg=default
 
 setw -g automatic-rename on
+setw -g automatic-rename-format "#{?#{==:#{pane_current_command},fish},#{b:pane_current_path},#{pane_current_command}}"
+setw -g status-interval  5
 set  -g set-titles       on
 
 # Open new windows and panes in the current working directory
