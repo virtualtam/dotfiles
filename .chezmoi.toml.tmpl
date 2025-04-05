@@ -1,8 +1,3 @@
-{{- $locker := "" -}}
-{{- if eq .chezmoi.os "linux" -}}
-{{-   $lockerChoices := list "light-locker" "gdmflexiserver" "none" -}}
-{{-   $locker := promptChoice "Screen Locker" $lockerChoices -}}
-{{- end -}}
 {{- $email := promptStringOnce . "email" "User Email Address" -}}
 {{- $name := promptStringOnce . "name" "User Name" -}}
 {{- $editor := promptStringOnce . "editor" "Default Editor" -}}
@@ -11,10 +6,19 @@
 {{- $gitSigningKey := promptStringOnce . "gitSigningKey" "Git Signing Key" -}}
 
 [data]
-{{- if eq .chezmoi.os "linux" -}}
+{{- if eq .chezmoi.os "linux" }}
     # Linux
+{{-   $lockerChoices := list "light-locker" "gdmflexiserver" "none" }}
+{{-   $locker := promptChoiceOnce . "locker" "Screen Locker" $lockerChoices }}
+{{-   if eq .chezmoi.osRelease.id "ubuntu" -}}
+{{-     $redshiftLatitude := promptStringOnce . "redshiftLatitude" "Redshift Latitude" }}
+{{-     $redshiftLongitude := promptStringOnce . "redshiftLongitude" "Redshift Longitude" }}
+    redshiftLatitude = {{ $redshiftLatitude | quote }}
+    redshiftLongitude = {{ $redshiftLongitude | quote }}
+{{-   end }}
     locker = {{ $locker | quote }}
 {{- end }}
+
     # User
     email = {{ $email | quote }}
     name = {{ $name | quote }}
