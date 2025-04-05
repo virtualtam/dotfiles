@@ -1,4 +1,7 @@
 ! Xresources file
 
+!- Screen DPI
+Xft.dpi: 96
+
 !- TkInter style
 *TkTheme: clam
