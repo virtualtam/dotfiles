@@ -1,6 +1,7 @@
 {
     "ansible.validation.enabled": false,
     "ansible.validation.lint.enabled": false,
+    "asciidoc.preview.useEditorStyle": false,
     "docker.languageserver.formatter.ignoreMultilineInstructions": true,
     "editor.formatOnSave": true,
     "editor.guides.bracketPairs": "active",
@@ -30,6 +31,7 @@
     "liveshare.accessibility.voiceEnabled": false,
     "lldb.suppressUpdateNotifications": true,
     "notebook.output.scrolling": true,
+    "plantuml.render": "Local",
     "python.defaultInterpreterPath": "/bin/python",
     "redhat.telemetry.enabled": false,
     "ruby.codeCompletion": "rcodetools",
@@ -53,4 +55,7 @@
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 20,
     "workbench.tree.enableStickyScroll": true,
+    "xml.format.enabled": false,
+    "xml.format.grammarAwareFormatting": false,
+    "xml.format.maxLineWidth": 0,
 }
