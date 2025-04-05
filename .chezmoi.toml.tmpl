@@ -1,9 +1,8 @@
-{{- $osid := .chezmoi.os -}}
-{{- if hasKey .chezmoi.osRelease "id" -}}
-{{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
+{{- $locker := "" -}}
+{{- if eq .chezmoi.os "linux" -}}
+{{-   $lockerChoices := list "light-locker" "gdmflexiserver" "none" -}}
+{{-   $locker := promptChoice "Screen Locker" $lockerChoices -}}
 {{- end -}}
-{{- $lockerChoices := list "light-locker" "gdmflexiserver" "none" -}}
-{{- $locker := promptChoice "Screen Locker" $lockerChoices -}}
 {{- $email := promptStringOnce . "email" "User Email Address" -}}
 {{- $name := promptStringOnce . "name" "User Name" -}}
 {{- $editor := promptStringOnce . "editor" "Default Editor" -}}
@@ -12,10 +11,10 @@
 {{- $gitSigningKey := promptStringOnce . "gitSigningKey" "Git Signing Key" -}}
 
 [data]
-    # OS
-    osid = {{ $osid | quote }}
+{{- if eq .chezmoi.os "linux" -}}
+    # Linux
     locker = {{ $locker | quote }}
-
+{{- end }}
     # User
     email = {{ $email | quote }}
     name = {{ $name | quote }}

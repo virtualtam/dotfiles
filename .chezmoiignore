@@ -7,10 +7,29 @@ COPYING
 
 # OS-Specific / Linux
 {{- if ne .chezmoi.os "linux" }}
-.config/systemd
-.profile
+# Desktop / X11
+.config/dunst
+.config/i3
+.config/i3status
+.config/picom
+.config/redshift.conf
+.config/rofi
 .xprofile
 .Xresources
+
+# Desktop / Wayland
+.config/hypr
+.config/sway
+.config/waybar
+.config/wofi
+
+# Services
+.config/systemd
+
+# User
+.profile
+.bashrc
+.config/bash
 {{- end }}
 
 # OS-Specific / macOs
