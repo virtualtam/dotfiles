@@ -30,6 +30,10 @@ COPYING
 .profile
 .bashrc
 .config/bash
+{{- else }}
+{{ if ne .chezmoi.osRelease.id "ubuntu" }}
+.config/redshift.conf
+{{ end}}
 {{- end }}
 
 # OS-Specific / macOs

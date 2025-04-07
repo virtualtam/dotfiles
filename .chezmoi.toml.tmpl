@@ -13,10 +13,10 @@
 {{-   if eq .chezmoi.osRelease.id "ubuntu" -}}
 {{-     $redshiftLatitude := promptStringOnce . "redshiftLatitude" "Redshift Latitude" }}
 {{-     $redshiftLongitude := promptStringOnce . "redshiftLongitude" "Redshift Longitude" }}
-{{-     $tmuxOverrideShell := promptBoolOnce . "tmuxOverrideShell" "Override Tmux Shell" }}
+{{-   $tmuxOverrideShell := promptBoolOnce . "tmuxOverrideShell" "Override Tmux Shell" }}
     redshiftLatitude = {{ $redshiftLatitude | quote }}
     redshiftLongitude = {{ $redshiftLongitude | quote }}
-    tmuxOverrideShell = {{ $tmuxOverrideShell | quote }}
+    tmuxOverrideShell = {{ $tmuxOverrideShell }}
 {{-   end }}
     locker = {{ $locker | quote }}
 {{- end }}
