@@ -7,7 +7,7 @@ xset s off
 # Disable DPMS
 xset -dpms
 
-{{- if eq .locker "light-locker" }}
+{{ if eq .locker "light-locker" -}}
 # Enable LightDM screen locker
 light-locker &
 {{- end }}
@@ -18,7 +18,7 @@ dunst &
 # Set desktop background
 ~/.fehbg
 
-{{ if eq .chezmoi.osRelease.id "ubuntu" -}}
+{{- if eq .chezmoi.osRelease.id "ubuntu" }}
 # Start Redshift
 redshift-gtk &
 
