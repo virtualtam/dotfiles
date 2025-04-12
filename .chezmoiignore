@@ -23,6 +23,9 @@ COPYING
 .config/waybar
 .config/wofi
 
+# Multimedia
+.moc
+
 # Services
 .config/systemd
 
