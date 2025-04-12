@@ -10,6 +10,10 @@
     # Linux
 {{-   $lockerChoices := list "light-locker" "gdmflexiserver" "none" }}
 {{-   $locker := promptChoiceOnce . "locker" "Screen Locker" $lockerChoices }}
+{{-   if eq .chezmoi.osRelease.id "arch" -}}
+{{-     $musicDir := promptStringOnce . "musicDir" "Music Directory" }}
+    musicDir = {{ $musicDir | quote }}
+{{-   end }}
 {{-   if eq .chezmoi.osRelease.id "ubuntu" -}}
 {{-     $redshiftLatitude := promptStringOnce . "redshiftLatitude" "Redshift Latitude" }}
 {{-     $redshiftLongitude := promptStringOnce . "redshiftLongitude" "Redshift Longitude" }}
