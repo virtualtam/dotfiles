@@ -54,6 +54,7 @@ return {
                     "tmux",
                     "toml",
                     "vrl",
+                    "xml",
                     "yaml",
                     "zig",
                 },
