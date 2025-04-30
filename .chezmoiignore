@@ -7,6 +7,9 @@ COPYING
 
 # OS-Specific / Linux
 {{- if ne .chezmoi.os "linux" }}
+# Desktop
+.config/alacritty
+
 # Desktop / X11
 .config/dunst
 .config/i3
@@ -25,6 +28,8 @@ COPYING
 
 # Multimedia
 .moc
+.config/mpd
+.config/ncmpc
 
 # Services
 .config/systemd
@@ -49,23 +54,11 @@ COPYING
 .config/Code
 .config/VSCodium
 .config/Windsurf
-.config/alacritty
-.config/dunst
 .config/fish
 .config/gh
 .config/ghostty
 .config/htop
-.config/hypr
-.config/i3
-.config/i3status
 .config/k9s
-.config/mpd
-.config/ncmpc
-.config/picom
-.config/rofi
-.config/sway
-.config/waybar
-.config/wofi
 .config/zathura
 .config/zsh
 .iex.exs
