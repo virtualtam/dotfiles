@@ -9,3 +9,9 @@ theme = nord
 #theme = flexoki-light
 #theme = iceberg-light
 #theme = rose-pine-dawn
+
+# Tabs
+#gtk-wide-tabs = false
+
+# Custom CSS
+gtk-custom-css = gtk-custom.css

@@ -1,0 +1,31 @@
+/**
+ * Ghostty - Custom GTK CSS
+ *
+ * Debug:
+ *   env GTK_DEBUG=interactive ghostty
+ *
+ * Reference:
+ * - https://docs.gtk.org/gtk4/css-overview.html
+ * - https://docs.gtk.org/gtk4/css-properties.html
+ */
+
+tabbar tabbox {
+  background-color: #2e3440;
+}
+
+tabbbar tabbox tab {
+  color: #e5e9f0;
+  background-color: #3b4252;
+}
+
+tabbar tabbox tab:hover {
+  background-color: #4c566a;
+}
+
+tabbar tabbox tab:selected {
+  background-color: #434c5e;
+}
+
+tabbar tabbox tab label {
+    font-family: "Fira Code";
+}
