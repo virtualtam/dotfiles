@@ -39,9 +39,14 @@ COPYING
 .bashrc
 .config/bash
 {{- else }}
-{{ if ne .chezmoi.osRelease.id "ubuntu" }}
+# Distribution-Specific / Arch Linux
+{{- if eq .chezmoi.osRelease.id "arch" }}
 .config/redshift.conf
-{{ end}}
+{{- else }}
+.moc
+.config/mpd
+.config/ncmpc
+{{- end }}
 {{- end }}
 
 # OS-Specific / macOs
