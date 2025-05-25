@@ -49,4 +49,7 @@
     "workbench.tree.indent": 20,
     // "workbench.activityBar.location": "hidden",
     "workbench.tree.enableStickyScroll": true,
+    "[templ]": {
+        "editor.defaultFormatter": "a-h.templ"
+    },
 }
