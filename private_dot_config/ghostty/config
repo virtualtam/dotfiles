@@ -13,5 +13,13 @@ theme = nord
 # Tabs
 #gtk-wide-tabs = false
 
+# Clipboad
+copy-on-select = clipboard
+
+# macos
+macos-option-as-alt = left
+keybind = alt+left=unbind
+keybind = alt+right=unbind
+
 # Custom CSS
 gtk-custom-css = gtk-custom.css
