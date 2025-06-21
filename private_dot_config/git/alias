@@ -29,6 +29,7 @@ cs = commit -a -s
 csm = commit -a -s -m
 
 d = diff
+dn = diff --name-only
 ds = diff --stat
 dw = diff --word-diff=color
 dh = diff HEAD
