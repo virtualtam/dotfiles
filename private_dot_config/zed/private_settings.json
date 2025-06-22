@@ -38,7 +38,7 @@
     "terraform": true,
     "toml": true
   },
-  "buffer_font_size": 14,
+  "buffer_font_size": 16,
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -51,5 +51,5 @@
     "light": "Gruvbox Light",
     "dark": "One Dark"
   },
-  "ui_font_size": 14
+  "ui_font_size": 16
 }
