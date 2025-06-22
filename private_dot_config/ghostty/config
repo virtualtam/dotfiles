@@ -21,5 +21,8 @@ macos-option-as-alt = left
 keybind = alt+left=unbind
 keybind = alt+right=unbind
 
+# Linux
+app-notifications = no-clipboard-copy
+
 # Custom CSS
 gtk-custom-css = gtk-custom.css
