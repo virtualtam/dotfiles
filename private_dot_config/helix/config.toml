@@ -1,5 +1,9 @@
 theme = "nord"
 
+[editor]
+bufferline = "multiple"
+cursorline = true
+
 [editor.cursor-shape]
 insert = "bar"      
 normal = "block"

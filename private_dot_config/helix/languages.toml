@@ -1,0 +1,5 @@
+[[language]]
+# https://github.com/helix-editor/helix/discussions/10665
+name = "gotmpl"
+file-types = ["gohtml"]
+language-servers = ["gopls", "vscode-html-language-server"]
