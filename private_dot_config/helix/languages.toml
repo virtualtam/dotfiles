@@ -3,3 +3,7 @@
 name = "gotmpl"
 file-types = ["gohtml"]
 language-servers = ["gopls", "vscode-html-language-server"]
+
+[[language]]
+name = "sshclientconfig"
+file-types = ["sshclientconfig", { glob = ".ssh/config" }, { glob =".ssh/config.d/*" }]
