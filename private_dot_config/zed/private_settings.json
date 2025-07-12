@@ -13,12 +13,12 @@
     "default_model": {
       "provider": "openrouter",
       "model": "anthropic/claude-sonnet-4"
-    },
-    "version": "2"
+    }
   },
   "auto_install_extensions": {
     "asciidoc": true,
     "catppuccin-icons": true,
+    "d2": true,
     "dockerfile": true,
     "elixir": true,
     "erlang": true,
@@ -31,14 +31,18 @@
     "log": true,
     "lua": true,
     "make": true,
+    "plantuml": true,
     "proto": true,
+    "rainbow-csv": true,
     "ruby": true,
     "ruff": true,
     "sql": true,
+    "template": true,
     "terraform": true,
-    "toml": true
+    "toml": true,
+    "xml": true
   },
-  "buffer_font_size": 16,
+  "buffer_font_size": 14,
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -51,5 +55,5 @@
     "light": "Gruvbox Light",
     "dark": "One Dark"
   },
-  "ui_font_size": 16
+  "ui_font_size": 14
 }
