@@ -5,5 +5,9 @@ file-types = ["gohtml"]
 language-servers = ["gopls", "vscode-html-language-server"]
 
 [[language]]
+name = "ini"
+file-types = ["ini", { glob = ".aws/config" }, { glob = ".aws/credentials" }]
+
+[[language]]
 name = "sshclientconfig"
 file-types = ["sshclientconfig", { glob = ".ssh/config" }, { glob =".ssh/config.d/*" }]
