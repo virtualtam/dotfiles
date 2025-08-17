@@ -1,6 +1,9 @@
 {
     "ansible.validation.enabled": false,
     "ansible.validation.lint.enabled": false,
+    "asciidoc.preview.useEditorStyle": false,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.renderSideBySide": true,
     "docker.languageserver.formatter.ignoreMultilineInstructions": true,
     "editor.accessibilitySupport": "off",
     "editor.formatOnSave": true,
@@ -26,6 +29,7 @@
     "html.format.templating": true,
     "html.format.wrapAttributes": "preserve-aligned",
     "lldb.suppressUpdateNotifications": true,
+    "plantuml.render": "Local",
     "redhat.telemetry.enabled": false,
     "ruby.codeCompletion": "rcodetools",
     "ruby.intellisense": "rubyLocate",
@@ -44,10 +48,10 @@
     "update.mode": "none",
     "window.zoomLevel": 1,
     "workbench.colorTheme": "Better Solarized Light",
+    "workbench.editor.pinnedTabSizing": "compact",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 20,
-    // "workbench.activityBar.location": "hidden",
     "workbench.tree.enableStickyScroll": true,
     "[templ]": {
         "editor.defaultFormatter": "a-h.templ"
