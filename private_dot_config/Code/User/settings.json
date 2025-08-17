@@ -76,6 +76,7 @@
     "update.mode": "none",
     "window.zoomLevel": 1,
     "workbench.colorTheme": "Better Solarized Light",
+    "workbench.editor.pinnedTabSizing": "compact",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 20,
