@@ -39,9 +39,20 @@ COPYING
 .bashrc
 .config/bash
 {{- else }}
-# Distribution-Specific / Arch Linux
 {{- if eq .chezmoi.osRelease.id "arch" }}
+# Distribution-Specific / Arch Linux
 .config/redshift.conf
+{{- else if eq .chezmoi.osRelease.id "debian" }}
+# Distribution-Specific / Debian
+.moc
+.config/k9s
+.config/mpd
+.config/ncmpc
+.config/redshift.conf
+.config/systemd
+.config/VSCodium
+.config/Windsurf
+.config/zathura
 {{- else }}
 .moc
 .config/mpd
