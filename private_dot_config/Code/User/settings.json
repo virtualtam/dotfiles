@@ -6,6 +6,17 @@
     "diffEditor.renderSideBySide": true,
     "docker.extension.enableComposeLanguageServer": false,
     "docker.languageserver.formatter.ignoreMultilineInstructions": true,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        }
+    },
     "editor.formatOnSave": true,
     "editor.guides.bracketPairs": "active",
     "editor.minimap.enabled": false,
@@ -24,7 +35,11 @@
         "**/heaptrack*.zst": true
     },
     "files.insertFinalNewline": true,
+    "git.blame.editorDecoration.enabled": false,
     "git.openRepositoryInParentFolders": "never",
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+    },
     "gitlab.duoChat.enabled": false,
     "gitlab.duoCodeSuggestions.enabledSupportedLanguages": {
         "csharp": false,
@@ -71,13 +86,14 @@
         "-workbench.action.quickOpen",
         "-workbench.action.terminal.clear",
     ],
-    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.stickyScroll.enabled": true,
     "update.mode": "none",
     "window.zoomLevel": 1,
     "workbench.colorTheme": "Better Solarized Light",
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 20,
     "workbench.tree.enableStickyScroll": true,
