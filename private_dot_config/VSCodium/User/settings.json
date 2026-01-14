@@ -30,6 +30,7 @@
     "html.format.wrapAttributes": "preserve-aligned",
     "lldb.suppressUpdateNotifications": true,
     "plantuml.render": "Local",
+    "python.languageServer": "None",
     "redhat.telemetry.enabled": false,
     "ruby.codeCompletion": "rcodetools",
     "ruby.intellisense": "rubyLocate",
