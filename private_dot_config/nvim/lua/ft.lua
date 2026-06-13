@@ -1,3 +1,11 @@
+-- Go templates
+vim.filetype.add({
+    extension = {
+        gotmpl = "gotmpl",
+        gohtml = "gohtmltmpl",
+    },
+})
+
 -- Git
 vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
     pattern = { "*/gitconfig", "*/.dots/git/*" },

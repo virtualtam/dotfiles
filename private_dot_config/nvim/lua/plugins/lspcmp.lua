@@ -86,6 +86,10 @@ return {
             })
 
             -- Language-specific overrides
+            vim.lsp.config('gopls', {
+                filetypes = { 'go', 'gomod', 'gowork', 'gotmpl', 'gohtmltmpl' },
+            })
+
             vim.lsp.config('lua_ls', {
                 settings = {
                     Lua = {

@@ -6,6 +6,9 @@ return {
             "ray-x/guihua.lua",
             "neovim/nvim-lspconfig",
             "nvim-treesitter/nvim-treesitter",
+            "mfussenegger/nvim-dap",
+            { "rcarriga/nvim-dap-ui", dependencies = { "nvim-neotest/nvim-nio" } },
+            "theHamsta/nvim-dap-virtual-text",
         },
         build = ':lua require("go.install").update_all_sync()',
         event = {"CmdlineEnter"},
@@ -16,6 +19,9 @@ return {
                 lsp_inlay_hints = {
                     enable = false,
                 },
+                dap_debug_gui = true,
+                dap_debug_vt = true,
+                dap_debug_keymap = true,
             })
 
             -- Format on save

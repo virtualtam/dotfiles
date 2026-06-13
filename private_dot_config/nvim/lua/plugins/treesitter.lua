@@ -4,7 +4,10 @@ return {
         "nvim-treesitter/nvim-treesitter",
         branch = "main",
         lazy = false,
-        build = function()
+        build = ':TSUpdate',
+        config = function()
+            require('nvim-treesitter').setup {}
+
             require('nvim-treesitter').install({
                 -- Default grammars
                 "c",
@@ -57,9 +60,6 @@ return {
                 "yaml",
                 "zig",
             }):wait(300000)
-        end,
-        config = function()
-            require('nvim-treesitter').setup {}
 
             -- Highlighting via built-in vim.treesitter
             vim.api.nvim_create_autocmd('FileType', {
