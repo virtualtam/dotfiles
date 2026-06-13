@@ -62,3 +62,4 @@
 
 ### Navigation
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Fuzzy finder
+- [folke/which-key.nvim](https://github.com/folke/which-key.nvim) - Show available keybindings in a popup as you type
