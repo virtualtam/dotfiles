@@ -22,10 +22,10 @@ _Software I use on a daily basis, with actively maintained configuration_
 - [hyprland](https://hyprland.org/) tiling window manager (Wayland)
 - [i3](https://i3wm.org) tiling window manager (X11)
 - [mpd](https://www.musicpd.org/) Music Player Daemon and [ncmpc](https://www.musicpd.org/clients/ncmpc/) ncurses client
+- [neovim](https://neovim.io/) text editor
 - [nord](https://www.nordtheme.com/docs/colors-and-palettes) and [solarized](http://ethanschoonover.com/solarized) color themes
 - [tmux](https://tmux.github.io/) terminal multiplexer
 - [zathura](https://pwmt.org/projects/zathura/) document viewer
-- some extra stuff
 
 Additional resources:
 
@@ -42,7 +42,6 @@ _Software I use occasionally, with rare configuration updates_
 - [alacritty](https://github.com/alacritty/alacritty) terminal emulator
 - [bash](https://www.gnu.org/software/bash/), the good ol' shell
 - [mercurial](https://www.mercurial-scm.org/) distributed SCM
-- [neovim](https://neovim.io/) text editor
 - [zsh](http://www.zsh.org/) shell
 
 ### Retired
