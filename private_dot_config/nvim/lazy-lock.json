@@ -22,5 +22,5 @@
   "rustaceanvim": { "branch": "main", "commit": "e9c5aaba16fead831379d5f44617547a90b913c7" },
   "telescope.nvim": { "branch": "master", "commit": "7d324792b7943e4aa16ad007212e6acc6f9fe335" },
   "vim-haproxy": { "branch": "master", "commit": "1d93a843b4c567c2f499ba0c7ed60c435109ee53" },
-  "vim-markdown": { "branch": "master", "commit": "1bc9d0cd8e1cc3e901b0a49c2b50a843f1c89397" }
+  "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }
 }
