@@ -11,11 +11,8 @@ return {
         event = {"CmdlineEnter"},
         ft = {"go", 'gomod'},
         config = function()
-            local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
             require("go").setup({
-                lsp_cfg = {
-                    capabilities = capabilities,
-                },
+                lsp_cfg = false,
                 lsp_inlay_hints = {
                     enable = false,
                 },

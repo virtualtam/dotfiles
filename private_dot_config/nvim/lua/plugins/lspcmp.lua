@@ -1,48 +1,92 @@
 -- Language Server Protocol & Code Completion
 return {
     {
-        "L3MON4D3/LuaSnip",
-        -- follow latest release.
-        version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-        -- install jsregexp (optional!).
-        build = "make install_jsregexp"
+        "folke/lazydev.nvim",
+        ft = "lua",
+        opts = {
+            library = {
+                { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+            },
+        },
     },
     {
-        "hrsh7th/nvim-cmp",
+        "saghen/blink.cmp",
+        version = "*",
+        lazy = false,
         dependencies = {
-            -- LSP
             "neovim/nvim-lspconfig",
-
-            -- cmp libraries
-            "hrsh7th/cmp-nvim-lsp",
-            "hrsh7th/cmp-buffer",
-            "hrsh7th/cmp-path",
-            "hrsh7th/cmp-cmdline",
-
-            -- Snippets
-            "saadparwaiz1/cmp_luasnip",
-
-            -- LSP integrations
             "williamboman/mason.nvim",
             "williamboman/mason-lspconfig.nvim",
-            "folke/neodev.nvim",
         },
         config = function()
-            -- Global configuration
-            require("neodev").setup({})
+            require("blink.cmp").setup({
+                keymap = {
+                    preset = "default",
+                    ["<Up>"] = { "select_prev", "fallback" },
+                    ["<Down>"] = { "select_next", "fallback" },
+                    ["<CR>"] = { "accept", "fallback" },
+                    ["<Right>"] = { "accept", "fallback" },
+                },
+                appearance = {
+                    nerd_font_variant = "mono",
+                },
+                sources = {
+                    default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+                    providers = {
+                        lazydev = {
+                            name = "LazyDev",
+                            module = "lazydev.integrations.blink",
+                            score_offset = 100,
+                        },
+                    },
+                },
+                completion = {
+                    accept = {
+                        auto_brackets = {
+                            enabled = false,
+                        },
+                    },
+                },
+            })
 
-            local lspconfig = require('lspconfig')
-            local lsp_defaults = lspconfig.util.default_config
+            -- Global LSP keymaps — applies to all clients including rustaceanvim
+            vim.api.nvim_create_autocmd("LspAttach", {
+                callback = function(args)
+                    local bufnr = args.buf
+                    local map = function(keys, func, desc)
+                        vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
+                    end
 
-            lsp_defaults.capabilities = vim.tbl_deep_extend(
-                "force",
-                lsp_defaults.capabilities,
-                require('cmp_nvim_lsp').default_capabilities()
-            )
+                    map('gd', vim.lsp.buf.definition, 'Go to definition')
+                    map('gD', vim.lsp.buf.declaration, 'Go to declaration')
+                    map('gi', vim.lsp.buf.implementation, 'Go to implementation')
+                    map('gr', vim.lsp.buf.references, 'Go to references')
+                    map('K', vim.lsp.buf.hover, 'Hover documentation')
+                    map('<leader>rn', vim.lsp.buf.rename, 'Rename')
+                    map('<leader>ca', vim.lsp.buf.code_action, 'Code action')
+                    map('[d', vim.diagnostic.goto_prev, 'Previous diagnostic')
+                    map(']d', vim.diagnostic.goto_next, 'Next diagnostic')
 
-            -- Language servers
-            lspconfig.gopls.setup({})
-            lspconfig.lua_ls.setup({
+                    -- Format on save for ruff (Python)
+                    local client = vim.lsp.get_client_by_id(args.data.client_id)
+                    if client and client.name == "ruff" then
+                        vim.api.nvim_create_autocmd("BufWritePre", {
+                            buffer = bufnr,
+                            callback = function()
+                                vim.lsp.buf.format({ async = false, name = "ruff" })
+                            end,
+                        })
+                    end
+                end,
+            })
+
+            -- Apply blink capabilities to all LSP servers (wildcard applies at server start time)
+            vim.lsp.config('*', {
+                capabilities = require("blink.cmp").get_lsp_capabilities(),
+            })
+
+            -- Language-specific overrides
+            vim.lsp.config('lua_ls', {
                 settings = {
                     Lua = {
                         callSnippet = "Replace",
@@ -50,75 +94,14 @@ return {
                 }
             })
 
+            -- Enable directly managed language servers
+            vim.lsp.enable({ 'gopls', 'lua_ls' })
+
+            -- Mason-managed language servers (automatic_enable = true by default)
             require('mason').setup()
-            local mason_lspconfig = require "mason-lspconfig"
-            mason_lspconfig.setup {
-                ensure_installed = { "pyright" }
-            }
-            require("lspconfig").pyright.setup {
-                capabilities = lsp_defaults.capabilities,
-            }
-
-            -- Autocompletion
-            vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
-
-            local cmp = require('cmp')
-            local luasnip = require('luasnip')
-            local select_opts = {behavior = cmp.SelectBehavior.Select}
-
-            cmp.setup({
-                enabled = function()
-                    -- disable completion in comments
-                    local context = require 'cmp.config.context'
-                    -- keep command mode completion enabled when cursor is in a comment
-                    if vim.api.nvim_get_mode().mode == 'c' then
-                        return true
-                    else
-                        return not context.in_treesitter_capture("comment")
-                        and not context.in_syntax_group("Comment")
-                    end
-                end,
-                formatting = {
-                    fields = {'menu', 'abbr', 'kind'},
-                    format = function(entry, item)
-                        local menu_icon = {
-                            nvim_lsp = 'λ',
-                            luasnip = '⋗',
-                            -- buffer = 'Ω',
-                            path = '🖫',
-                        }
-
-                        item.menu = menu_icon[entry.source.name]
-                        return item
-                    end,
-                },
-                mapping = {
-                    ["<Up>"] = cmp.mapping.select_prev_item(select_opts),
-                    ["<Down>"] = cmp.mapping.select_next_item(select_opts),
-
-                    ["<CR>"] = cmp.mapping.confirm({select = false}),
-                    ["<Right>"] = cmp.mapping.confirm({select = false}),
-                },
-                sources = {
-                    {name = 'path'},
-                    {name = 'nvim_lsp', keyword_length = 1},
-                    -- {name = 'buffer', keyword_length = 3},
-                    {name = 'luasnip', keyword_length = 2},
-                },
-                snippet = {
-                    expand = function(args)
-                        luasnip.lsp_expand(args.body)
-                    end
-                },
+            require("mason-lspconfig").setup({
+                ensure_installed = { "pyright", "ruff" },
             })
-
-            -- Integrations
-            local cmp_autopairs = require('nvim-autopairs.completion.cmp')
-
-            cmp.event:on(
-            'confirm_done',
-            cmp_autopairs.on_confirm_done()
-            )
         end
     },
 }

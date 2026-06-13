@@ -20,6 +20,9 @@
 # Editor / Zed
 .lsp
 
+# Agents / LLMs
+.claude/settings.local.json
+
 # OS / Arch Linux / Packaging
 *.pkg.tar.xz
 
@@ -54,3 +57,4 @@ coverage.html
 .venv/
 __pycache__/
 *.pyc
+
