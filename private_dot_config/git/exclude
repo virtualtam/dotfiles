@@ -21,7 +21,7 @@
 .lsp
 
 # Agents / LLMs
-.claude/settings.local.json
+**/.claude/settings.local.json
 
 # OS / Arch Linux / Packaging
 *.pkg.tar.xz
