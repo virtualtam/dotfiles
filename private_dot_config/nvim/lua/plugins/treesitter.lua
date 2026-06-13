@@ -2,109 +2,106 @@
 return {
     {
         "nvim-treesitter/nvim-treesitter",
-        build = ":TSUpdate",
-        dependencies = {
-            "nvim-treesitter/nvim-treesitter-textobjects",
-        },
-        config = function()
-            require("nvim-treesitter.configs").setup {
-                auto_install = true,
-                ensure_installed = {
-                    -- Default grammars
-                    "c",
-                    "lua",
-                    "query",
-                    "vim",
-                    "vimdoc",
+        branch = "main",
+        lazy = false,
+        build = function()
+            require('nvim-treesitter').install({
+                -- Default grammars
+                "c",
+                "lua",
+                "query",
+                "vim",
+                "vimdoc",
 
-                    -- Language grammars
-                    "bash",
-                    "cmake",
-                    "cpp",
-                    "css",
-                    "cue",
-                    "dockerfile",
-                    "elixir",
-                    "erlang",
-                    "fish",
-                    "git_config",
-                    "git_rebase",
-                    "gitcommit",
-                    "gitignore",
-                    "go",
-                    "gomod",
-                    "gosum",
-                    "hcl",
-                    "html",
-                    "javascript",
-                    "json",
-                    "jsonc",
-                    "latex",
-                    "make",
-                    "markdown",
-                    "markdown_inline",
-                    "meson",
-                    "ninja",
-                    "python",
-                    "query",
-                    "rst",
-                    "ruby",
-                    "rust",
-                    "ssh_config",
-                    "tmux",
-                    "toml",
-                    "vrl",
-                    "xml",
-                    "yaml",
-                    "zig",
-                },
-                highlight = {
-                    enable = true,
-                },
-                indent = {
-                    enable = true,
-                },
-                textobjects = {
-                    move = {
-                        enable = true,
-                        set_jumps = true, -- whether to set jumps in the jumplist
-                        goto_next_start = {
-                            ["]m"] = "@function.outer",
-                            ["]]"] = { query = "@class.outer", desc = "Next class start" },
-                            --
-                            -- You can use regex matching (i.e. lua pattern) and/or pass a list in a "query" key to group multiple queires.
-                            ["]o"] = "@loop.*",
-                            -- ["]o"] = { query = { "@loop.inner", "@loop.outer" } }
-                            --
-                            -- You can pass a query group to use query from `queries/<lang>/<query_group>.scm file in your runtime path.
-                            -- Below example nvim-treesitter's `locals.scm` and `folds.scm`. They also provide highlights.scm and indent.scm.
-                            ["]s"] = { query = "@scope", query_group = "locals", desc = "Next scope" },
-                            ["]z"] = { query = "@fold", query_group = "folds", desc = "Next fold" },
-                        },
-                        goto_next_end = {
-                            ["]M"] = "@function.outer",
-                            ["]["] = "@class.outer",
-                        },
-                        goto_previous_start = {
-                            ["[m"] = "@function.outer",
-                            ["[["] = "@class.outer",
-                        },
-                        goto_previous_end = {
-                            ["[M"] = "@function.outer",
-                            ["[]"] = "@class.outer",
-                        },
-                        -- Below will go to either the start or the end, whichever is closer.
-                        -- Use if you want more granular movements
-                        -- Make it even more gradual by adding multiple queries and regex.
-                        goto_next = {
-                            ["]d"] = "@conditional.outer",
-                        },
-                        goto_previous = {
-                            ["[d"] = "@conditional.outer",
-                        }
-                    },
-                }
+                -- Language grammars
+                "bash",
+                "cmake",
+                "cpp",
+                "css",
+                "cue",
+                "dockerfile",
+                "elixir",
+                "erlang",
+                "fish",
+                "git_config",
+                "git_rebase",
+                "gitcommit",
+                "gitignore",
+                "go",
+                "gomod",
+                "gosum",
+                "hcl",
+                "html",
+                "javascript",
+                "json",
+                "json5",
+                "latex",
+                "make",
+                "markdown",
+                "markdown_inline",
+                "meson",
+                "ninja",
+                "python",
+                "rst",
+                "ruby",
+                "rust",
+                "ssh_config",
+                "tmux",
+                "toml",
+                "vrl",
+                "xml",
+                "yaml",
+                "zig",
+            }):wait(300000)
+        end,
+        config = function()
+            require('nvim-treesitter').setup {}
+
+            -- Highlighting via built-in vim.treesitter
+            vim.api.nvim_create_autocmd('FileType', {
+                pattern = '*',
+                callback = function() pcall(vim.treesitter.start) end,
+            })
+
+            -- Indentation (experimental)
+            vim.api.nvim_create_autocmd('FileType', {
+                pattern = '*',
+                callback = function()
+                    vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+                end,
+            })
+        end,
+    },
+    {
+        "nvim-treesitter/nvim-treesitter-textobjects",
+        branch = "main",
+        lazy = false,
+        dependencies = { "nvim-treesitter/nvim-treesitter" },
+        config = function()
+            local move = require("nvim-treesitter-textobjects.move")
+
+            require("nvim-treesitter-textobjects").setup {
+                move = { set_jumps = true },
             }
-        end
+
+            -- goto next start
+            vim.keymap.set({ "n", "x", "o" }, "]m", function() move.goto_next_start("@function.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]]", function() move.goto_next_start("@class.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]o", function() move.goto_next_start({ "@loop.inner", "@loop.outer" }, "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]s", function() move.goto_next_start("@local.scope", "locals") end)
+            vim.keymap.set({ "n", "x", "o" }, "]z", function() move.goto_next_start("@fold", "folds") end)
+
+            -- goto next end
+            vim.keymap.set({ "n", "x", "o" }, "]M", function() move.goto_next_end("@function.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "][", function() move.goto_next_end("@class.outer", "textobjects") end)
+
+            -- goto previous start
+            vim.keymap.set({ "n", "x", "o" }, "[m", function() move.goto_previous_start("@function.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[[", function() move.goto_previous_start("@class.outer", "textobjects") end)
+
+            -- goto previous end
+            vim.keymap.set({ "n", "x", "o" }, "[M", function() move.goto_previous_end("@function.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[]", function() move.goto_previous_end("@class.outer", "textobjects") end)
+        end,
     },
 }
