@@ -15,6 +15,7 @@ return {
         ft = {"go", 'gomod'},
         config = function()
             require("go").setup({
+                textobjects = false,
                 lsp_cfg = false,
                 lsp_inlay_hints = {
                     enable = false,
