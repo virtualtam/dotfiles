@@ -64,6 +64,22 @@ function dk --description 'Docker wrapper with concise output'
             docker exec -ti $argv[2..-1]
     case xb
             docker exec -ti $argv[2] bash
+    case xp
+            docker exec -ti $argv[2] psql $argv[3..-1]
+    case xpi
+            set container $argv[2]
+            set databases (
+                docker exec $container psql -At -q -c "SELECT datname FROM pg_database WHERE datistemplate = false AND datname != 'postgres' ORDER BY datname" \
+                | rg -v Time
+            )
+            set database (
+                string join \n $databases \
+                | fzf --prompt="Database ($container) > " \
+                      --height=40% --reverse --border \
+                      --preview="docker exec $container psql -At -q -d {} -c '\d'" \
+                      --preview-window=right:50%:wrap
+                )
+            docker exec -ti "$container" psql -d "$database"
     case xs
             docker exec -ti $argv[2] sh
     case '*'
