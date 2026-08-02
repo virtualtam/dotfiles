@@ -11,7 +11,7 @@ return {
     },
     {
         "saghen/blink.cmp",
-        version = "*",
+        version = "1.*",
         lazy = false,
         dependencies = {
             "neovim/nvim-lspconfig",
@@ -31,7 +31,7 @@ return {
                     nerd_font_variant = "mono",
                 },
                 sources = {
-                    default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+                    default = { "lazydev", "lsp", "path", "snippets" },
                     providers = {
                         lazydev = {
                             name = "LazyDev",
