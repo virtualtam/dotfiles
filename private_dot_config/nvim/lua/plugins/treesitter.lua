@@ -53,7 +53,6 @@ return {
                 "rust",
                 "sql",
                 "ssh_config",
-                "tmux",
                 "toml",
                 "vrl",
                 "xml",
