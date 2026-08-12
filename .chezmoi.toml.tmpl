@@ -2,6 +2,8 @@
 {{- $name := promptStringOnce . "name" "User Name" -}}
 {{- $editor := promptStringOnce . "editor" "Default Editor" -}}
 {{- $pager := promptStringOnce . "pager" "Default Pager" -}}
+{{- $hostTypeChoices := list "devel" "server" -}}
+{{- $hostType := promptChoice "Host Type" $hostTypeChoices -}}
 {{- $gitMailmap := promptStringOnce . "gitMailmap" "Git Mailmap File" -}}
 {{- $gitSigningKey := promptStringOnce . "gitSigningKey" "Git Signing Key" -}}
 
@@ -24,6 +26,9 @@
 {{-   end }}
     locker = {{ $locker | quote }}
 {{- end }}
+
+    # Host
+    hostType = {{ $hostType | quote }}
 
     # User
     email = {{ $email | quote }}

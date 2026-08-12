@@ -85,3 +85,12 @@ COPYING
 {{- else }}
 Documents/**
 {{- end }}
+
+# Host-Specific
+{{- if ne .hostType "devel" }}
+.config/nvim/lua/plugins/go.lua
+.config/nvim/lua/plugins/git.lua
+.config/nvim/lua/plugins/lspcmp.lua
+.config/nvim/lua/plugins/rust.lua
+.config/nvim/lua/plugins/treesitter.lua
+{{- end }}
