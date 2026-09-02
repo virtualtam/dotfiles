@@ -6,9 +6,12 @@
 --- HOST-SPECIFIC SETTINGS ---
 ------------------------------
 
--- monitors.lua is host-specific and untracked (see .gitignore); it is
--- hand-maintained on each machine and never templated by chezmoi.
-require("monitors")
+-- Host-specific monitor configuration.
+-- This file is git-ignored.
+local monitorsOk, monitorsErr = pcall(require, "monitors")
+if not monitorsOk then
+    hl.notification.create({ text = "monitors.lua failed to load: " .. tostring(monitorsErr), timeout = 10 })
+end
 
 
 ----------------
