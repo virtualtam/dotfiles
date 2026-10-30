@@ -8,7 +8,7 @@ vim.filetype.add({
 
 -- Git
 vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
-    pattern = { "*/gitconfig", "*/.dots/git/*" },
+    pattern = { "*/gitconfig", "*/.config/git/*" },
     command = "setf gitconfig",
 })
 
