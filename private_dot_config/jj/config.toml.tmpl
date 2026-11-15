@@ -2,5 +2,8 @@
 name = {{ .name | quote }}
 email = {{ .email | quote }}
 
+[colors]
+"diff token" = { underline = false }
+
 [templates]
 commit_trailers = "format_signed_off_by_trailer(self)"
