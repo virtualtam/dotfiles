@@ -2,6 +2,16 @@
 name = {{ .name | quote }}
 email = {{ .email | quote }}
 
+[aliases]
+ds = ["diff", "--stat"]
+dw = ["diff", "-w"]
+lg = ["log", "-r", "::@", "-T", "builtin_log_oneline"]
+lh = ["log", "-r", "::@", "-T", "builtin_log_detailed"]
+lt = ["log", "-r", "::@", "-T", "builtin_log_oneline", "-n", "10"]
+rt = ["git", "remote"]
+sh = ["show"]
+shst = ["show", "--stat"]
+
 [colors]
 "diff token" = { underline = false }
 
