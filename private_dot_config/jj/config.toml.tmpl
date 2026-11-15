@@ -7,3 +7,13 @@ email = {{ .email | quote }}
 
 [templates]
 commit_trailers = "format_signed_off_by_trailer(self)"
+{{- if ne .gitSigningKey "" }}
+
+[signing]
+behavior = "drop"
+backend = "gpg"
+key = {{ .gitSigningKey | quote }}
+
+[revsets]
+git-sign-on-push = "~signed() & mine()"
+{{- end }}
